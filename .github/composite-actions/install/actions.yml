@@ -21,6 +21,7 @@ runs:
       run: |
         git config --global user.email "samuel.billaud1990@gmail.com"
         git config --global user.name "Samuel Billaud"
+
     - name: Install dependencies
       shell: bash
       run: pnpm install
