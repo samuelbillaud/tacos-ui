@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "build:packages": "turbo run build --filter=!./apps/*",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
@@ -19,6 +20,8 @@
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
     "prettier": "latest",
+    "@changesets/cli": "^2.26.0",
+    "tsup": "^6.6.3",
     "turbo": "latest"
   },
   "engines": {
