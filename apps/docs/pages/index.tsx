@@ -4,7 +4,7 @@ export default function Docs() {
   return (
     <div>
       <Hello name="Docsssssss" />
-      <Button />
+      <Button text="docs button" onClick={() => {}} />
     </div>
   );
 }

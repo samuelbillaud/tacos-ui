@@ -1,5 +1,10 @@
-import * as React from "react";
+import { FC } from "react";
 
-export const Button = () => {
-  return <button>Boppooooooooooopppp</button>;
+type ButtonProps = {
+  text: string;
+  onClick: () => void;
+}
+
+export const Button: FC<ButtonProps> = ({ text, onClick }) => {
+  return <button onClick={onClick}>{text}</button>;
 };

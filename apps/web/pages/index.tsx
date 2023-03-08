@@ -5,7 +5,7 @@ export default function Web() {
   return (
     <div>
       <Hello name="world" />
-      <Button />
+      <Button text="web button" onClick={() => {}} />
     </div>
   );
 }
