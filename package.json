@@ -1,10 +1,10 @@
 {
   "name": "tacos-ui",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "packages/**/**"
   ],
   "scripts": {
     "build": "turbo run build",
