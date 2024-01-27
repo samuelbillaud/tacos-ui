@@ -1,0 +1,44 @@
+{
+  "name": "@tacos-ui/panda-preset",
+  "version": "0.0.1",
+  "description": "Panda CSS Preset for Tacos UI",
+  "keywords": [
+    "Panda CSS",
+    "Preset"
+  ],
+  "author": "Samuel Billaud <samuel.billaud1990@gmail.com> (https://github.com/samuelbillaud)",
+  "license": "MIT",
+  "repository": "https://github.com/samuelbillaud/zaatar-ui",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "@pandacss/dev": "0.28.0",
+    "@pandacss/types": "0.28.0",
+    "tsup": "8.0.1"
+  },
+  "peerDependencies": {
+    "@pandacss/dev": ">0.22.0",
+    "@pandacss/types": ">0.22.0"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "clean": true,
+    "dts": true,
+    "sourcemap": true,
+    "format": [
+      "esm",
+      "cjs"
+    ]
+  },
+  "main": "src/index.ts"
+}
