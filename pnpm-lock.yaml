@@ -42,7 +42,10 @@ importers:
     specifiers:
       '@pandacss/dev': 0.28.0
       '@pandacss/types': 0.28.0
+      '@radix-ui/colors': ^3.0.0
       tsup: 8.0.1
+    dependencies:
+      '@radix-ui/colors': 3.0.0
     devDependencies:
       '@pandacss/dev': 0.28.0
       '@pandacss/types': 0.28.0
@@ -964,6 +967,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@radix-ui/colors/3.0.0:
+    resolution: {integrity: sha512-FUOsGBkHrYJwCSEtWRCIfQbZG7q1e6DgxCIOe1SUQzDe/7rXXeA47s8yCn6fuTNQAj1Zq4oTFi9Yjp3wzElcxg==}
+    dev: false
 
   /@rollup/rollup-android-arm-eabi/4.9.6:
     resolution: {integrity: sha512-MVNXSSYN6QXOulbHpLMKYi60ppyO13W9my1qogeiAqtjb2yR4LSmfU2+POvDkLzhjYLXz9Rf9+9a3zFHW1Lecg==}

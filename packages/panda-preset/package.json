@@ -40,5 +40,8 @@
       "cjs"
     ]
   },
-  "main": "src/index.ts"
+  "main": "src/index.ts",
+  "dependencies": {
+    "@radix-ui/colors": "^3.0.0"
+  }
 }
