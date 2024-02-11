@@ -4,6 +4,7 @@ import { breakpoints } from './theme/breakpoints'
 import { conditions } from './conditions'
 import { globalCss } from './global-css'
 import { keyframes } from './theme/keyframes'
+import { slotRecipes } from './theme/recipes'
 import { semanticTokens } from './theme/semantic-tokens'
 import { textStyles } from './theme/text-styles'
 import { tokens } from './theme/tokens'
@@ -16,6 +17,7 @@ export const preset = definePreset({
       breakpoints,
       keyframes,
       semanticTokens,
+      slotRecipes,
       textStyles,
       tokens,
     },

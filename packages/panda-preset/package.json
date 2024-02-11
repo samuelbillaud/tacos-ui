@@ -19,6 +19,10 @@
   "scripts": {
     "build": "tsup"
   },
+  "dependencies": {
+    "@ark-ui/anatomy": "2.1.0",
+    "@radix-ui/colors": "^3.0.0"
+  },
   "devDependencies": {
     "@pandacss/dev": "0.28.0",
     "@pandacss/types": "0.28.0",
@@ -40,8 +44,5 @@
       "cjs"
     ]
   },
-  "main": "src/index.ts",
-  "dependencies": {
-    "@radix-ui/colors": "^3.0.0"
-  }
+  "main": "src/index.ts"
 }
