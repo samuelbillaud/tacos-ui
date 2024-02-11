@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Switch } from '~/components/ui/switch'
+import { Switch } from '~/components/ui/Switch'
 import { switchRecipe } from 'styled-system/recipes'
 
 const meta: Meta = {
