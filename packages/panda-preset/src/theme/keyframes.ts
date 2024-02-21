@@ -53,4 +53,9 @@ export const keyframes = defineKeyframes({
   'skeleton-pulse': {
     '50%': { opacity: '0.5' },
   },
+  spin: {
+    to: {
+      transform: 'rotate(360deg)',
+    },
+  },
 })
