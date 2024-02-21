@@ -59,14 +59,9 @@ export const DefaultChecked: Story = {
 export const Disabled: Story = {
   args: {
     children: 'Label',
-    disabled: true
+    disabled: true,
   },
 };
 
-export const WithResponsiveMargin: Story = {
-  args: {
-    children: 'Label',
-    disabled: true,
-    ml: { base: 4, md: 16 }
-  },
-};
+export const WithResponsiveMargin = (args: Story['args']) =>
+  <Switch {...args} ml={{ base: 4, md: 16 }}>Label</Switch>;

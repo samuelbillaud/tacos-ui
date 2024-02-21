@@ -8,8 +8,7 @@ import { switchRecipe, type SwitchRecipeVariantProps } from 'styled-system/recip
 import { splitMarginsProps, type MarginProps } from '~/lib/splitMarginProps'
 
 export interface SwitchProps
-  extends MarginProps, SwitchRootProps,
-    SwitchRecipeVariantProps {
+  extends SwitchRecipeVariantProps, Omit<SwitchRootProps, 'asChild'>, MarginProps {
   children?: ReactNode
 }
 
