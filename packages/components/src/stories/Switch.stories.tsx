@@ -1,6 +1,8 @@
-import type { Meta, StoryObj } from '@storybook/react'
-import { Switch } from '~/components/ui/Switch'
-import { switchRecipe } from 'styled-system/recipes'
+import type { Meta, StoryObj } from '@storybook/react';
+
+import { switchRecipe } from 'styled-system/recipes';
+
+import { Switch } from '~/components/ui';
 
 const meta: Meta = {
   title: 'Components/Switch',
@@ -17,7 +19,7 @@ const meta: Meta = {
     },
     onCheckedChange: {
       action: 'onCheckedChange',
-    }
+    },
   },
   args: {
     size: 'md',
@@ -38,21 +40,21 @@ export const Base: Story = {
 export const Small: Story = {
   args: {
     children: 'Label',
-    size: 'sm'
+    size: 'sm',
   },
 };
 
 export const Large: Story = {
   args: {
     children: 'Label',
-    size: 'lg'
+    size: 'lg',
   },
 };
 
 export const DefaultChecked: Story = {
   args: {
     children: 'Label',
-    defaultChecked: true
+    defaultChecked: true,
   },
 };
 
@@ -63,5 +65,8 @@ export const Disabled: Story = {
   },
 };
 
-export const WithResponsiveMargin = (args: Story['args']) =>
-  <Switch {...args} ml={{ base: 4, md: 16 }}>Label</Switch>;
+export const WithResponsiveMargin = (args: Story['args']) => (
+  <Switch {...args} ml={{ base: 4, md: 16 }}>
+    Label
+  </Switch>
+);

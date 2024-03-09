@@ -13,7 +13,7 @@
   "private": true,
   "scripts": {
     "prepare": "panda codegen --silent",
-    "storybook": "storybook dev -p 6006",
+    "dev": "storybook dev -p 6006",
     "typecheck": "tsc"
   },
   "devDependencies": {

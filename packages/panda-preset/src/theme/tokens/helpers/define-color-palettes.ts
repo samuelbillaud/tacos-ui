@@ -1,5 +1,7 @@
-import { defineTokens } from '@pandacss/dev'
 import type { Token } from '@pandacss/types'
+
+import { defineTokens } from '@pandacss/dev'
+
 import * as radixColors from '@radix-ui/colors'
 
 export const defineColorPalettes = () => {
@@ -19,8 +21,8 @@ const defineColorPalette = (color: string) => {
       .filter((key) => key.startsWith(color))
       .filter((key) => !/\d/.test(key))
       .map((key) => {
-        // @ts-expect-error
         const tokens = toColorTokens(color, radixColors[key])
+
         return [key, tokens]
       }),
   )
@@ -29,7 +31,9 @@ const defineColorPalette = (color: string) => {
     Object.keys(colorObj).reduce(
       (acc, key) => {
         const target = key.includes('Dark') ? 'dark' : 'light'
+
         acc[target] = { ...acc[target], ...colorObj[key] }
+
         return acc
       },
       { light: {}, dark: {} },
@@ -45,6 +49,7 @@ const toColorTokens = (
     Object.keys(scale).map((key) => {
       const value = scale[key]
       const name = key.replace(color, '').toLowerCase()
+
       return [name, { value }]
     }),
   )

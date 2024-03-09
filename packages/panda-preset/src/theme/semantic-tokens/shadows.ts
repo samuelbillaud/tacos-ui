@@ -1,4 +1,4 @@
-import { defineSemanticTokens } from '@pandacss/dev'
+import { defineSemanticTokens } from '@pandacss/dev';
 
 export const shadows = defineSemanticTokens.shadows({
   xs: {
@@ -37,4 +37,4 @@ export const shadows = defineSemanticTokens.shadows({
       _dark: '0px 24px 40px {colors.black.a10}, 0px 0px 1px inset {colors.gray.a7}',
     },
   },
-})
+});

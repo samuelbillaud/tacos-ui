@@ -26,6 +26,6 @@ export const yellow = {
 
   default: { value: '{colors.yellow.9}' },
   emphasized: { value: '{colors.yellow.10}' },
-  fg: { value: '{colors.black}' },
+  fg: { value: '{colors.black.DEFAULT}' },
   text: { value: '{colors.yellow.a11}' },
-}
+};

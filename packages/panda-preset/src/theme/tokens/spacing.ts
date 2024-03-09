@@ -33,4 +33,4 @@ export const spacing = {
   72: { value: '18rem' },
   80: { value: '20rem' },
   96: { value: '24rem' },
-}
+};

@@ -1,4 +1,4 @@
-import type { Tokens } from '@pandacss/types'
+import { type Tokens } from '@pandacss/types'
 
 import { animations } from './animations'
 import { blurs } from './blurs'
@@ -14,7 +14,7 @@ import { zIndex } from './z-index'
 
 const defineTokens = <T extends Tokens>(v: T) => v
 
-export const tokens = defineTokens({
+export const tokens: Tokens = defineTokens({
   animations,
   blurs,
   borders,

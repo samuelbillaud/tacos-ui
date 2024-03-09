@@ -1,4 +1,4 @@
-import { defineTokens } from '@pandacss/dev'
+import { defineTokens } from '@pandacss/dev';
 
 export const durations = defineTokens.durations({
   fastest: { value: '50ms' },
@@ -8,4 +8,4 @@ export const durations = defineTokens.durations({
   slow: { value: '300ms' },
   slower: { value: '400ms' },
   slowest: { value: '500ms' },
-})
+});

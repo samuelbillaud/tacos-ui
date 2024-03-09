@@ -13,16 +13,20 @@ export function splitProps<T extends Dict>(props: T, ...keys: Key[]) {
   const dKeys = Object.keys(descriptors)
   const split = (k: string[]) => {
     const clone = {} as Dict
+
     for (let i = 0; i < k.length; i++) {
       const key = k[i]
+
       if (descriptors[key]) {
         Object.defineProperty(clone, key, descriptors[key])
         delete descriptors[key]
       }
     }
+
     return clone
   }
   const fn = (key: Key) => split(Array.isArray(key) ? key : dKeys.filter(key))
+
   return keys.map(fn).concat(split(dKeys))
 }
 
@@ -60,30 +64,30 @@ const isMarginProperty = (prop: string) => {
 }
 
 export type MarginProps = {
+  m?: JsxStyleProps['m'];
   margin?: JsxStyleProps['margin'];
   marginBlock?: JsxStyleProps['marginBlock'];
   marginBlockEnd?: JsxStyleProps['marginBlockEnd'];
   marginBlockStart?: JsxStyleProps['marginBlockStart'];
   marginBottom?: JsxStyleProps['marginBottom'];
+  marginEnd?: JsxStyleProps['marginEnd'];
   marginInline?: JsxStyleProps['marginInline'];
   marginInlineEnd?: JsxStyleProps['marginInlineEnd'];
   marginInlineStart?: JsxStyleProps['marginInlineStart'];
   marginLeft?: JsxStyleProps['marginLeft'];
   marginRight?: JsxStyleProps['marginRight'];
+  marginStart?: JsxStyleProps['marginStart'];
   marginTop?: JsxStyleProps['marginTop'];
+  marginX?: JsxStyleProps['marginX'];
+  marginY?: JsxStyleProps['marginY'];
+  mb?: JsxStyleProps['mb'];
+  me?: JsxStyleProps['me'];
   ml?: JsxStyleProps['ml'];
   mr?: JsxStyleProps['mr'];
-  mt?: JsxStyleProps['mt'];
-  mb?: JsxStyleProps['mb'];
-  m?: JsxStyleProps['m'];
-  my?: JsxStyleProps['my'];
-  marginY?: JsxStyleProps['marginY'];
-  mx?: JsxStyleProps['mx'];
-  marginX?: JsxStyleProps['marginX'];
-  me?: JsxStyleProps['me'];
-  marginEnd?: JsxStyleProps['marginEnd'];
   ms?: JsxStyleProps['ms'];
-  marginStart?: JsxStyleProps['marginStart'];
+  mt?: JsxStyleProps['mt'];
+  mx?: JsxStyleProps['mx'];
+  my?: JsxStyleProps['my'];
 }
 
 export const splitMarginsProps = (props: Dict): MarginProps[] =>  splitProps(props, isMarginProperty)

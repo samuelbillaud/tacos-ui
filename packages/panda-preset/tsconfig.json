@@ -1,4 +1,9 @@
 {
+  "extends": "../../tsconfig.json",
+  // "compilerOptions": {
+  //   "baseUrl": "."
+  // },
+
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
@@ -11,5 +16,8 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true
-  }
+  },
+
+  "include": ["src/**/*"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

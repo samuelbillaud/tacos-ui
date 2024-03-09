@@ -1,4 +1,4 @@
-import { defineSlotRecipe } from '@pandacss/dev'
+import { defineSlotRecipe } from '@pandacss/dev';
 
 export const buttonRecipe = defineSlotRecipe({
   slots: ['root', 'loadingIcon'],
@@ -242,4 +242,4 @@ export const buttonRecipe = defineSlotRecipe({
       },
     },
   },
-})
+});

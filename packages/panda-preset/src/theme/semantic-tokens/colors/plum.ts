@@ -26,6 +26,6 @@ export const plum = {
 
   default: { value: '{colors.plum.9}' },
   emphasized: { value: '{colors.plum.10}' },
-  fg: { value: '{colors.white}' },
+  fg: { value: '{colors.white.DEFAULT}' },
   text: { value: '{colors.plum.a11}' },
-}
+};

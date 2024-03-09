@@ -26,6 +26,6 @@ export const amber = {
 
   default: { value: '{colors.amber.9}' },
   emphasized: { value: '{colors.amber.10}' },
-  fg: { value: '{colors.black}' },
+  fg: { value: '{colors.black.DEFAULT}' },
   text: { value: '{colors.amber.a11}' },
-}
+};

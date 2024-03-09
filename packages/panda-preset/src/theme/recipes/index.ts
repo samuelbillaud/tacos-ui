@@ -1,10 +1,10 @@
-import { switchRecipe } from './switch'
-import { buttonRecipe } from './button'
+import { buttonRecipe } from './button';
+import { switchRecipe } from './switch';
 
 export const recipes = {
   buttonRecipe,
-}
+};
 
 export const slotRecipes = {
   switchRecipe,
-}
+};

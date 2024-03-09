@@ -1,4 +1,4 @@
-import { defineTokens } from '@pandacss/dev'
+import { defineTokens } from '@pandacss/dev';
 
 export const radii = defineTokens.radii({
   none: { value: '0' },
@@ -11,4 +11,4 @@ export const radii = defineTokens.radii({
   '2xl': { value: '1rem' },
   '3xl': { value: '1.5rem' },
   full: { value: '9999px' },
-})
+});

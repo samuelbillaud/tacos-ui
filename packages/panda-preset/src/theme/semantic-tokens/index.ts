@@ -1,6 +1,7 @@
-import { defineSemanticTokens } from '@pandacss/dev'
-import { colors } from './colors'
-import { shadows } from './shadows'
+import { defineSemanticTokens } from '@pandacss/dev';
+
+import { colors } from './colors';
+import { shadows } from './shadows';
 
 export const semanticTokens = defineSemanticTokens({
   colors: {
@@ -9,7 +10,7 @@ export const semanticTokens = defineSemanticTokens({
     accent: colors['sky'],
     bg: {
       canvas: { value: '{colors.gray.1}' },
-      default: { value: { base: '{colors.white}', _dark: '{colors.gray.2}' } },
+      default: { value: { base: '{colors.white.DEFAULT}', _dark: '{colors.gray.2}' } },
       subtle: { value: { base: '{colors.gray.2}', _dark: '{colors.gray.3}' } },
       muted: { value: { base: '{colors.gray.3}', _dark: '{colors.gray.4}' } },
       emphasized: { value: { base: '{colors.gray.4}', _dark: '{colors.gray.5}' } },
@@ -30,4 +31,4 @@ export const semanticTokens = defineSemanticTokens({
     },
   },
   shadows,
-})
+});

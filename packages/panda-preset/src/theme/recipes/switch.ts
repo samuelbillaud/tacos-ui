@@ -1,5 +1,6 @@
-import { switchAnatomy } from '@ark-ui/anatomy'
-import { defineSlotRecipe } from '@pandacss/dev'
+import { defineSlotRecipe } from '@pandacss/dev';
+
+import { switchAnatomy } from '@ark-ui/anatomy';
 
 export const switchRecipe = defineSlotRecipe({
   className: 'switchRecipe',
@@ -105,4 +106,4 @@ export const switchRecipe = defineSlotRecipe({
   defaultVariants: {
     size: 'md',
   },
-})
+});

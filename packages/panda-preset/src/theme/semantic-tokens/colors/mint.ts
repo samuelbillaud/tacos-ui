@@ -26,6 +26,6 @@ export const mint = {
 
   default: { value: '{colors.mint.9}' },
   emphasized: { value: '{colors.mint.10}' },
-  fg: { value: '{colors.black}' },
+  fg: { value: '{colors.black.DEFAULT}' },
   text: { value: '{colors.mint.a11}' },
-}
+};

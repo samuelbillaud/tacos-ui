@@ -26,6 +26,6 @@ export const violet = {
 
   default: { value: '{colors.violet.9}' },
   emphasized: { value: '{colors.violet.10}' },
-  fg: { value: '{colors.white}' },
+  fg: { value: '{colors.white.DEFAULT}' },
   text: { value: '{colors.violet.a11}' },
-}
+};

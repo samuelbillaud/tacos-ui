@@ -17,7 +17,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsup"
+    "dev": "tsup src/index.ts --watch",
+    "build": "tsup src/index.ts"
   },
   "dependencies": {
     "@ark-ui/anatomy": "2.1.0",

@@ -28,4 +28,4 @@ export const sky = {
   emphasized: { value: '{colors.sky.10}' },
   fg: { value: '{colors.slate.light.12}' },
   text: { value: '{colors.sky.a11}' },
-}
+};

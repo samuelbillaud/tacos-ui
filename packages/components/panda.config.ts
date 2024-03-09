@@ -1,4 +1,5 @@
-import { defineConfig } from '@pandacss/dev'
+import { defineConfig } from '@pandacss/dev';
+
 import { preset as tacosPreset } from '@tacos-ui/panda-preset';
 
 export default defineConfig({
@@ -10,4 +11,4 @@ export default defineConfig({
   staticCss: {
     recipes: '*',
   },
-})
+});

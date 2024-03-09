@@ -1,8 +1,9 @@
-import { defineTokens } from '@pandacss/dev'
-import { defineColorPalettes } from './helpers/define-color-palettes'
+import { defineTokens } from '@pandacss/dev';
+
+import { defineColorPalettes } from './helpers/define-color-palettes';
 
 export const defineColorTokens = () => {
-  const colorPalettes = defineColorPalettes()
+  const colorPalettes = defineColorPalettes();
 
   return defineTokens.colors({
     ...colorPalettes,
@@ -38,5 +39,5 @@ export const defineColorTokens = () => {
       a11: { value: 'rgba(255, 255, 255, 0.9)' },
       a12: { value: 'rgba(255, 255, 255, 0.95)' },
     },
-  })
-}
+  });
+};

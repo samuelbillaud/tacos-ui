@@ -6,4 +6,4 @@ export const conditions = {
     collapsed: '&:is([aria-collapsed=true], [data-collapsed], [data-state="collapsed"])',
     underValue: '&:is([data-state="under-value"])',
   },
-}
+};

@@ -1,4 +1,4 @@
-import { defineKeyframes } from '@pandacss/dev'
+import { defineKeyframes } from '@pandacss/dev';
 
 export const keyframes = defineKeyframes({
   'fade-in': {
@@ -58,4 +58,4 @@ export const keyframes = defineKeyframes({
       transform: 'rotate(360deg)',
     },
   },
-})
+});

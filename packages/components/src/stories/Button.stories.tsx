@@ -1,7 +1,10 @@
-import type { Meta, StoryObj } from '@storybook/react'
-import { Button } from '~/components/ui/Button'
-import { buttonRecipe } from 'styled-system/recipes'
+import type { Meta, StoryObj } from '@storybook/react';
+
 import { X } from 'lucide-react';
+
+import { buttonRecipe } from 'styled-system/recipes';
+
+import { Button } from '~/components/ui';
 
 const meta: Meta = {
   title: 'Components/Button',
@@ -18,7 +21,7 @@ const meta: Meta = {
     },
     onClick: {
       action: 'onClick',
-    }
+    },
   },
   args: {
     size: 'md',
@@ -39,7 +42,7 @@ export const Base: Story = {
 export const Small: Story = {
   args: {
     children: 'Confirm',
-    size: 'sm'
+    size: 'sm',
   },
 };
 
@@ -53,14 +56,18 @@ export const Large: Story = {
 export const Disabled: Story = {
   args: {
     children: 'Confirm',
-    disabled: true
+    disabled: true,
   },
 };
 
 export const OutlineWithLeftIcon: Story = {
   args: {
-    children: <><X/> Close</>,
-    variant: 'outline'
+    children: (
+      <>
+        <X /> Close
+      </>
+    ),
+    variant: 'outline',
   },
 };
 
@@ -75,7 +82,7 @@ export const AsChild: Story = {
   args: {
     children: <a href="#">Go to GitHub</a>,
     variant: 'outline',
-    asChild: true
+    asChild: true,
   },
 };
 
@@ -84,9 +91,12 @@ export const SoftAndIsLoading: Story = {
     children: 'Confirm',
     variant: 'soft',
     color: 'primary',
-    isLoading: true
+    isLoading: true,
   },
 };
 
-export const WithResponsiveMargin = (args: Story['args']) =>
-  <Button {...args} ml={{ base: 4, md: 16 }}>Confirm</Button>;
+export const WithResponsiveMargin = (args: Story['args']) => (
+  <Button {...args} ml={{ base: 4, md: 16 }}>
+    Confirm
+  </Button>
+);

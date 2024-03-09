@@ -26,6 +26,6 @@ export const bronze = {
 
   default: { value: '{colors.bronze.9}' },
   emphasized: { value: '{colors.bronze.10}' },
-  fg: { value: '{colors.white}' },
+  fg: { value: '{colors.white.DEFAULT}' },
   text: { value: '{colors.bronze.a11}' },
-}
+};

@@ -4,11 +4,35 @@
   "private": true,
   "description": "The repository of zaatar-ui",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "pnpm --recursive --parallel --stream run dev",
+    "dev:panda-preset": "pnpm --filter @tacos-ui/panda-preset",
+    "dev:components": "pnpm --filter @tacos-ui/react",
+    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,json}\"",
+    "lint": "eslint .",
+    "lint:fix": "pnpm lint --fix"
   },
   "keywords": [],
   "author": "Samuel Billaud <samuel.billaud1990@gmail.com> (https://github.com/samuelbillaud)",
   "repository": "https://github.com/samuelbillaud/zaatar-ui",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.0.1",
+    "@eslint/js": "^8.56.0",
+    "@stylistic/eslint-plugin": "^1.6.3",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-perfectionist": "^2.6.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "globals": "^14.0.0"
+  }
 }

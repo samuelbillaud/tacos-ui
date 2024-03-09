@@ -1,4 +1,4 @@
-import { defineTokens } from '@pandacss/dev'
+import { defineTokens } from '@pandacss/dev';
 
 export const blurs = defineTokens.blurs({
   sm: { value: '4px' },
@@ -8,4 +8,4 @@ export const blurs = defineTokens.blurs({
   xl: { value: '24px' },
   '2xl': { value: '40px' },
   '3xl': { value: '64px' },
-})
+});
