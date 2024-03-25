@@ -13,6 +13,7 @@
   "private": true,
   "scripts": {
     "prepare": "panda codegen --silent",
+    "build": "tsup",
     "dev": "storybook dev -p 6006",
     "typecheck": "tsc"
   },
@@ -32,8 +33,11 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "storybook": "^7.6.14",
-    "typescript": "5.3.3",
+    "typescript": "5.4.3",
     "vite": "5.0.12",
     "vite-tsconfig-paths": "4.3.1"
+  },
+  "peerDependencies": {
+    "@tacos-ui/styled-system": "*"
   }
 }

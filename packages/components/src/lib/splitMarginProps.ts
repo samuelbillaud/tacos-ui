@@ -1,6 +1,6 @@
 import type {
   JsxStyleProps,
-} from 'styled-system/types'
+} from '@tacos-ui/styled-system/types'
 
 
 type Dict = Record<string, unknown>

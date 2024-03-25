@@ -17,8 +17,8 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "tsup src/index.ts --watch",
-    "build": "tsup src/index.ts"
+    "dev": "tsup --watch",
+    "build": "tsup"
   },
   "dependencies": {
     "@ark-ui/anatomy": "2.1.0",
@@ -26,24 +26,11 @@
   },
   "devDependencies": {
     "@pandacss/dev": "0.28.0",
-    "@pandacss/types": "0.28.0",
-    "tsup": "8.0.1"
+    "@pandacss/types": "0.28.0"
   },
   "peerDependencies": {
     "@pandacss/dev": ">0.22.0",
     "@pandacss/types": ">0.22.0"
-  },
-  "tsup": {
-    "entry": [
-      "src/index.ts"
-    ],
-    "clean": true,
-    "dts": true,
-    "sourcemap": true,
-    "format": [
-      "esm",
-      "cjs"
-    ]
   },
   "main": "src/index.ts"
 }

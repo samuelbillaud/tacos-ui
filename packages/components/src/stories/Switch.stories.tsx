@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { switchRecipe } from 'styled-system/recipes';
+import { switchRecipe } from '@tacos-ui/styled-system/recipes';
 
 import { Switch } from '~/components/ui';
 

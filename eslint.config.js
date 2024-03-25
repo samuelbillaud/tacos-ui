@@ -66,7 +66,7 @@ const config = {
           value: {
             react: ['react', 'react-*', 'react-*/**'],
             panda: '@pandacss/**',
-            styledSystem: 'styled-system/**',
+            styledSystem: '@tacos-ui/styled-system/**',
           },
         },
         'newlines-between': 'always',

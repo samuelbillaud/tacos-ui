@@ -1,22 +1,5 @@
 {
   "extends": "../../tsconfig.json",
-  // "compilerOptions": {
-  //   "baseUrl": "."
-  // },
-
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "verbatimModuleSyntax": true,
-    "moduleResolution": "node",
-    "noEmit": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "strict": true
-  },
 
   "include": ["src/**/*"],
   "references": [{ "path": "./tsconfig.node.json" }]

@@ -5,9 +5,10 @@ import { preset as tacosPreset } from '@tacos-ui/panda-preset';
 export default defineConfig({
   preflight: true,
   presets: ['@pandacss/preset-base', tacosPreset],
-  include: ['./src/**/*.{js,jsx,ts,tsx}'],
+  include: ["./node_modules/@tacos-ui/panda-preset/**/*.js", './src/**/*.{js,jsx,ts,tsx}'],
   jsxFramework: 'react',
-  outdir: 'styled-system',
+  outdir: '@tacos-ui/styled-system',
+  emitPackage: true,
   staticCss: {
     recipes: '*',
   },

@@ -3,9 +3,9 @@ import { forwardRef } from 'react';
 import { type HTMLArkProps, ark } from '@ark-ui/react/factory';
 import { Loader2 } from 'lucide-react';
 
-import { css, cx } from 'styled-system/css';
-import { splitCssProps } from 'styled-system/jsx';
-import { type ButtonRecipeVariantProps, buttonRecipe } from 'styled-system/recipes';
+import { css, cx } from '@tacos-ui/styled-system/css';
+import { splitCssProps } from '@tacos-ui/styled-system/jsx';
+import { type ButtonRecipeVariantProps, buttonRecipe } from '@tacos-ui/styled-system/recipes';
 
 import { type MarginProps, splitMarginsProps } from '~/lib/splitMarginProps';
 

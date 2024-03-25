@@ -2,9 +2,9 @@ import { type ReactNode, forwardRef } from 'react';
 
 import { Switch as ArkSwitch, type SwitchRootProps } from '@ark-ui/react/switch';
 
-import { css, cx } from 'styled-system/css';
-import { splitCssProps } from 'styled-system/jsx';
-import { type SwitchRecipeVariantProps, switchRecipe } from 'styled-system/recipes';
+import { css, cx } from '@tacos-ui/styled-system/css';
+import { splitCssProps } from '@tacos-ui/styled-system/jsx';
+import { type SwitchRecipeVariantProps, switchRecipe } from '@tacos-ui/styled-system/recipes';
 
 import { type MarginProps, splitMarginsProps } from '~/lib/splitMarginProps';
 
