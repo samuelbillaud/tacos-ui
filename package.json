@@ -9,8 +9,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "pnpm --recursive --parallel --stream run dev",
     "build": "pnpm --recursive --parallel --stream run build",
-    "dev:panda-preset": "pnpm --filter @tacos-ui/panda-preset",
-    "dev:components": "pnpm --filter @tacos-ui/react",
+    "dev:panda-preset": "pnpm --filter @tacos-ui/panda-preset run dev",
+    "dev:components": "pnpm --filter @tacos-ui/react run dev",
     "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,json}\"",
     "lint": "eslint .",
     "lint:fix": "pnpm lint --fix"
@@ -20,21 +20,21 @@
   "repository": "https://github.com/samuelbillaud/zaatar-ui",
   "license": "MIT",
   "devDependencies": {
-    "@eslint/eslintrc": "^3.0.1",
-    "@eslint/js": "^8.56.0",
-    "@stylistic/eslint-plugin": "^1.6.3",
-    "@typescript-eslint/eslint-plugin": "^7.1.0",
-    "@typescript-eslint/parser": "^7.1.0",
+    "@eslint/eslintrc": "^3.0.2",
+    "@eslint/js": "^8.57.0",
+    "@stylistic/eslint-plugin": "^1.7.0",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
     "eslint": "8.57.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-perfectionist": "^2.6.0",
-    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-perfectionist": "^2.7.0",
+    "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^3.2.5",
-    "typescript": "^5.4.3",
-    "tsup": "^8.0.1"
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.3"
   },
   "dependencies": {
-    "globals": "^14.0.0"
+    "globals": "^15.0.0"
   }
 }

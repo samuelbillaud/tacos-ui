@@ -42,9 +42,9 @@ export const buttonRecipe = defineSlotRecipe({
       '& svg': {
         color: 'transparent',
         height: '[1.5em]',
-        width: '[1.5em]'
+        width: '[1.5em]',
       },
-    }
+    },
   },
   defaultVariants: {
     variant: 'solid',
@@ -116,7 +116,7 @@ export const buttonRecipe = defineSlotRecipe({
               borderColor: 'accent.emphasized',
             },
           },
-        }
+        },
       },
       ghost: {
         root: {
@@ -145,7 +145,7 @@ export const buttonRecipe = defineSlotRecipe({
             outlineColor: 'colorPalette.default',
             outlineOffset: '2px',
           },
-        }
+        },
       },
       soft: {
         root: {
@@ -172,7 +172,7 @@ export const buttonRecipe = defineSlotRecipe({
               color: 'fg.disabled',
             },
           },
-        }
+        },
       },
     },
     size: {
@@ -189,7 +189,7 @@ export const buttonRecipe = defineSlotRecipe({
             width: '4',
             height: '4',
           },
-        }
+        },
       },
       md: {
         root: {
@@ -203,7 +203,7 @@ export const buttonRecipe = defineSlotRecipe({
             width: '5',
             height: '5',
           },
-        }
+        },
       },
       lg: {
         root: {
@@ -217,7 +217,7 @@ export const buttonRecipe = defineSlotRecipe({
             width: '5',
             height: '5',
           },
-        }
+        },
       },
     },
     isLoading: {

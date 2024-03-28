@@ -4,3 +4,4 @@ build
 
 styled-system
 .vscode
+*storybook.log

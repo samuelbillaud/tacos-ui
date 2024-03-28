@@ -95,8 +95,9 @@ export const SoftAndIsLoading: Story = {
   },
 };
 
-export const WithResponsiveMargin = (args: Story['args']) => (
-  <Button {...args} ml={{ base: 4, md: 16 }}>
-    Confirm
-  </Button>
-);
+export const WithResponsiveMargin: Story = {
+  args: {
+    children: 'Confirm',
+    ml: { base: 4, md: 16 },
+  },
+};

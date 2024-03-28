@@ -1,4 +1,4 @@
-import { defineConfig } from "@pandacss/dev";
+import { defineConfig } from '@pandacss/dev';
 
 import { preset } from './src/index.ts';
 
@@ -16,7 +16,7 @@ export default defineConfig({
   exclude: [],
 
   // The output directory for your css system
-  // outdir: "@tacos-ui/styled-system",
+  outdir: '@tacos-ui/styled-system',
 
   emitPackage: true,
 

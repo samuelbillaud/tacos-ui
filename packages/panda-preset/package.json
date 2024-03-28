@@ -18,15 +18,17 @@
   },
   "scripts": {
     "dev": "tsup --watch",
-    "build": "tsup"
+    "build": "tsup",
+    "studio": "pandacss studio"
   },
   "dependencies": {
-    "@ark-ui/anatomy": "2.1.0",
+    "@ark-ui/anatomy": "2.3.1",
     "@radix-ui/colors": "^3.0.0"
   },
   "devDependencies": {
-    "@pandacss/dev": "0.28.0",
-    "@pandacss/types": "0.28.0"
+    "@pandacss/dev": "0.36.1",
+    "@pandacss/studio": "^0.36.1",
+    "@pandacss/types": "0.36.1"
   },
   "peerDependencies": {
     "@pandacss/dev": ">0.22.0",

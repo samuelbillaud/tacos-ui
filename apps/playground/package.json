@@ -10,21 +10,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tacos-ui/panda-preset": "workspace:*",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@tacos-ui/panda-preset": "workspace:*"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@pandacss/dev": "0.28.0",
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
-    "@typescript-eslint/eslint-plugin": "^6.14.0",
-    "@typescript-eslint/parser": "^6.14.0",
-    "@vitejs/plugin-react-swc": "^3.5.0",
-    "eslint": "^8.55.0",
+    "@pandacss/dev": "0.36.1",
+    "@types/react": "^18.2.73",
+    "@types/react-dom": "^18.2.23",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
+    "@vitejs/plugin-react-swc": "^3.6.0",
+    "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5",
+    "eslint-plugin-react-refresh": "^0.4.6",
     "typescript": "^5.4.3",
-    "vite": "^5.0.8"
+    "vite": "^5.2.6"
   }
 }
