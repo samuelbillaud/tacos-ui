@@ -7,7 +7,7 @@ import { css, cx } from '@tacos-ui/styled-system/css';
 import { splitCssProps } from '@tacos-ui/styled-system/jsx';
 import { type ButtonRecipeVariantProps, buttonRecipe } from '@tacos-ui/styled-system/recipes';
 
-import { type MarginProps, splitMarginsProps } from '~/lib/splitMarginProps';
+import { type MarginProps } from '~/lib/splitMarginProps';
 
 type BaseButtonProps = HTMLArkProps<'button'>;
 
@@ -18,7 +18,6 @@ export interface ButtonProps extends ButtonRecipeVariantProps, BaseButtonProps, 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
   const [variantProps, buttonProps] = buttonRecipe.splitVariantProps(props);
   const [cssProps, localProps] = splitCssProps(buttonProps);
-  const [marginProps] = splitMarginsProps(cssProps);
 
   const { isLoading, disabled } = props;
 
@@ -28,7 +27,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) =>
   return (
     <ark.button
       asChild={asChild}
-      className={cx(styles.root, css(marginProps), className)}
+      className={cx(styles.root, css(cssProps), className)}
       data-disabled={disabled || isLoading || undefined}
       ref={ref}
       {...rootProps}

@@ -6,7 +6,7 @@ import { css, cx } from '@tacos-ui/styled-system/css';
 import { splitCssProps } from '@tacos-ui/styled-system/jsx';
 import { type SwitchRecipeVariantProps, switchRecipe } from '@tacos-ui/styled-system/recipes';
 
-import { type MarginProps, splitMarginsProps } from '~/lib/splitMarginProps';
+import { type MarginProps } from '~/lib/splitMarginProps';
 
 export interface SwitchProps
   extends SwitchRecipeVariantProps,
@@ -18,17 +18,12 @@ export interface SwitchProps
 export const Switch = forwardRef<HTMLLabelElement, SwitchProps>((props, ref) => {
   const [variantProps, switchProps] = switchRecipe.splitVariantProps(props);
   const [cssProps, localProps] = splitCssProps(switchProps);
-  const [marginProps] = splitMarginsProps(cssProps);
 
   const { children, className, ...rootProps } = localProps;
   const styles = switchRecipe(variantProps);
 
   return (
-    <ArkSwitch.Root
-      className={cx(styles.root, css(marginProps), className)}
-      ref={ref}
-      {...rootProps}
-    >
+    <ArkSwitch.Root className={cx(styles.root, css(cssProps), className)} ref={ref} {...rootProps}>
       <ArkSwitch.Control className={styles.control}>
         <ArkSwitch.Thumb className={styles.thumb} />
       </ArkSwitch.Control>
