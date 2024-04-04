@@ -1,0 +1,38 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: "friday"
+      time: "08:00"
+      timezone: Europe/Paris
+    open-pull-requests-limit: 10
+    allow:
+      - dependency-name: "*"
+        dependency-type: "all"
+    groups:
+      arkui:
+        patterns:
+          - "@ark-ui/*"
+      storybook:
+        patterns:
+          - "storybook"
+          - "@storybook/*"
+      pandacss:
+        patterns:
+          - "@pandacss/*"
+      eslint:
+        patterns:
+          - "@typescript-eslint/*"
+          - "eslint-*"
+          - "eslint"
+          - "@eslint/*"
+          - "@stylistic/*"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: "friday"
+      time: "08:00"
+      timezone: Europe/Paris

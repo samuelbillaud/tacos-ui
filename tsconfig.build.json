@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "esnext",
+    "noImplicitReturns": false,
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": true,
+    "module": "ESNext",
+    "customConditions": ["source"],
+    "noErrorTruncation": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "declaration": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

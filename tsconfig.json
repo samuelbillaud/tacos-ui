@@ -1,33 +1,10 @@
 {
+  "extends": "./tsconfig.build.json",
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "skipLibCheck": true,
-    "noImplicitAny": false,
-    "allowJs": true,
-    "noErrorTruncation": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-
-    /* Bundler mode */
-    "moduleResolution": "node",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-
-    /* Linting */
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "forceConsistentCasingInFileNames": true,
-
-    "declaration": true,
-    "composite": true,
-    "sourceMap": true,
-    "declarationMap": true
-  }
+    "paths": {
+      "~/*": ["./packages/components/src/*"]
+    }
+  },
+  "include": ["packages", "apps", "eslint.config.js"],
+  "exclude": ["node_modules"]
 }

@@ -21,6 +21,7 @@ const defineColorPalette = (color: string) => {
       .filter((key) => key.startsWith(color))
       .filter((key) => !/\d/.test(key))
       .map((key) => {
+        // @ts-expect-error types for radixColors are not available
         const tokens = toColorTokens(color, radixColors[key]);
 
         return [key, tokens];
