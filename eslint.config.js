@@ -20,9 +20,9 @@ const config = {
     parser: tsParser,
     parserOptions: {
       project: [
-        'tsconfig.json',
-        'packages/components/tsconfig.json',
-        'packages/panda-preset/tsconfig.json',
+        './tsconfig.json',
+        './packages/components/tsconfig.json',
+        './packages/panda-preset/tsconfig.json',
       ],
     },
     globals: globals.browser,
@@ -88,6 +88,7 @@ const globalIgnores = {
     '**/dist',
     '**/build',
     '**/styled-system',
+    '*.d.ts',
   ],
 };
 

@@ -1,6 +1,6 @@
 import { defineConfig } from '@pandacss/dev';
 
-import { preset } from './src/index.ts';
+import { preset } from './src';
 
 export default defineConfig({
   // Use preset-base & panda-preset
