@@ -31,7 +31,7 @@
     "@types/react": "18.2.73",
     "@types/react-dom": "18.2.24",
     "@vitejs/plugin-react-swc": "^3.6.0",
-    "chromatic": "^11.2.0"
+    "chromatic": "^11.3.0"
   },
   "dependencies": {
     "@ark-ui/react": "2.2.3",
