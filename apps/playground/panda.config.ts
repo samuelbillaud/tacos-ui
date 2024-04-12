@@ -1,6 +1,6 @@
 import { defineConfig } from '@pandacss/dev';
 
-import { preset as tacosPreset } from '@tacos-ui/panda-preset';
+import tacosPreset from '@tacos-ui/panda-preset';
 
 export default defineConfig({
   // Whether to use css reset
@@ -18,6 +18,8 @@ export default defineConfig({
 
   // Files to exclude
   exclude: [],
+
+  importMap: '@tacos-ui/styled-system',
 
   // The output directory for your css system
   outdir: 'styled-system',

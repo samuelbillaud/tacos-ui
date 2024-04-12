@@ -11,7 +11,7 @@ import { tokens } from './theme/tokens';
 
 const definePreset = <T extends Preset>(preset: T) => preset;
 
-export const preset: Preset = definePreset({
+const preset: Preset = definePreset({
   theme: {
     extend: {
       breakpoints,
@@ -26,3 +26,5 @@ export const preset: Preset = definePreset({
   conditions,
   globalCss,
 });
+
+export default preset;

@@ -54,6 +54,9 @@ importers:
       '@tacos-ui/panda-preset':
         specifier: workspace:*
         version: link:../../packages/panda-preset
+      '@tacos-ui/styled-system':
+        specifier: workspace:*
+        version: link:../../packages/styled-system
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -121,6 +124,9 @@ importers:
       '@tacos-ui/panda-preset':
         specifier: workspace:*
         version: link:../panda-preset
+      '@tacos-ui/styled-system':
+        specifier: workspace:*
+        version: link:../styled-system
       lucide-react:
         specifier: 0.365.0
         version: 0.365.0(react@18.2.0)
@@ -177,6 +183,16 @@ importers:
       '@pandacss/types':
         specifier: 0.37.2
         version: 0.37.2
+
+  packages/styled-system:
+    dependencies:
+      '@tacos-ui/panda-preset':
+        specifier: workspace:*
+        version: link:../panda-preset
+    devDependencies:
+      '@pandacss/dev':
+        specifier: 0.37.2
+        version: 0.37.2(typescript@5.4.4)
 
 packages:
 
@@ -4247,8 +4263,8 @@ packages:
       '@vue/compiler-ssr': 3.4.19
       '@vue/shared': 3.4.19
       estree-walker: 2.0.2
-      magic-string: 0.30.8
-      postcss: 8.4.35
+      magic-string: 0.30.9
+      postcss: 8.4.38
       source-map-js: 1.2.0
 
   /@vue/compiler-ssr@3.4.19:

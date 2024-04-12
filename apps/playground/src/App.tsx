@@ -1,4 +1,4 @@
-import { css } from '../styled-system/css';
+import { css } from '@tacos-ui/styled-system/css';
 
 function App() {
   return (

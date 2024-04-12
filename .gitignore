@@ -7,3 +7,5 @@ styled-system
 *storybook.log
 
 tsconfig.tsbuildinfo
+
+!packages/styled-system

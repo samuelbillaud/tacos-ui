@@ -1,5 +1,6 @@
 {
   "name": "@tacos-ui/react",
+  "version": "0.2.1",
   "description": "React component for Tacos UI",
   "keywords": [
     "Ark UI",
@@ -17,7 +18,27 @@
     "type": "git",
     "url": "git+https://github.com/samuelbillaud/zaatar-ui.git"
   },
-  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "prepare": "panda codegen --silent",
     "build": "tsup",
@@ -42,6 +63,7 @@
     "@storybook/react-vite": "^8.0.6",
     "@storybook/test": "^8.0.6",
     "@tacos-ui/panda-preset": "workspace:*",
+    "@tacos-ui/styled-system": "workspace:*",
     "lucide-react": "0.365.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -50,7 +72,6 @@
     "vite": "5.2.8",
     "vite-tsconfig-paths": "4.3.2"
   },
-  "version": "",
   "bugs": {
     "url": "https://github.com/samuelbillaud/zaatar-ui/issues"
   },
