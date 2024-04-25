@@ -7,5 +7,5 @@ export default defineConfig({
   dts: true,
   minify: true,
   clean: true,
-  external: ['@pandacss/dev', '@tacos-ui/panda-preset', 'react', 'react-dom'],
+  external: ['@tacos-ui/panda-preset', '@tacos-ui/styled-system', 'react', 'react-dom'],
 });

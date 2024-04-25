@@ -4,10 +4,6 @@ export default defineConfig({
   // Whether to use css reset
   preflight: true,
 
-  // Use lignthingcss instead of postcss for style generation
-  // https://www.adebayosegun.com/blog/panda-v1-roadmap
-  lightningcss: true,
-
   // presets
   presets: ['@pandacss/preset-base', '@tacos-ui/panda-preset'],
 
@@ -17,10 +13,14 @@ export default defineConfig({
   // Files to exclude
   exclude: [],
 
+  // Useful for theme customization
+  theme: {
+    extend: {},
+  },
+
   // The output directory for your css system
-  outdir: 'styled-system',
+  outdir: 'dist',
 
+  // The JSX framework to use
   jsxFramework: 'react',
-
-  importMap: '@tacos-ui/styled-system',
 });

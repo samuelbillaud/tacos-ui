@@ -1,6 +1,6 @@
 import { defineConfig } from '@pandacss/dev';
 
-import { preset } from './src';
+import preset from './src';
 
 export default defineConfig({
   // Use preset-base & panda-preset
@@ -15,10 +15,7 @@ export default defineConfig({
   // Files to exclude
   exclude: [],
 
-  // The output directory for your css system
-  outdir: '@tacos-ui/styled-system',
-
-  emitPackage: true,
+  importMap: '@tacos-ui/panda-preset',
 
   // The JSX framework to use
   jsxFramework: 'react',

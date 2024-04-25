@@ -3,6 +3,7 @@ import { defineSlotRecipe } from '@pandacss/dev';
 export const buttonRecipe = defineSlotRecipe({
   slots: ['root', 'loadingIcon'],
   className: 'button',
+  jsx: ['Button', /Button\.+/],
   base: {
     root: {
       position: 'relative',
