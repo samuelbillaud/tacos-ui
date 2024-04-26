@@ -1,4 +1,4 @@
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
+import type { JsxStyleProps } from '../../styled-system/types';
 
 type Dict = Record<string, unknown>;
 type PredicateFn = (key: string) => boolean;

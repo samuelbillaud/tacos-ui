@@ -4,12 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "prepare": "panda codegen",
+    "prepare": "panda codegen --silent",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tacos-ui/react": "workspace:*",
     "@tacos-ui/panda-preset": "workspace:*",
     "react": "^18.3.0",
     "react-dom": "^18.3.0"

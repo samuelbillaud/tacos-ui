@@ -3,17 +3,15 @@ import { forwardRef } from 'react';
 import { type HTMLArkProps, ark } from '@ark-ui/react/factory';
 import { Loader2 } from 'lucide-react';
 
-import { css, cx } from '@tacos-ui/styled-system/css';
-import { splitCssProps } from '@tacos-ui/styled-system/jsx';
-import { type ButtonRecipeVariantProps, buttonRecipe } from '@tacos-ui/styled-system/recipes';
-
 import { type MarginProps } from '~/lib/splitMarginProps';
+
+import { css, cx } from '../../../styled-system/css';
+import { splitCssProps } from '../../../styled-system/jsx';
+import { type ButtonRecipeVariantProps, buttonRecipe } from '../../../styled-system/recipes';
 
 type BaseButtonProps = HTMLArkProps<'button'>;
 
-export interface ButtonProps extends ButtonRecipeVariantProps, BaseButtonProps, MarginProps {
-  isLoading?: boolean;
-}
+export interface ButtonProps extends ButtonRecipeVariantProps, BaseButtonProps, MarginProps {}
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
   const [variantProps, buttonProps] = buttonRecipe.splitVariantProps(props);
