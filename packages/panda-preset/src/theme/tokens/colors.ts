@@ -11,7 +11,7 @@ export const defineColorTokens = () => {
     transparent: { value: 'rgb(0 0 0 / 0)' },
     black: {
       DEFAULT: { value: '#000000' },
-      a1: { value: 'rgba(0, 0, 0, 0.05)' },
+      a1: { value: 'rgba(0, 0, 0, 0.055)' },
       a2: { value: 'rgba(0, 0, 0, 0.1)' },
       a3: { value: 'rgba(0, 0, 0, 0.15)' },
       a4: { value: 'rgba(0, 0, 0, 0.2)' },
