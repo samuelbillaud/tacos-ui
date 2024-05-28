@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@tacos-ui/panda-preset": "workspace:*",
+    "@tacos-ui/react": "workspace:*",
+    "@tacos-ui/styled-system": "workspace:*",
     "react": "^18.3.0",
     "react-dom": "^18.3.0"
   },

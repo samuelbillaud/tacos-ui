@@ -1,0 +1,68 @@
+{
+  "name": "@tacos-ui/styled-system",
+  "version": "0.3.0",
+  "description": "Styled system for Tacos UI",
+  "scripts": {
+    "prepare": "panda codegen",
+    "dev": "pnpm prepare --watch",
+    "build": "pnpm prepare"
+  },
+  "keywords": [
+    "Panda CSS",
+    "Styled System",
+    "Tacos UI"
+  ],
+  "type": "module",
+  "author": "Samuel Billaud <samuel.billaud1990@gmail.com> (https://github.com/samuelbillaud)",
+  "license": "MIT",
+  "repository": "https://github.com/samuelbillaud/zaatar-ui",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./css": {
+      "import": {
+        "default": "./dist/css/index.mjs",
+        "types": "./dist/css/index.d.ts"
+      }
+    },
+    "./tokens": {
+      "import": {
+        "default": "./dist/tokens/index.mjs",
+        "types": "./dist/tokens/index.d.ts"
+      }
+    },
+    "./types": {
+      "import": {
+        "types": "./dist/types/index.d.ts"
+      }
+    },
+    "./patterns": {
+      "import": {
+        "default": "./dist/patterns/index.mjs",
+        "types": "./dist/patterns/index.d.ts"
+      }
+    },
+    "./recipes": {
+      "import": {
+        "default": "./dist/recipes/index.mjs",
+        "types": "./dist/recipes/index.d.ts"
+      }
+    },
+    "./jsx": {
+      "import": {
+        "default": "./dist/jsx/index.mjs",
+        "types": "./dist/jsx/index.d.ts"
+      }
+    }
+  },
+  "devDependencies": {
+    "@pandacss/dev": "0.37.2"
+  },
+  "dependencies": {
+    "@tacos-ui/panda-preset": "workspace:*"
+  }
+}

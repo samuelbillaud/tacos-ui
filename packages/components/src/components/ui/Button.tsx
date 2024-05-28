@@ -11,9 +11,7 @@ import { type MarginProps } from '~/lib/splitMarginProps';
 
 type BaseButtonProps = HTMLArkProps<'button'>;
 
-export interface ButtonProps extends ButtonRecipeVariantProps, BaseButtonProps, MarginProps {
-  isLoading?: boolean;
-}
+export interface ButtonProps extends ButtonRecipeVariantProps, BaseButtonProps, MarginProps {}
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
   const [variantProps, buttonProps] = buttonRecipe.splitVariantProps(props);

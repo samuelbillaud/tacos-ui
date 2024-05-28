@@ -1,4 +1,4 @@
-import type { Preset } from '@pandacss/types';
+import { type Preset, definePreset } from '@pandacss/dev';
 
 import { conditions } from './conditions';
 import { globalCss } from './global-css';
@@ -9,20 +9,24 @@ import { semanticTokens } from './theme/semantic-tokens';
 import { textStyles } from './theme/text-styles';
 import { tokens } from './theme/tokens';
 
-const definePreset = <T extends Preset>(preset: T) => preset;
-
-export const preset: Preset = definePreset({
-  theme: {
-    extend: {
-      breakpoints,
-      keyframes,
-      semanticTokens,
-      recipes,
-      slotRecipes,
-      textStyles,
-      tokens,
+const createPreset = (): Preset => {
+  return definePreset({
+    theme: {
+      extend: {
+        breakpoints,
+        keyframes,
+        recipes,
+        semanticTokens,
+        slotRecipes,
+        textStyles,
+        tokens,
+      },
     },
-  },
-  conditions,
-  globalCss,
-});
+    conditions,
+    globalCss,
+  });
+};
+
+const defaultPreset = createPreset();
+
+export { createPreset, defaultPreset as default };
