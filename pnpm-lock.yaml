@@ -41,7 +41,7 @@ importers:
         version: 3.2.5
       tsup:
         specifier: ^8.0.2
-        version: 8.0.2(typescript@5.4.5)
+        version: 8.0.2(@swc/core@1.5.0)(postcss@8.4.38)(typescript@5.4.5)
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
@@ -68,8 +68,8 @@ importers:
         version: 18.3.0(react@18.3.0)
     devDependencies:
       '@pandacss/dev':
-        specifier: 0.37.2
-        version: 0.37.2(typescript@5.4.5)
+        specifier: 0.39.2
+        version: 0.39.2(typescript@5.4.5)
       '@types/react':
         specifier: ^18.3.0
         version: 18.3.0
@@ -78,13 +78,13 @@ importers:
         version: 18.3.0
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.10.0
-        version: 7.10.0(@typescript-eslint/parser@7.10.0)(eslint@9.3.0)(typescript@5.4.5)
+        version: 7.10.0(@typescript-eslint/parser@7.10.0(eslint@9.3.0)(typescript@5.4.5))(eslint@9.3.0)(typescript@5.4.5)
       '@typescript-eslint/parser':
         specifier: ^7.10.0
         version: 7.10.0(eslint@9.3.0)(typescript@5.4.5)
       '@vitejs/plugin-react-swc':
         specifier: ^3.6.0
-        version: 3.6.0(vite@5.2.10)
+        version: 3.6.0(@swc/helpers@0.5.8)(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.23.0))
       eslint:
         specifier: ^9.3.0
         version: 9.3.0
@@ -99,13 +99,13 @@ importers:
         version: 5.4.5
       vite:
         specifier: ^5.2.10
-        version: 5.2.10
+        version: 5.2.10(@types/node@20.12.7)(lightningcss@1.23.0)
 
   packages/components:
     dependencies:
       '@ark-ui/react':
         specifier: 2.2.3
-        version: 2.2.3(@internationalized/date@3.5.2)(react-dom@18.3.0)(react@18.3.0)
+        version: 2.2.3(@internationalized/date@3.5.2)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@tacos-ui/panda-preset':
         specifier: workspace:*
         version: link:../panda-preset
@@ -126,20 +126,20 @@ importers:
         specifier: ^1.3.3
         version: 1.3.3(react@18.3.0)
       '@pandacss/dev':
-        specifier: 0.37.2
-        version: 0.37.2(typescript@5.4.5)
+        specifier: 0.39.2
+        version: 0.39.2(typescript@5.4.5)
       '@storybook/addon-essentials':
         specifier: ^8.1.3
-        version: 8.1.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(prettier@3.2.5)(react-dom@18.3.0)(react@18.3.0)
+        version: 8.1.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(prettier@3.2.5)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@storybook/addon-interactions':
         specifier: ^8.1.3
         version: 8.1.3
       '@storybook/react':
         specifier: ^8.1.3
-        version: 8.1.3(prettier@3.2.5)(react-dom@18.3.0)(react@18.3.0)(typescript@5.4.5)
+        version: 8.1.3(prettier@3.2.5)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)(typescript@5.4.5)
       '@storybook/react-vite':
         specifier: ^8.1.3
-        version: 8.1.3(prettier@3.2.5)(react-dom@18.3.0)(react@18.3.0)(typescript@5.4.5)(vite@5.2.10)
+        version: 8.1.3(prettier@3.2.5)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)(rollup@4.16.4)(typescript@5.4.5)(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.23.0))
       '@storybook/test':
         specifier: ^8.1.3
         version: 8.1.3
@@ -151,22 +151,22 @@ importers:
         version: 18.3.0
       '@vitejs/plugin-react-swc':
         specifier: ^3.6.0
-        version: 3.6.0(vite@5.2.10)
+        version: 3.6.0(@swc/helpers@0.5.8)(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.23.0))
       chromatic:
         specifier: ^11.3.0
         version: 11.3.0
       storybook:
         specifier: ^8.1.3
-        version: 8.1.3(react-dom@18.3.0)(react@18.3.0)
+        version: 8.1.3(@babel/preset-env@7.24.4(@babel/core@7.24.4))(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       typescript:
         specifier: 5.4.5
         version: 5.4.5
       vite:
         specifier: 5.2.10
-        version: 5.2.10
+        version: 5.2.10(@types/node@20.12.7)(lightningcss@1.23.0)
       vite-tsconfig-paths:
         specifier: 4.3.2
-        version: 4.3.2(typescript@5.4.5)(vite@5.2.10)
+        version: 4.3.2(typescript@5.4.5)(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.23.0))
 
   packages/panda-preset:
     dependencies:
@@ -178,14 +178,14 @@ importers:
         version: 3.0.0
     devDependencies:
       '@pandacss/dev':
-        specifier: 0.37.2
-        version: 0.37.2(typescript@5.4.5)
+        specifier: 0.39.2
+        version: 0.39.2(typescript@5.4.5)
       '@pandacss/studio':
-        specifier: ^0.37.2
-        version: 0.37.2(@types/react-dom@18.3.0)(@types/react@18.3.0)(typescript@5.4.5)
+        specifier: ^0.39.2
+        version: 0.39.2(@types/node@20.12.7)(@types/react-dom@18.3.0)(@types/react@18.3.0)(lightningcss@1.23.0)(typescript@5.4.5)
       '@pandacss/types':
-        specifier: 0.37.2
-        version: 0.37.2
+        specifier: 0.39.2
+        version: 0.39.2
 
   packages/styled-system:
     dependencies:
@@ -194,8 +194,8 @@ importers:
         version: link:../panda-preset
     devDependencies:
       '@pandacss/dev':
-        specifier: 0.37.2
-        version: 0.37.2(typescript@5.4.5)
+        specifier: 0.39.2
+        version: 0.39.2(typescript@5.4.5)
 
 packages:
 
@@ -913,14 +913,14 @@ packages:
     resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
     engines: {node: '>=0.1.90'}
 
-  '@csstools/postcss-cascade-layers@4.0.4':
-    resolution: {integrity: sha512-MKErv8lpEwVmAcAwidY1Kfd3oWrh2Q14kxHs9xn26XzjP/PrcdngWq63lJsZeMlBY7o+WlEOeE+FP6zPzeY2uw==}
+  '@csstools/postcss-cascade-layers@4.0.6':
+    resolution: {integrity: sha512-Xt00qGAQyqAODFiFEJNkTpSUz5VfYqnDLECdlA/Vv17nl/OIV5QfTRHGAXrBGG5YcJyHpJ+GF9gF/RZvOQz4oA==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss: ^8.4
 
-  '@csstools/selector-specificity@3.0.3':
-    resolution: {integrity: sha512-KEPNw4+WW5AVEIyzC80rTbWEUatTW2lXpN8+8ILC8PiPeWPjwUzrPZDIOZ2wwqDmeqOYTdSGyL3+vE5GC3FB3Q==}
+  '@csstools/selector-specificity@3.1.1':
+    resolution: {integrity: sha512-a7cxGcJ2wIlMFLlh8z2ONm+715QkPHiyJcxwQlKOz/03GPw1COpfhcmC9wm4xlZfp//jWHNNMwzjtqHXVWU9KA==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss-selector-parser: ^6.0.13
@@ -1320,59 +1320,59 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@pandacss/astro-plugin-studio@0.37.2':
-    resolution: {integrity: sha512-X0kJnbSOtqvmZNUlaLqeZtUV/gqrsbJZdgnpK4/jLcSaaAKQ5vrLaSenSdMrqnon+ftUSEW8h5m96qlV9jnFpA==}
+  '@pandacss/astro-plugin-studio@0.39.2':
+    resolution: {integrity: sha512-/8HwXF4Sp9neuu8bKBDn7wt3KeadWxkm65X+KD73ptvb2KxAcHpyb/PERxGtd/g7uiZ0+kd+OHK1rYwkL3aJCw==}
     peerDependencies:
       astro: '>=4'
 
-  '@pandacss/config@0.37.2':
-    resolution: {integrity: sha512-f6XXYAENfXxZfZ71fNpy+AMylv+3LUcHWoKlANhB+Hjp5wYrYtLRqv+lWUi055tgvuegp1zvQ3YO4+Mb/gYong==}
+  '@pandacss/config@0.39.2':
+    resolution: {integrity: sha512-teWEW4+EtfGSVhD4MemKdcbJ6Yq8hk9HtTnAslC+qLsKJ/FtN7zMN/TeL9hQnJnxEH2WSS6RMZqYriWNHv13vg==}
 
-  '@pandacss/core@0.37.2':
-    resolution: {integrity: sha512-lmYjJz2UTCOEEBYHgSEiGuDf+DrE+qalaHwN6UxHxl6jLn7Hx+O7/+crD7QBdg/RF7CXmlFpPWk8PJ7uT18BUQ==}
+  '@pandacss/core@0.39.2':
+    resolution: {integrity: sha512-R8wtlCzaHuwD6k0N6CoYM4pG0/EMXvGRgEX3X5rRHHWs4SpTUnWkcbzgswfNAkWa5NyJPeKHB8EpJaK8fxmd2g==}
 
-  '@pandacss/dev@0.37.2':
-    resolution: {integrity: sha512-Kj1D6F7Fif6q/RGe9sB4sm5MP+3RclO/BNQXV26c5pienVteIqM6X8MM/nD53X3aP2X7dYIQ4X25y7l1OC+koQ==}
+  '@pandacss/dev@0.39.2':
+    resolution: {integrity: sha512-EgSDoF6qYGaDBdPnUOyy0NXdc0oH9VzPNdLOmso2w4XyzqaDvyH0OSLY5ESslEZFYanJkp8qcnhxzq4arTJ4lw==}
     hasBin: true
 
-  '@pandacss/extractor@0.37.2':
-    resolution: {integrity: sha512-RxdDDY0/momj25sc81pyfOBrCB4WIvmSp7zrlNOrZWly92FkcNsVCuCLbfJi37ukwS1FZrqNnQ2uKqCdWBFHPw==}
+  '@pandacss/extractor@0.39.2':
+    resolution: {integrity: sha512-9B7zKQ8qW00jlVtUJ6zf1D6vqrcik9qovlq0fDYvXet/V24dlD1mtjUU3T4eh4/h03vt4wy7XWTOT040ixTUiA==}
 
-  '@pandacss/generator@0.37.2':
-    resolution: {integrity: sha512-tnSkSvPdvHNNhEAzy0hdCiUFEoaTixqsVvGQX4unpC9aAdC33xpB8/tdj+3NAh4bKUD00S9XhopzTCoQLT7vHw==}
+  '@pandacss/generator@0.39.2':
+    resolution: {integrity: sha512-ygnz0LO/dIWCnyeyuWByLv/2XEr6FLnanWbIlDS7pOKFTxjYvSKntTudEgYn2UQAwbE8kewWy7dWMD8L24OM6Q==}
 
-  '@pandacss/is-valid-prop@0.37.2':
-    resolution: {integrity: sha512-ZIxXsNwGE1FKSPont6Ubv5IpE4L9wgD2Y5zGQekJ50vb+2SSiBKJm7sY6FCt3pauH+tW60fDfiw6WuRgmQrUYw==}
+  '@pandacss/is-valid-prop@0.39.2':
+    resolution: {integrity: sha512-9Fl1FHVfFYcQmS51dFm8rtPr9LsO24UPaxqQ7B/sG4wiHVk/0/N8o2MvHUS1wb0U6I91es7OusRdVFC71M9z9g==}
 
-  '@pandacss/logger@0.37.2':
-    resolution: {integrity: sha512-LC1QofecX3byC6CeLeE/fObFQIvJ/vONcOC5yvjGeQuhXtBQXVayHqkaSJPt002xC7U1a89e+Lnj+/E8nuwOmQ==}
+  '@pandacss/logger@0.39.2':
+    resolution: {integrity: sha512-57ICYm487LfkC+/dGHJKHK1OB4Hen1mTOKceQvw6BYd6md3QH+4Vslj8jcFJHZTrSN8VctByfhR80BPeh4wfxw==}
 
-  '@pandacss/node@0.37.2':
-    resolution: {integrity: sha512-LD/rxAZeSYUdhAapqC1vt4trownYW2hJVR8SfPrfPG4GEoTIAaWpd5UeJWYHBnucleEU91W/yKKoTkgqfVWSMg==}
+  '@pandacss/node@0.39.2':
+    resolution: {integrity: sha512-/4Cq6Q31Lqssl0BPSciF1ai8OCIVM5ud+DWwQfaDkB98KObcNZ4xYOJ4uk5nwTycb/5wK1fNlOi8Mq9o5qkzUQ==}
 
-  '@pandacss/parser@0.37.2':
-    resolution: {integrity: sha512-H8FVyQ4aQHiaZcEjhF73tW/Pn5zqVwltsJWZ9ZkoupGfHZfX1v07t0Jzmqt9Kq1JKA7uehGEMFThZB7zbe1NHw==}
+  '@pandacss/parser@0.39.2':
+    resolution: {integrity: sha512-jE1hwVv3RtPAaNkAfH30Fvb4y5fKlqr736zfDlRqb0+6qvMZy6G+f2jviYmoF9LNUXoAF1TGIwBmMAKq5p5EXw==}
 
-  '@pandacss/postcss@0.37.2':
-    resolution: {integrity: sha512-3MDJ8xts/DW7LUVNBtuy47YIQhICBHRz/GqcuFNk60fnmTtPNrtMyngqnP9gycRiKa22G87rOej7ypYxPm9Sig==}
+  '@pandacss/postcss@0.39.2':
+    resolution: {integrity: sha512-68XjYTLtST+1OQfnLjgJrB1/vLd28jEGQ1aKn1zmyJbRL5MnIBIe1sgjJlch/m80I5b8YZ6UbMqKGjxOhSh6mA==}
 
-  '@pandacss/preset-base@0.37.2':
-    resolution: {integrity: sha512-rpbLpqrhsfgcI3844beK6LdkuDJAOZ1axNCvRPZpxycyJsc6QHsMwI1JGbzkyw5/8q8dsk6ZMyPeO+PwXjUuBw==}
+  '@pandacss/preset-base@0.39.2':
+    resolution: {integrity: sha512-Lvn9OEsZsbtn/ybA+SSm0acJ9Q2Tqkg2yj2DKFOCxzzcls2HOuDwRwAkSPT72GjYmVNTPDoZpRGHgAZl3rwpyA==}
 
-  '@pandacss/preset-panda@0.37.2':
-    resolution: {integrity: sha512-xDMjmdM14JExMxguao394ELplo8YIwKaprpoek2y/aqoH6Ip2ItapyaanAbjXQnLM1gZKI1L0qZmpfAxge7lRA==}
+  '@pandacss/preset-panda@0.39.2':
+    resolution: {integrity: sha512-TJPjxfojKSnt8TCm3elugw/SPoa2HLWSkyuYp+/EphV46O7buyYjwuqIDcOdqqdv4Rxa/7zwsVVhzwgdtpn4MQ==}
 
-  '@pandacss/shared@0.37.2':
-    resolution: {integrity: sha512-TB9IcJ9AXE9MPK9Eflz7lrhoVm9qtkvO6iM8yIfK2Nes1r4USQLbi6IztWVXzQs/Xfz72T2tKmkgJAgJ4j1hwg==}
+  '@pandacss/shared@0.39.2':
+    resolution: {integrity: sha512-tlo4xs6uHkpk4JUCw05LrclkS7yIJU8W/nXxhQMniSiDVZ1h6yiOShsnhzFYaS1mpyhKso8QKzcL+CyAD1hu9Q==}
 
-  '@pandacss/studio@0.37.2':
-    resolution: {integrity: sha512-+gelmJl8rZgvouS6SSzhQEwsyYY2kNOaC43gJKgMQQoJUbSFFstLJkfLAHcVmkVBhPUyLr1Fd2Km7CR6Vd9z0w==}
+  '@pandacss/studio@0.39.2':
+    resolution: {integrity: sha512-MZcG5N+bI7DIndHjW5xReaISktESyccBy2JqbhR1bk2/KgC/Kps3PSaBrgvnT8t1rjzj29LUMN2bCP9wSy25Og==}
 
-  '@pandacss/token-dictionary@0.37.2':
-    resolution: {integrity: sha512-bSr6ARLNWmK8DrdZYW459OVfAiJBNROJsxco3Lcv+WlOqyAXer+yrkX45LSsL9jM7SuW1aHQjzOMeLu0iSTOBQ==}
+  '@pandacss/token-dictionary@0.39.2':
+    resolution: {integrity: sha512-CVl1hA5KCHn8s5u74IQcQWjIAsGOxPouuwK5Kl7FkGE0jKEmpgqGLUWRrcy45nQ0vGgY36IHJESDF7HKzh7hmw==}
 
-  '@pandacss/types@0.37.2':
-    resolution: {integrity: sha512-1HYXrGSngm6wrRyiiEtF2nHl7sfVD9HDc0BVN+qD1Gpjo7uniz99jz9oYOPAVNAbPoll28ltx828Falh4XgvYg==}
+  '@pandacss/types@0.39.2':
+    resolution: {integrity: sha512-A+urImQjBGVTu2sAajgDToHnk+QPtsvxgqHIdtQjwIs59u4RI35JB4OXoy1Vb2ctUOJhuYmJSo/tWW4yR4S5ww==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -1917,6 +1917,7 @@ packages:
   '@swc/core@1.5.0':
     resolution: {integrity: sha512-fjADAC5gOOX54Rpcr1lF9DHLD+nPD5H/zXLtEgK2Ez3esmogT+LfHzCZtUxqetjvaMChKhQ0Pp0ZB6Hpz/tCbw==}
     engines: {node: '>=10'}
+    deprecated: Mac OS installation is broken
     peerDependencies:
       '@swc/helpers': ^0.5.0
     peerDependenciesMeta:
@@ -3175,9 +3176,9 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
 
-  cssnano-utils@4.0.2:
-    resolution: {integrity: sha512-ZR1jHg+wZ8o4c3zqf1SIUSTIvm/9mU343FMR6Obe/unskbvpGhZOo1J6d/r8D1pzkRQYuwbcH3hToOuoA2G7oQ==}
-    engines: {node: ^14 || ^16 || >=18.0}
+  cssnano-utils@5.0.0:
+    resolution: {integrity: sha512-Uij0Xdxc24L6SirFr25MlwC2rCFX6scyUmuKpzI+JQ7cyqDEwD42fJ0xfB3yLfOnRDU5LKGgjQ9FA6LYh76GWQ==}
+    engines: {node: ^18.12.0 || ^20.9.0 || >=22.0}
     peerDependencies:
       postcss: ^8.4.31
 
@@ -3626,12 +3627,12 @@ packages:
   filelist@1.0.4:
     resolution: {integrity: sha512-w1cEuf3S+DrLCQL7ET6kz+gmlJdbq9J7yXCSjK/OZCPA+qEN1WyF4ZAf0YYJa4/shHJra2t/d/r8SV4Ji+x+8Q==}
 
-  filesize@10.1.0:
-    resolution: {integrity: sha512-GTLKYyBSDz3nPhlLVPjPWZCnhkd9TrrRArNcy8Z+J2cqScB7h2McAzR6NBX6nYOoWafql0roY8hrocxnZBv9CQ==}
-    engines: {node: '>= 10.4.0'}
-
   filesize@10.1.1:
     resolution: {integrity: sha512-L0cdwZrKlwZQkMSFnCflJ6J2Y+5egO/p3vgRSDQGxQt++QbUZe5gMbRO6kg6gzwQDPvq2Fk9AmoxUNfZ5gdqaQ==}
+    engines: {node: '>= 10.4.0'}
+
+  filesize@10.1.2:
+    resolution: {integrity: sha512-Dx770ai81ohflojxhU+oG+Z2QGvKdYxgEr9OSA8UVrqhwNHjfH9A8f5NKfg83fEH8ZFA5N5llJo5T3PIoZ4CRA==}
     engines: {node: '>= 10.4.0'}
 
   fill-range@7.0.1:
@@ -4473,10 +4474,6 @@ packages:
   magic-string@0.30.10:
     resolution: {integrity: sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==}
 
-  magic-string@0.30.8:
-    resolution: {integrity: sha512-ISQTe55T2ao7XtlAStud6qwYPZjE4GK1S/BeVPus4jrq6JuOnQ00YKQC581RWhR122W7msZV263KzVeLoqidyQ==}
-    engines: {node: '>=12'}
-
   make-dir@2.1.0:
     resolution: {integrity: sha512-LS9X+dc8KLxXCb8dni79fLIIUA5VyZoyjSMCwTluaXA0o27cCK0bhXkpgw+sTXVpPy/lSO57ilRixqk0vDmtRA==}
     engines: {node: '>=6'}
@@ -5061,15 +5058,15 @@ packages:
     resolution: {integrity: sha512-d7Uw+eZoloe0EHDIYoe+bQ5WXnGMOpmiZFTuMWCwpjzzkL2nTjcKiAk4hh8TjnGye2TwWOk3UXucZ+3rbmBa8Q==}
     engines: {node: '>= 0.4'}
 
-  postcss-discard-duplicates@6.0.1:
-    resolution: {integrity: sha512-1hvUs76HLYR8zkScbwyJ8oJEugfPV+WchpnA+26fpJ7Smzs51CzGBHC32RS03psuX/2l0l0UKh2StzNxOrKCYg==}
-    engines: {node: ^14 || ^16 || >=18.0}
+  postcss-discard-duplicates@7.0.0:
+    resolution: {integrity: sha512-bAnSuBop5LpAIUmmOSsuvtKAAKREB6BBIYStWUTGq8oG5q9fClDMMuY8i4UPI/cEcDx2TN+7PMnXYIId20UVDw==}
+    engines: {node: ^18.12.0 || ^20.9.0 || >=22.0}
     peerDependencies:
       postcss: ^8.4.31
 
-  postcss-discard-empty@6.0.1:
-    resolution: {integrity: sha512-yitcmKwmVWtNsrrRqGJ7/C0YRy53i0mjexBDQ9zYxDwTWVBgbU4+C9jIZLmQlTDT9zhml+u0OMFJh8+31krmOg==}
-    engines: {node: ^14 || ^16 || >=18.0}
+  postcss-discard-empty@7.0.0:
+    resolution: {integrity: sha512-e+QzoReTZ8IAwhnSdp/++7gBZ/F+nBq9y6PomfwORfP7q9nBpK5AMP64kOt0bA+lShBFbBDcgpJ3X4etHg4lzA==}
+    engines: {node: ^18.12.0 || ^20.9.0 || >=22.0}
     peerDependencies:
       postcss: ^8.4.31
 
@@ -5085,15 +5082,15 @@ packages:
       ts-node:
         optional: true
 
-  postcss-merge-rules@6.0.3:
-    resolution: {integrity: sha512-yfkDqSHGohy8sGYIJwBmIGDv4K4/WrJPX355XrxQb/CSsT4Kc/RxDi6akqn5s9bap85AWgv21ArcUWwWdGNSHA==}
-    engines: {node: ^14 || ^16 || >=18.0}
+  postcss-merge-rules@7.0.0:
+    resolution: {integrity: sha512-Zty3VlOsD6VSjBMu6PiHCVpLegtBT/qtZRVBcSeyEZ6q1iU5qTYT0WtEoLRV+YubZZguS5/ycfP+NRiKfjv6aw==}
+    engines: {node: ^18.12.0 || ^20.9.0 || >=22.0}
     peerDependencies:
       postcss: ^8.4.31
 
-  postcss-minify-selectors@6.0.2:
-    resolution: {integrity: sha512-0b+m+w7OAvZejPQdN2GjsXLv5o0jqYHX3aoV0e7RBKPCsB7TYG5KKWBFhGnB/iP3213Ts8c5H4wLPLMm7z28Sg==}
-    engines: {node: ^14 || ^16 || >=18.0}
+  postcss-minify-selectors@7.0.0:
+    resolution: {integrity: sha512-f00CExZhD6lNw2vTZbcnmfxVgaVKzUw6IRsIFX3JTT8GdsoABc1WnhhGwL1i8YPJ3sSWw39fv7XPtvLb+3Uitw==}
+    engines: {node: ^18.12.0 || ^20.9.0 || >=22.0}
     peerDependencies:
       postcss: ^8.4.31
 
@@ -5103,22 +5100,18 @@ packages:
     peerDependencies:
       postcss: ^8.2.14
 
-  postcss-normalize-whitespace@6.0.1:
-    resolution: {integrity: sha512-76i3NpWf6bB8UHlVuLRxG4zW2YykF9CTEcq/9LGAiz2qBuX5cBStadkk0jSkg9a9TCIXbMQz7yzrygKoCW9JuA==}
-    engines: {node: ^14 || ^16 || >=18.0}
+  postcss-normalize-whitespace@7.0.0:
+    resolution: {integrity: sha512-37/toN4wwZErqohedXYqWgvcHUGlT8O/m2jVkAfAe9Bd4MzRqlBmXrJRePH0e9Wgnz2X7KymTgTOaaFizQe3AQ==}
+    engines: {node: ^18.12.0 || ^20.9.0 || >=22.0}
     peerDependencies:
       postcss: ^8.4.31
 
-  postcss-selector-parser@6.0.15:
-    resolution: {integrity: sha512-rEYkQOMUCEMhsKbK66tbEU9QVIxbhN18YiniAwA7XQYTVBqrBy+P2p5JcdqsHgKM2zWylp8d7J6eszocfds5Sw==}
+  postcss-selector-parser@6.0.16:
+    resolution: {integrity: sha512-A0RVJrX+IUkVZbW3ClroRWurercFhieevHB38sr2+l9eUClMqome3LmEmnhlNy+5Mr2EYN6B2Kaw9wYdd+VHiw==}
     engines: {node: '>=4'}
 
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
-
-  postcss@8.4.35:
-    resolution: {integrity: sha512-u5U8qYpBCpN13BsiEB0CbR1Hhh4Gc0zLFuedrHJKMctHCHAGrMdG0PRM/KErzAL3CU6/eckEtmHNB3x6e3c0vA==}
-    engines: {node: ^10 || ^12 || >=14}
 
   postcss@8.4.38:
     resolution: {integrity: sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==}
@@ -6422,7 +6415,7 @@ snapshots:
     transitivePeerDependencies:
       - '@internationalized/date'
 
-  '@ark-ui/react@2.2.3(@internationalized/date@3.5.2)(react-dom@18.3.0)(react@18.3.0)':
+  '@ark-ui/react@2.2.3(@internationalized/date@3.5.2)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
     dependencies:
       '@ark-ui/anatomy': 2.3.1(@internationalized/date@3.5.2)
       '@zag-js/accordion': 0.38.0
@@ -6451,7 +6444,7 @@ snapshots:
       '@zag-js/progress': 0.38.0
       '@zag-js/radio-group': 0.38.0
       '@zag-js/rating-group': 0.38.0
-      '@zag-js/react': 0.38.0(react-dom@18.3.0)(react@18.3.0)
+      '@zag-js/react': 0.38.0(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@zag-js/select': 0.38.0
       '@zag-js/slider': 0.38.0
       '@zag-js/splitter': 0.38.0
@@ -6495,11 +6488,11 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/react@3.0.10(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.2.0)(react@18.2.0)(vite@5.1.7)':
+  '@astrojs/react@3.0.10(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(vite@5.1.7(@types/node@20.12.7)(lightningcss@1.23.0))':
     dependencies:
       '@types/react': 18.3.0
       '@types/react-dom': 18.3.0
-      '@vitejs/plugin-react': 4.2.1(vite@5.1.7)
+      '@vitejs/plugin-react': 4.2.1(vite@5.1.7(@types/node@20.12.7)(lightningcss@1.23.0))
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       ultrahtml: 1.5.3
@@ -7333,15 +7326,15 @@ snapshots:
   '@colors/colors@1.5.0':
     optional: true
 
-  '@csstools/postcss-cascade-layers@4.0.4(postcss@8.4.35)':
+  '@csstools/postcss-cascade-layers@4.0.6(postcss@8.4.38)':
     dependencies:
-      '@csstools/selector-specificity': 3.0.3(postcss-selector-parser@6.0.15)
-      postcss: 8.4.35
-      postcss-selector-parser: 6.0.15
+      '@csstools/selector-specificity': 3.1.1(postcss-selector-parser@6.0.16)
+      postcss: 8.4.38
+      postcss-selector-parser: 6.0.16
 
-  '@csstools/selector-specificity@3.0.3(postcss-selector-parser@6.0.15)':
+  '@csstools/selector-specificity@3.1.1(postcss-selector-parser@6.0.16)':
     dependencies:
-      postcss-selector-parser: 6.0.15
+      postcss-selector-parser: 6.0.16
 
   '@discoveryjs/json-ext@0.5.7': {}
 
@@ -7558,14 +7551,15 @@ snapshots:
     dependencies:
       '@sinclair/typebox': 0.27.8
 
-  '@joshwooding/vite-plugin-react-docgen-typescript@0.3.1(typescript@5.4.5)(vite@5.2.10)':
+  '@joshwooding/vite-plugin-react-docgen-typescript@0.3.1(typescript@5.4.5)(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.23.0))':
     dependencies:
       glob: 7.2.3
       glob-promise: 4.2.2(glob@7.2.3)
       magic-string: 0.27.0
       react-docgen-typescript: 2.2.2(typescript@5.4.5)
+      vite: 5.2.10(@types/node@20.12.7)(lightningcss@1.23.0)
+    optionalDependencies:
       typescript: 5.4.5
-      vite: 5.2.10
 
   '@jridgewell/gen-mapping@0.3.5':
     dependencies:
@@ -7610,113 +7604,113 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@pandacss/astro-plugin-studio@0.37.2(astro@4.4.0)(typescript@5.4.5)':
+  '@pandacss/astro-plugin-studio@0.39.2(astro@4.4.0(@types/node@20.12.7)(lightningcss@1.23.0)(typescript@5.4.5))(typescript@5.4.5)':
     dependencies:
-      '@pandacss/node': 0.37.2(typescript@5.4.5)
-      astro: 4.4.0(typescript@5.4.5)
+      '@pandacss/node': 0.39.2(typescript@5.4.5)
+      astro: 4.4.0(@types/node@20.12.7)(lightningcss@1.23.0)(typescript@5.4.5)
       javascript-stringify: 2.1.0
     transitivePeerDependencies:
       - jsdom
       - typescript
 
-  '@pandacss/config@0.37.2':
+  '@pandacss/config@0.39.2':
     dependencies:
-      '@pandacss/logger': 0.37.2
-      '@pandacss/preset-base': 0.37.2
-      '@pandacss/preset-panda': 0.37.2
-      '@pandacss/shared': 0.37.2
-      '@pandacss/types': 0.37.2
+      '@pandacss/logger': 0.39.2
+      '@pandacss/preset-base': 0.39.2
+      '@pandacss/preset-panda': 0.39.2
+      '@pandacss/shared': 0.39.2
+      '@pandacss/types': 0.39.2
       bundle-n-require: 1.1.1
       escalade: 3.1.2
       merge-anything: 5.1.7
       microdiff: 1.3.2
       typescript: 5.3.3
 
-  '@pandacss/core@0.37.2':
+  '@pandacss/core@0.39.2':
     dependencies:
-      '@csstools/postcss-cascade-layers': 4.0.4(postcss@8.4.35)
-      '@pandacss/is-valid-prop': 0.37.2
-      '@pandacss/logger': 0.37.2
-      '@pandacss/shared': 0.37.2
-      '@pandacss/token-dictionary': 0.37.2
-      '@pandacss/types': 0.37.2
+      '@csstools/postcss-cascade-layers': 4.0.6(postcss@8.4.38)
+      '@pandacss/is-valid-prop': 0.39.2
+      '@pandacss/logger': 0.39.2
+      '@pandacss/shared': 0.39.2
+      '@pandacss/token-dictionary': 0.39.2
+      '@pandacss/types': 0.39.2
       browserslist: 4.23.0
       hookable: 5.5.3
       lightningcss: 1.23.0
       lodash.merge: 4.6.2
       outdent: 0.8.0
-      postcss: 8.4.35
-      postcss-discard-duplicates: 6.0.1(postcss@8.4.35)
-      postcss-discard-empty: 6.0.1(postcss@8.4.35)
-      postcss-merge-rules: 6.0.3(postcss@8.4.35)
-      postcss-minify-selectors: 6.0.2(postcss@8.4.35)
-      postcss-nested: 6.0.1(postcss@8.4.35)
-      postcss-normalize-whitespace: 6.0.1(postcss@8.4.35)
-      postcss-selector-parser: 6.0.15
+      postcss: 8.4.38
+      postcss-discard-duplicates: 7.0.0(postcss@8.4.38)
+      postcss-discard-empty: 7.0.0(postcss@8.4.38)
+      postcss-merge-rules: 7.0.0(postcss@8.4.38)
+      postcss-minify-selectors: 7.0.0(postcss@8.4.38)
+      postcss-nested: 6.0.1(postcss@8.4.38)
+      postcss-normalize-whitespace: 7.0.0(postcss@8.4.38)
+      postcss-selector-parser: 6.0.16
       ts-pattern: 5.0.8
 
-  '@pandacss/dev@0.37.2(typescript@5.4.5)':
+  '@pandacss/dev@0.39.2(typescript@5.4.5)':
     dependencies:
       '@clack/prompts': 0.7.0
-      '@pandacss/config': 0.37.2
-      '@pandacss/logger': 0.37.2
-      '@pandacss/node': 0.37.2(typescript@5.4.5)
-      '@pandacss/postcss': 0.37.2(typescript@5.4.5)
-      '@pandacss/preset-panda': 0.37.2
-      '@pandacss/shared': 0.37.2
-      '@pandacss/token-dictionary': 0.37.2
-      '@pandacss/types': 0.37.2
+      '@pandacss/config': 0.39.2
+      '@pandacss/logger': 0.39.2
+      '@pandacss/node': 0.39.2(typescript@5.4.5)
+      '@pandacss/postcss': 0.39.2(typescript@5.4.5)
+      '@pandacss/preset-panda': 0.39.2
+      '@pandacss/shared': 0.39.2
+      '@pandacss/token-dictionary': 0.39.2
+      '@pandacss/types': 0.39.2
       cac: 6.7.14
     transitivePeerDependencies:
       - jsdom
       - typescript
 
-  '@pandacss/extractor@0.37.2(typescript@5.4.5)':
+  '@pandacss/extractor@0.39.2(typescript@5.4.5)':
     dependencies:
-      '@pandacss/shared': 0.37.2
+      '@pandacss/shared': 0.39.2
       ts-evaluator: 1.2.0(typescript@5.4.5)
       ts-morph: 21.0.1
     transitivePeerDependencies:
       - jsdom
       - typescript
 
-  '@pandacss/generator@0.37.2':
+  '@pandacss/generator@0.39.2':
     dependencies:
-      '@pandacss/core': 0.37.2
-      '@pandacss/is-valid-prop': 0.37.2
-      '@pandacss/logger': 0.37.2
-      '@pandacss/shared': 0.37.2
-      '@pandacss/token-dictionary': 0.37.2
-      '@pandacss/types': 0.37.2
+      '@pandacss/core': 0.39.2
+      '@pandacss/is-valid-prop': 0.39.2
+      '@pandacss/logger': 0.39.2
+      '@pandacss/shared': 0.39.2
+      '@pandacss/token-dictionary': 0.39.2
+      '@pandacss/types': 0.39.2
       javascript-stringify: 2.1.0
       outdent: 0.8.0
       pluralize: 8.0.0
-      postcss: 8.4.35
+      postcss: 8.4.38
       ts-pattern: 5.0.8
 
-  '@pandacss/is-valid-prop@0.37.2': {}
+  '@pandacss/is-valid-prop@0.39.2': {}
 
-  '@pandacss/logger@0.37.2':
+  '@pandacss/logger@0.39.2':
     dependencies:
-      '@pandacss/types': 0.37.2
+      '@pandacss/types': 0.39.2
       kleur: 4.1.5
 
-  '@pandacss/node@0.37.2(typescript@5.4.5)':
+  '@pandacss/node@0.39.2(typescript@5.4.5)':
     dependencies:
-      '@pandacss/config': 0.37.2
-      '@pandacss/core': 0.37.2
-      '@pandacss/extractor': 0.37.2(typescript@5.4.5)
-      '@pandacss/generator': 0.37.2
-      '@pandacss/logger': 0.37.2
-      '@pandacss/parser': 0.37.2(typescript@5.4.5)
-      '@pandacss/shared': 0.37.2
-      '@pandacss/token-dictionary': 0.37.2
-      '@pandacss/types': 0.37.2
+      '@pandacss/config': 0.39.2
+      '@pandacss/core': 0.39.2
+      '@pandacss/extractor': 0.39.2(typescript@5.4.5)
+      '@pandacss/generator': 0.39.2
+      '@pandacss/logger': 0.39.2
+      '@pandacss/parser': 0.39.2(typescript@5.4.5)
+      '@pandacss/shared': 0.39.2
+      '@pandacss/token-dictionary': 0.39.2
+      '@pandacss/types': 0.39.2
       browserslist: 4.23.0
       chokidar: 3.6.0
       fast-glob: 3.3.2
       file-size: 1.0.0
-      filesize: 10.1.0
+      filesize: 10.1.2
       fs-extra: 11.2.0
       glob-parent: 6.0.2
       is-glob: 4.0.3
@@ -7726,7 +7720,7 @@ snapshots:
       perfect-debounce: 1.0.0
       pkg-types: 1.0.3
       pluralize: 8.0.0
-      postcss: 8.4.35
+      postcss: 8.4.38
       preferred-pm: 3.1.2
       prettier: 3.2.5
       ts-morph: 21.0.1
@@ -7736,53 +7730,53 @@ snapshots:
       - jsdom
       - typescript
 
-  '@pandacss/parser@0.37.2(typescript@5.4.5)':
+  '@pandacss/parser@0.39.2(typescript@5.4.5)':
     dependencies:
-      '@pandacss/config': 0.37.2
-      '@pandacss/core': 0.37.2
-      '@pandacss/extractor': 0.37.2(typescript@5.4.5)
-      '@pandacss/logger': 0.37.2
-      '@pandacss/shared': 0.37.2
-      '@pandacss/types': 0.37.2
+      '@pandacss/config': 0.39.2
+      '@pandacss/core': 0.39.2
+      '@pandacss/extractor': 0.39.2(typescript@5.4.5)
+      '@pandacss/logger': 0.39.2
+      '@pandacss/shared': 0.39.2
+      '@pandacss/types': 0.39.2
       '@vue/compiler-sfc': 3.4.19
-      magic-string: 0.30.8
+      magic-string: 0.30.10
       ts-morph: 21.0.1
       ts-pattern: 5.0.8
     transitivePeerDependencies:
       - jsdom
       - typescript
 
-  '@pandacss/postcss@0.37.2(typescript@5.4.5)':
+  '@pandacss/postcss@0.39.2(typescript@5.4.5)':
     dependencies:
-      '@pandacss/node': 0.37.2(typescript@5.4.5)
-      postcss: 8.4.35
+      '@pandacss/node': 0.39.2(typescript@5.4.5)
+      postcss: 8.4.38
     transitivePeerDependencies:
       - jsdom
       - typescript
 
-  '@pandacss/preset-base@0.37.2':
+  '@pandacss/preset-base@0.39.2':
     dependencies:
-      '@pandacss/types': 0.37.2
+      '@pandacss/types': 0.39.2
 
-  '@pandacss/preset-panda@0.37.2':
+  '@pandacss/preset-panda@0.39.2':
     dependencies:
-      '@pandacss/types': 0.37.2
+      '@pandacss/types': 0.39.2
 
-  '@pandacss/shared@0.37.2': {}
+  '@pandacss/shared@0.39.2': {}
 
-  '@pandacss/studio@0.37.2(@types/react-dom@18.3.0)(@types/react@18.3.0)(typescript@5.4.5)':
+  '@pandacss/studio@0.39.2(@types/node@20.12.7)(@types/react-dom@18.3.0)(@types/react@18.3.0)(lightningcss@1.23.0)(typescript@5.4.5)':
     dependencies:
-      '@astrojs/react': 3.0.10(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.2.0)(react@18.2.0)(vite@5.1.7)
-      '@pandacss/astro-plugin-studio': 0.37.2(astro@4.4.0)(typescript@5.4.5)
-      '@pandacss/config': 0.37.2
-      '@pandacss/logger': 0.37.2
-      '@pandacss/shared': 0.37.2
-      '@pandacss/token-dictionary': 0.37.2
-      '@pandacss/types': 0.37.2
-      astro: 4.4.0(typescript@5.4.5)
+      '@astrojs/react': 3.0.10(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(vite@5.1.7(@types/node@20.12.7)(lightningcss@1.23.0))
+      '@pandacss/astro-plugin-studio': 0.39.2(astro@4.4.0(@types/node@20.12.7)(lightningcss@1.23.0)(typescript@5.4.5))(typescript@5.4.5)
+      '@pandacss/config': 0.39.2
+      '@pandacss/logger': 0.39.2
+      '@pandacss/shared': 0.39.2
+      '@pandacss/token-dictionary': 0.39.2
+      '@pandacss/types': 0.39.2
+      astro: 4.4.0(@types/node@20.12.7)(lightningcss@1.23.0)(typescript@5.4.5)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      vite: 5.1.7
+      vite: 5.1.7(@types/node@20.12.7)(lightningcss@1.23.0)
     transitivePeerDependencies:
       - '@types/node'
       - '@types/react'
@@ -7797,14 +7791,14 @@ snapshots:
       - terser
       - typescript
 
-  '@pandacss/token-dictionary@0.37.2':
+  '@pandacss/token-dictionary@0.39.2':
     dependencies:
-      '@pandacss/logger': 0.37.2
-      '@pandacss/shared': 0.37.2
-      '@pandacss/types': 0.37.2
+      '@pandacss/logger': 0.39.2
+      '@pandacss/shared': 0.39.2
+      '@pandacss/types': 0.39.2
       ts-pattern: 5.0.8
 
-  '@pandacss/types@0.37.2': {}
+  '@pandacss/types@0.39.2': {}
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
@@ -7818,140 +7812,157 @@ snapshots:
   '@radix-ui/react-compose-refs@1.0.1(@types/react@18.3.0)(react@18.3.0)':
     dependencies:
       '@babel/runtime': 7.24.4
-      '@types/react': 18.3.0
       react: 18.3.0
+    optionalDependencies:
+      '@types/react': 18.3.0
 
   '@radix-ui/react-context@1.0.1(@types/react@18.3.0)(react@18.3.0)':
     dependencies:
       '@babel/runtime': 7.24.4
-      '@types/react': 18.3.0
       react: 18.3.0
+    optionalDependencies:
+      '@types/react': 18.3.0
 
-  '@radix-ui/react-dialog@1.0.5(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0)(react@18.3.0)':
+  '@radix-ui/react-dialog@1.0.5(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
     dependencies:
       '@babel/runtime': 7.24.4
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.0)(react@18.3.0)
       '@radix-ui/react-context': 1.0.1(@types/react@18.3.0)(react@18.3.0)
-      '@radix-ui/react-dismissable-layer': 1.0.5(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0)(react@18.3.0)
+      '@radix-ui/react-dismissable-layer': 1.0.5(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@radix-ui/react-focus-guards': 1.0.1(@types/react@18.3.0)(react@18.3.0)
-      '@radix-ui/react-focus-scope': 1.0.4(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0)(react@18.3.0)
+      '@radix-ui/react-focus-scope': 1.0.4(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@radix-ui/react-id': 1.0.1(@types/react@18.3.0)(react@18.3.0)
-      '@radix-ui/react-portal': 1.0.4(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0)(react@18.3.0)
-      '@radix-ui/react-presence': 1.0.1(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0)(react@18.3.0)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0)(react@18.3.0)
+      '@radix-ui/react-portal': 1.0.4(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
+      '@radix-ui/react-presence': 1.0.1(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
+      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@radix-ui/react-slot': 1.0.2(@types/react@18.3.0)(react@18.3.0)
       '@radix-ui/react-use-controllable-state': 1.0.1(@types/react@18.3.0)(react@18.3.0)
-      '@types/react': 18.3.0
-      '@types/react-dom': 18.3.0
       aria-hidden: 1.2.4
       react: 18.3.0
       react-dom: 18.3.0(react@18.3.0)
       react-remove-scroll: 2.5.5(@types/react@18.3.0)(react@18.3.0)
+    optionalDependencies:
+      '@types/react': 18.3.0
+      '@types/react-dom': 18.3.0
 
-  '@radix-ui/react-dismissable-layer@1.0.5(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0)(react@18.3.0)':
+  '@radix-ui/react-dismissable-layer@1.0.5(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
     dependencies:
       '@babel/runtime': 7.24.4
       '@radix-ui/primitive': 1.0.1
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.0)(react@18.3.0)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0)(react@18.3.0)
+      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.0)(react@18.3.0)
       '@radix-ui/react-use-escape-keydown': 1.0.3(@types/react@18.3.0)(react@18.3.0)
-      '@types/react': 18.3.0
-      '@types/react-dom': 18.3.0
       react: 18.3.0
       react-dom: 18.3.0(react@18.3.0)
+    optionalDependencies:
+      '@types/react': 18.3.0
+      '@types/react-dom': 18.3.0
 
   '@radix-ui/react-focus-guards@1.0.1(@types/react@18.3.0)(react@18.3.0)':
     dependencies:
       '@babel/runtime': 7.24.4
-      '@types/react': 18.3.0
       react: 18.3.0
+    optionalDependencies:
+      '@types/react': 18.3.0
 
-  '@radix-ui/react-focus-scope@1.0.4(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0)(react@18.3.0)':
+  '@radix-ui/react-focus-scope@1.0.4(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
     dependencies:
       '@babel/runtime': 7.24.4
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.0)(react@18.3.0)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0)(react@18.3.0)
+      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.0)(react@18.3.0)
-      '@types/react': 18.3.0
-      '@types/react-dom': 18.3.0
       react: 18.3.0
       react-dom: 18.3.0(react@18.3.0)
+    optionalDependencies:
+      '@types/react': 18.3.0
+      '@types/react-dom': 18.3.0
 
   '@radix-ui/react-id@1.0.1(@types/react@18.3.0)(react@18.3.0)':
     dependencies:
       '@babel/runtime': 7.24.4
       '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.3.0)(react@18.3.0)
-      '@types/react': 18.3.0
       react: 18.3.0
+    optionalDependencies:
+      '@types/react': 18.3.0
 
-  '@radix-ui/react-portal@1.0.4(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0)(react@18.3.0)':
+  '@radix-ui/react-portal@1.0.4(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
     dependencies:
       '@babel/runtime': 7.24.4
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0)(react@18.3.0)
-      '@types/react': 18.3.0
-      '@types/react-dom': 18.3.0
+      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       react: 18.3.0
       react-dom: 18.3.0(react@18.3.0)
+    optionalDependencies:
+      '@types/react': 18.3.0
+      '@types/react-dom': 18.3.0
 
-  '@radix-ui/react-presence@1.0.1(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0)(react@18.3.0)':
+  '@radix-ui/react-presence@1.0.1(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
     dependencies:
       '@babel/runtime': 7.24.4
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.0)(react@18.3.0)
       '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.3.0)(react@18.3.0)
-      '@types/react': 18.3.0
-      '@types/react-dom': 18.3.0
       react: 18.3.0
       react-dom: 18.3.0(react@18.3.0)
+    optionalDependencies:
+      '@types/react': 18.3.0
+      '@types/react-dom': 18.3.0
 
-  '@radix-ui/react-primitive@1.0.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0)(react@18.3.0)':
+  '@radix-ui/react-primitive@1.0.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
     dependencies:
       '@babel/runtime': 7.24.4
       '@radix-ui/react-slot': 1.0.2(@types/react@18.3.0)(react@18.3.0)
-      '@types/react': 18.3.0
-      '@types/react-dom': 18.3.0
       react: 18.3.0
       react-dom: 18.3.0(react@18.3.0)
+    optionalDependencies:
+      '@types/react': 18.3.0
+      '@types/react-dom': 18.3.0
 
   '@radix-ui/react-slot@1.0.2(@types/react@18.3.0)(react@18.3.0)':
     dependencies:
       '@babel/runtime': 7.24.4
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.0)(react@18.3.0)
-      '@types/react': 18.3.0
       react: 18.3.0
+    optionalDependencies:
+      '@types/react': 18.3.0
 
   '@radix-ui/react-use-callback-ref@1.0.1(@types/react@18.3.0)(react@18.3.0)':
     dependencies:
       '@babel/runtime': 7.24.4
-      '@types/react': 18.3.0
       react: 18.3.0
+    optionalDependencies:
+      '@types/react': 18.3.0
 
   '@radix-ui/react-use-controllable-state@1.0.1(@types/react@18.3.0)(react@18.3.0)':
     dependencies:
       '@babel/runtime': 7.24.4
       '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.0)(react@18.3.0)
-      '@types/react': 18.3.0
       react: 18.3.0
+    optionalDependencies:
+      '@types/react': 18.3.0
 
   '@radix-ui/react-use-escape-keydown@1.0.3(@types/react@18.3.0)(react@18.3.0)':
     dependencies:
       '@babel/runtime': 7.24.4
       '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.0)(react@18.3.0)
-      '@types/react': 18.3.0
       react: 18.3.0
+    optionalDependencies:
+      '@types/react': 18.3.0
 
   '@radix-ui/react-use-layout-effect@1.0.1(@types/react@18.3.0)(react@18.3.0)':
     dependencies:
       '@babel/runtime': 7.24.4
-      '@types/react': 18.3.0
       react: 18.3.0
+    optionalDependencies:
+      '@types/react': 18.3.0
 
-  '@rollup/pluginutils@5.1.0':
+  '@rollup/pluginutils@5.1.0(rollup@4.16.4)':
     dependencies:
       '@types/estree': 1.0.5
       estree-walker: 2.0.2
       picomatch: 2.3.1
+    optionalDependencies:
+      rollup: 4.16.4
 
   '@rollup/rollup-android-arm-eabi@4.16.4':
     optional: true
@@ -8020,9 +8031,9 @@ snapshots:
       memoizerific: 1.11.3
       ts-dedent: 2.2.0
 
-  '@storybook/addon-controls@8.1.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(prettier@3.2.5)(react-dom@18.3.0)(react@18.3.0)':
+  '@storybook/addon-controls@8.1.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(prettier@3.2.5)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
     dependencies:
-      '@storybook/blocks': 8.1.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(prettier@3.2.5)(react-dom@18.3.0)(react@18.3.0)
+      '@storybook/blocks': 8.1.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(prettier@3.2.5)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       dequal: 2.0.3
       lodash: 4.17.21
       ts-dedent: 2.2.0
@@ -8039,16 +8050,16 @@ snapshots:
     dependencies:
       '@babel/core': 7.24.4
       '@mdx-js/react': 3.0.1(@types/react@18.3.0)(react@18.3.0)
-      '@storybook/blocks': 8.1.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(prettier@3.2.5)(react-dom@18.3.0)(react@18.3.0)
+      '@storybook/blocks': 8.1.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(prettier@3.2.5)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@storybook/client-logger': 8.1.3
-      '@storybook/components': 8.1.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0)(react@18.3.0)
+      '@storybook/components': 8.1.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@storybook/csf-plugin': 8.1.3
       '@storybook/csf-tools': 8.1.3
       '@storybook/global': 5.0.0
       '@storybook/node-logger': 8.1.3
       '@storybook/preview-api': 8.1.3
-      '@storybook/react-dom-shim': 8.1.3(react-dom@18.3.0)(react@18.3.0)
-      '@storybook/theming': 8.1.3(react-dom@18.3.0)(react@18.3.0)
+      '@storybook/react-dom-shim': 8.1.3(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
+      '@storybook/theming': 8.1.3(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@storybook/types': 8.1.3
       '@types/react': 18.3.0
       fs-extra: 11.2.0
@@ -8063,11 +8074,11 @@ snapshots:
       - prettier
       - supports-color
 
-  '@storybook/addon-essentials@8.1.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(prettier@3.2.5)(react-dom@18.3.0)(react@18.3.0)':
+  '@storybook/addon-essentials@8.1.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(prettier@3.2.5)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
     dependencies:
       '@storybook/addon-actions': 8.1.3
       '@storybook/addon-backgrounds': 8.1.3
-      '@storybook/addon-controls': 8.1.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(prettier@3.2.5)(react-dom@18.3.0)(react@18.3.0)
+      '@storybook/addon-controls': 8.1.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(prettier@3.2.5)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@storybook/addon-docs': 8.1.3(@types/react-dom@18.3.0)(prettier@3.2.5)
       '@storybook/addon-highlight': 8.1.3
       '@storybook/addon-measure': 8.1.3
@@ -8075,7 +8086,7 @@ snapshots:
       '@storybook/addon-toolbars': 8.1.3
       '@storybook/addon-viewport': 8.1.3
       '@storybook/core-common': 8.1.3(prettier@3.2.5)
-      '@storybook/manager-api': 8.1.3(react-dom@18.3.0)(react@18.3.0)
+      '@storybook/manager-api': 8.1.3(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@storybook/node-logger': 8.1.3
       '@storybook/preview-api': 8.1.3
       ts-dedent: 2.2.0
@@ -8123,19 +8134,19 @@ snapshots:
     dependencies:
       memoizerific: 1.11.3
 
-  '@storybook/blocks@8.1.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(prettier@3.2.5)(react-dom@18.3.0)(react@18.3.0)':
+  '@storybook/blocks@8.1.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(prettier@3.2.5)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
     dependencies:
       '@storybook/channels': 8.1.3
       '@storybook/client-logger': 8.1.3
-      '@storybook/components': 8.1.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0)(react@18.3.0)
+      '@storybook/components': 8.1.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@storybook/core-events': 8.1.3
       '@storybook/csf': 0.1.7
       '@storybook/docs-tools': 8.1.3(prettier@3.2.5)
       '@storybook/global': 5.0.0
-      '@storybook/icons': 1.2.9(react-dom@18.3.0)(react@18.3.0)
-      '@storybook/manager-api': 8.1.3(react-dom@18.3.0)(react@18.3.0)
+      '@storybook/icons': 1.2.9(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
+      '@storybook/manager-api': 8.1.3(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@storybook/preview-api': 8.1.3
-      '@storybook/theming': 8.1.3(react-dom@18.3.0)(react@18.3.0)
+      '@storybook/theming': 8.1.3(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@storybook/types': 8.1.3
       '@types/lodash': 4.17.0
       color-convert: 2.0.1
@@ -8144,13 +8155,14 @@ snapshots:
       markdown-to-jsx: 7.3.2(react@18.3.0)
       memoizerific: 1.11.3
       polished: 4.3.1
-      react: 18.3.0
-      react-colorful: 5.6.1(react-dom@18.3.0)(react@18.3.0)
-      react-dom: 18.3.0(react@18.3.0)
+      react-colorful: 5.6.1(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       telejson: 7.2.0
       tocbot: 4.27.13
       ts-dedent: 2.2.0
       util-deprecate: 1.0.2
+    optionalDependencies:
+      react: 18.3.0
+      react-dom: 18.3.0(react@18.3.0)
     transitivePeerDependencies:
       - '@types/react'
       - '@types/react-dom'
@@ -8179,7 +8191,7 @@ snapshots:
       - prettier
       - supports-color
 
-  '@storybook/builder-vite@8.1.3(prettier@3.2.5)(typescript@5.4.5)(vite@5.2.10)':
+  '@storybook/builder-vite@8.1.3(prettier@3.2.5)(typescript@5.4.5)(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.23.0))':
     dependencies:
       '@storybook/channels': 8.1.3
       '@storybook/client-logger': 8.1.3
@@ -8198,8 +8210,9 @@ snapshots:
       fs-extra: 11.2.0
       magic-string: 0.30.10
       ts-dedent: 2.2.0
+      vite: 5.2.10(@types/node@20.12.7)(lightningcss@1.23.0)
+    optionalDependencies:
       typescript: 5.4.5
-      vite: 5.2.10
     transitivePeerDependencies:
       - encoding
       - prettier
@@ -8213,7 +8226,7 @@ snapshots:
       telejson: 7.2.0
       tiny-invariant: 1.3.3
 
-  '@storybook/cli@8.1.3(react-dom@18.3.0)(react@18.3.0)':
+  '@storybook/cli@8.1.3(@babel/preset-env@7.24.4(@babel/core@7.24.4))(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
     dependencies:
       '@babel/core': 7.24.4
       '@babel/types': 7.24.0
@@ -8221,7 +8234,7 @@ snapshots:
       '@storybook/codemod': 8.1.3
       '@storybook/core-common': 8.1.3(prettier@3.2.5)
       '@storybook/core-events': 8.1.3
-      '@storybook/core-server': 8.1.3(prettier@3.2.5)(react-dom@18.3.0)(react@18.3.0)
+      '@storybook/core-server': 8.1.3(prettier@3.2.5)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@storybook/csf-tools': 8.1.3
       '@storybook/node-logger': 8.1.3
       '@storybook/telemetry': 8.1.3(prettier@3.2.5)
@@ -8240,7 +8253,7 @@ snapshots:
       get-npm-tarball-url: 2.1.0
       giget: 1.2.3
       globby: 14.0.1
-      jscodeshift: 0.15.2(@babel/preset-env@7.24.4)
+      jscodeshift: 0.15.2(@babel/preset-env@7.24.4(@babel/core@7.24.4))
       leven: 3.1.0
       ora: 5.4.1
       prettier: 3.2.5
@@ -8276,7 +8289,7 @@ snapshots:
       '@types/cross-spawn': 6.0.6
       cross-spawn: 7.0.3
       globby: 14.0.1
-      jscodeshift: 0.15.2(@babel/preset-env@7.24.4)
+      jscodeshift: 0.15.2(@babel/preset-env@7.24.4(@babel/core@7.24.4))
       lodash: 4.17.21
       prettier: 3.2.5
       recast: 0.23.6
@@ -8284,15 +8297,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@storybook/components@8.1.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0)(react@18.3.0)':
+  '@storybook/components@8.1.3(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
     dependencies:
-      '@radix-ui/react-dialog': 1.0.5(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0)(react@18.3.0)
+      '@radix-ui/react-dialog': 1.0.5(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@radix-ui/react-slot': 1.0.2(@types/react@18.3.0)(react@18.3.0)
       '@storybook/client-logger': 8.1.3
       '@storybook/csf': 0.1.7
       '@storybook/global': 5.0.0
-      '@storybook/icons': 1.2.9(react-dom@18.3.0)(react@18.3.0)
-      '@storybook/theming': 8.1.3(react-dom@18.3.0)(react@18.3.0)
+      '@storybook/icons': 1.2.9(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
+      '@storybook/theming': 8.1.3(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@storybook/types': 8.1.3
       memoizerific: 1.11.3
       react: 18.3.0
@@ -8325,7 +8338,6 @@ snapshots:
       node-fetch: 2.7.0
       picomatch: 2.3.1
       pkg-dir: 5.0.0
-      prettier: 3.2.5
       prettier-fallback: prettier@3.2.5
       pretty-hrtime: 1.0.3
       resolve-from: 5.0.0
@@ -8334,6 +8346,8 @@ snapshots:
       tiny-invariant: 1.3.3
       ts-dedent: 2.2.0
       util: 0.12.5
+    optionalDependencies:
+      prettier: 3.2.5
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -8343,7 +8357,7 @@ snapshots:
       '@storybook/csf': 0.1.7
       ts-dedent: 2.2.0
 
-  '@storybook/core-server@8.1.3(prettier@3.2.5)(react-dom@18.3.0)(react@18.3.0)':
+  '@storybook/core-server@8.1.3(prettier@3.2.5)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
     dependencies:
       '@aw-web-design/x-default-browser': 1.4.126
       '@babel/core': 7.24.4
@@ -8358,7 +8372,7 @@ snapshots:
       '@storybook/docs-mdx': 3.1.0-next.0
       '@storybook/global': 5.0.0
       '@storybook/manager': 8.1.3
-      '@storybook/manager-api': 8.1.3(react-dom@18.3.0)(react@18.3.0)
+      '@storybook/manager-api': 8.1.3(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@storybook/node-logger': 8.1.3
       '@storybook/preview-api': 8.1.3
       '@storybook/telemetry': 8.1.3(prettier@3.2.5)
@@ -8444,7 +8458,7 @@ snapshots:
 
   '@storybook/global@5.0.0': {}
 
-  '@storybook/icons@1.2.9(react-dom@18.3.0)(react@18.3.0)':
+  '@storybook/icons@1.2.9(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
     dependencies:
       react: 18.3.0
       react-dom: 18.3.0(react@18.3.0)
@@ -8459,16 +8473,16 @@ snapshots:
       '@vitest/utils': 1.5.2
       util: 0.12.5
 
-  '@storybook/manager-api@8.1.3(react-dom@18.3.0)(react@18.3.0)':
+  '@storybook/manager-api@8.1.3(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
     dependencies:
       '@storybook/channels': 8.1.3
       '@storybook/client-logger': 8.1.3
       '@storybook/core-events': 8.1.3
       '@storybook/csf': 0.1.7
       '@storybook/global': 5.0.0
-      '@storybook/icons': 1.2.9(react-dom@18.3.0)(react@18.3.0)
+      '@storybook/icons': 1.2.9(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@storybook/router': 8.1.3
-      '@storybook/theming': 8.1.3(react-dom@18.3.0)(react@18.3.0)
+      '@storybook/theming': 8.1.3(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@storybook/types': 8.1.3
       dequal: 2.0.3
       lodash: 4.17.21
@@ -8503,18 +8517,18 @@ snapshots:
 
   '@storybook/preview@8.1.3': {}
 
-  '@storybook/react-dom-shim@8.1.3(react-dom@18.3.0)(react@18.3.0)':
+  '@storybook/react-dom-shim@8.1.3(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
     dependencies:
       react: 18.3.0
       react-dom: 18.3.0(react@18.3.0)
 
-  '@storybook/react-vite@8.1.3(prettier@3.2.5)(react-dom@18.3.0)(react@18.3.0)(typescript@5.4.5)(vite@5.2.10)':
+  '@storybook/react-vite@8.1.3(prettier@3.2.5)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)(rollup@4.16.4)(typescript@5.4.5)(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.23.0))':
     dependencies:
-      '@joshwooding/vite-plugin-react-docgen-typescript': 0.3.1(typescript@5.4.5)(vite@5.2.10)
-      '@rollup/pluginutils': 5.1.0
-      '@storybook/builder-vite': 8.1.3(prettier@3.2.5)(typescript@5.4.5)(vite@5.2.10)
+      '@joshwooding/vite-plugin-react-docgen-typescript': 0.3.1(typescript@5.4.5)(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.23.0))
+      '@rollup/pluginutils': 5.1.0(rollup@4.16.4)
+      '@storybook/builder-vite': 8.1.3(prettier@3.2.5)(typescript@5.4.5)(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.23.0))
       '@storybook/node-logger': 8.1.3
-      '@storybook/react': 8.1.3(prettier@3.2.5)(react-dom@18.3.0)(react@18.3.0)(typescript@5.4.5)
+      '@storybook/react': 8.1.3(prettier@3.2.5)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)(typescript@5.4.5)
       '@storybook/types': 8.1.3
       find-up: 5.0.0
       magic-string: 0.30.10
@@ -8523,7 +8537,7 @@ snapshots:
       react-dom: 18.3.0(react@18.3.0)
       resolve: 1.22.8
       tsconfig-paths: 4.2.0
-      vite: 5.2.10
+      vite: 5.2.10(@types/node@20.12.7)(lightningcss@1.23.0)
     transitivePeerDependencies:
       - '@preact/preset-vite'
       - encoding
@@ -8533,13 +8547,13 @@ snapshots:
       - typescript
       - vite-plugin-glimmerx
 
-  '@storybook/react@8.1.3(prettier@3.2.5)(react-dom@18.3.0)(react@18.3.0)(typescript@5.4.5)':
+  '@storybook/react@8.1.3(prettier@3.2.5)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)(typescript@5.4.5)':
     dependencies:
       '@storybook/client-logger': 8.1.3
       '@storybook/docs-tools': 8.1.3(prettier@3.2.5)
       '@storybook/global': 5.0.0
       '@storybook/preview-api': 8.1.3
-      '@storybook/react-dom-shim': 8.1.3(react-dom@18.3.0)(react@18.3.0)
+      '@storybook/react-dom-shim': 8.1.3(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@storybook/types': 8.1.3
       '@types/escodegen': 0.0.6
       '@types/estree': 0.0.51
@@ -8553,12 +8567,13 @@ snapshots:
       prop-types: 15.8.1
       react: 18.3.0
       react-dom: 18.3.0(react@18.3.0)
-      react-element-to-jsx-string: 15.0.0(react-dom@18.3.0)(react@18.3.0)
+      react-element-to-jsx-string: 15.0.0(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       semver: 7.6.0
       ts-dedent: 2.2.0
       type-fest: 2.19.0
-      typescript: 5.4.5
       util-deprecate: 1.0.2
+    optionalDependencies:
+      typescript: 5.4.5
     transitivePeerDependencies:
       - encoding
       - prettier
@@ -8604,12 +8619,13 @@ snapshots:
       - jest
       - vitest
 
-  '@storybook/theming@8.1.3(react-dom@18.3.0)(react@18.3.0)':
+  '@storybook/theming@8.1.3(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
     dependencies:
       '@emotion/use-insertion-effect-with-fallbacks': 1.0.1(react@18.3.0)
       '@storybook/client-logger': 8.1.3
       '@storybook/global': 5.0.0
       memoizerific: 1.11.3
+    optionalDependencies:
       react: 18.3.0
       react-dom: 18.3.0(react@18.3.0)
 
@@ -8696,7 +8712,7 @@ snapshots:
   '@swc/core-win32-x64-msvc@1.5.0':
     optional: true
 
-  '@swc/core@1.5.0':
+  '@swc/core@1.5.0(@swc/helpers@0.5.8)':
     dependencies:
       '@swc/counter': 0.1.3
       '@swc/types': 0.1.6
@@ -8711,6 +8727,7 @@ snapshots:
       '@swc/core-win32-arm64-msvc': 1.5.0
       '@swc/core-win32-ia32-msvc': 1.5.0
       '@swc/core-win32-x64-msvc': 1.5.0
+      '@swc/helpers': 0.5.8
 
   '@swc/counter@0.1.3': {}
 
@@ -8915,7 +8932,7 @@ snapshots:
 
   '@types/uuid@9.0.8': {}
 
-  '@typescript-eslint/eslint-plugin@7.10.0(@typescript-eslint/parser@7.10.0)(eslint@9.3.0)(typescript@5.4.5)':
+  '@typescript-eslint/eslint-plugin@7.10.0(@typescript-eslint/parser@7.10.0(eslint@9.3.0)(typescript@5.4.5))(eslint@9.3.0)(typescript@5.4.5)':
     dependencies:
       '@eslint-community/regexpp': 4.10.0
       '@typescript-eslint/parser': 7.10.0(eslint@9.3.0)(typescript@5.4.5)
@@ -8928,11 +8945,12 @@ snapshots:
       ignore: 5.3.1
       natural-compare: 1.4.0
       ts-api-utils: 1.3.0(typescript@5.4.5)
+    optionalDependencies:
       typescript: 5.4.5
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/eslint-plugin@7.7.1(@typescript-eslint/parser@7.7.1)(eslint@9.3.0)(typescript@5.4.5)':
+  '@typescript-eslint/eslint-plugin@7.7.1(@typescript-eslint/parser@7.7.1(eslint@9.3.0)(typescript@5.4.5))(eslint@9.3.0)(typescript@5.4.5)':
     dependencies:
       '@eslint-community/regexpp': 4.10.0
       '@typescript-eslint/parser': 7.7.1(eslint@9.3.0)(typescript@5.4.5)
@@ -8947,6 +8965,7 @@ snapshots:
       natural-compare: 1.4.0
       semver: 7.6.0
       ts-api-utils: 1.3.0(typescript@5.4.5)
+    optionalDependencies:
       typescript: 5.4.5
     transitivePeerDependencies:
       - supports-color
@@ -8959,6 +8978,7 @@ snapshots:
       '@typescript-eslint/visitor-keys': 7.10.0
       debug: 4.3.4
       eslint: 9.3.0
+    optionalDependencies:
       typescript: 5.4.5
     transitivePeerDependencies:
       - supports-color
@@ -8971,6 +8991,7 @@ snapshots:
       '@typescript-eslint/visitor-keys': 7.7.1
       debug: 4.3.4
       eslint: 9.3.0
+    optionalDependencies:
       typescript: 5.4.5
     transitivePeerDependencies:
       - supports-color
@@ -8992,6 +9013,7 @@ snapshots:
       debug: 4.3.4
       eslint: 9.3.0
       ts-api-utils: 1.3.0(typescript@5.4.5)
+    optionalDependencies:
       typescript: 5.4.5
     transitivePeerDependencies:
       - supports-color
@@ -9003,6 +9025,7 @@ snapshots:
       debug: 4.3.4
       eslint: 9.3.0
       ts-api-utils: 1.3.0(typescript@5.4.5)
+    optionalDependencies:
       typescript: 5.4.5
     transitivePeerDependencies:
       - supports-color
@@ -9021,6 +9044,7 @@ snapshots:
       minimatch: 9.0.4
       semver: 7.6.0
       ts-api-utils: 1.3.0(typescript@5.4.5)
+    optionalDependencies:
       typescript: 5.4.5
     transitivePeerDependencies:
       - supports-color
@@ -9035,6 +9059,7 @@ snapshots:
       minimatch: 9.0.4
       semver: 7.6.0
       ts-api-utils: 1.3.0(typescript@5.4.5)
+    optionalDependencies:
       typescript: 5.4.5
     transitivePeerDependencies:
       - supports-color
@@ -9076,21 +9101,21 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-react-swc@3.6.0(vite@5.2.10)':
+  '@vitejs/plugin-react-swc@3.6.0(@swc/helpers@0.5.8)(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.23.0))':
     dependencies:
-      '@swc/core': 1.5.0
-      vite: 5.2.10
+      '@swc/core': 1.5.0(@swc/helpers@0.5.8)
+      vite: 5.2.10(@types/node@20.12.7)(lightningcss@1.23.0)
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@vitejs/plugin-react@4.2.1(vite@5.1.7)':
+  '@vitejs/plugin-react@4.2.1(vite@5.1.7(@types/node@20.12.7)(lightningcss@1.23.0))':
     dependencies:
       '@babel/core': 7.24.4
       '@babel/plugin-transform-react-jsx-self': 7.24.1(@babel/core@7.24.4)
       '@babel/plugin-transform-react-jsx-source': 7.24.1(@babel/core@7.24.4)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.1
-      vite: 5.1.7
+      vite: 5.1.7(@types/node@20.12.7)(lightningcss@1.23.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -9794,7 +9819,7 @@ snapshots:
       '@zag-js/types': 0.45.0
       '@zag-js/utils': 0.45.0
 
-  '@zag-js/react@0.38.0(react-dom@18.3.0)(react@18.3.0)':
+  '@zag-js/react@0.38.0(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
     dependencies:
       '@zag-js/core': 0.38.0
       '@zag-js/store': 0.38.0
@@ -10240,7 +10265,7 @@ snapshots:
     dependencies:
       tslib: 2.6.2
 
-  astro@4.4.0(typescript@5.4.5):
+  astro@4.4.0(@types/node@20.12.7)(lightningcss@1.23.0)(typescript@5.4.5):
     dependencies:
       '@astrojs/compiler': 2.7.1
       '@astrojs/internal-helpers': 0.2.1
@@ -10302,8 +10327,8 @@ snapshots:
       tsconfck: 3.0.3(typescript@5.4.5)
       unist-util-visit: 5.0.0
       vfile: 6.0.1
-      vite: 5.1.7
-      vitefu: 0.2.5(vite@5.1.7)
+      vite: 5.2.10(@types/node@20.12.7)(lightningcss@1.23.0)
+      vitefu: 0.2.5(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.23.0))
       which-pm: 2.1.1
       yargs-parser: 21.1.1
       zod: 3.23.4
@@ -10705,9 +10730,9 @@ snapshots:
 
   cssesc@3.0.0: {}
 
-  cssnano-utils@4.0.2(postcss@8.4.35):
+  cssnano-utils@5.0.0(postcss@8.4.38):
     dependencies:
-      postcss: 8.4.35
+      postcss: 8.4.38
 
   csstype@3.1.3: {}
 
@@ -11327,9 +11352,9 @@ snapshots:
     dependencies:
       minimatch: 5.1.6
 
-  filesize@10.1.0: {}
-
   filesize@10.1.1: {}
+
+  filesize@10.1.2: {}
 
   fill-range@7.0.1:
     dependencies:
@@ -11964,7 +11989,7 @@ snapshots:
     dependencies:
       argparse: 2.0.1
 
-  jscodeshift@0.15.2(@babel/preset-env@7.24.4):
+  jscodeshift@0.15.2(@babel/preset-env@7.24.4(@babel/core@7.24.4)):
     dependencies:
       '@babel/core': 7.24.4
       '@babel/parser': 7.24.4
@@ -11973,7 +11998,6 @@ snapshots:
       '@babel/plugin-transform-nullish-coalescing-operator': 7.24.1(@babel/core@7.24.4)
       '@babel/plugin-transform-optional-chaining': 7.24.1(@babel/core@7.24.4)
       '@babel/plugin-transform-private-methods': 7.24.1(@babel/core@7.24.4)
-      '@babel/preset-env': 7.24.4(@babel/core@7.24.4)
       '@babel/preset-flow': 7.24.1(@babel/core@7.24.4)
       '@babel/preset-typescript': 7.24.1(@babel/core@7.24.4)
       '@babel/register': 7.23.7(@babel/core@7.24.4)
@@ -11987,6 +12011,8 @@ snapshots:
       recast: 0.23.6
       temp: 0.8.4
       write-file-atomic: 2.4.3
+    optionalDependencies:
+      '@babel/preset-env': 7.24.4(@babel/core@7.24.4)
     transitivePeerDependencies:
       - supports-color
 
@@ -12166,10 +12192,6 @@ snapshots:
       '@jridgewell/sourcemap-codec': 1.4.15
 
   magic-string@0.30.10:
-    dependencies:
-      '@jridgewell/sourcemap-codec': 1.4.15
-
-  magic-string@0.30.8:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
 
@@ -12904,54 +12926,50 @@ snapshots:
 
   possible-typed-array-names@1.0.0: {}
 
-  postcss-discard-duplicates@6.0.1(postcss@8.4.35):
+  postcss-discard-duplicates@7.0.0(postcss@8.4.38):
     dependencies:
-      postcss: 8.4.35
+      postcss: 8.4.38
 
-  postcss-discard-empty@6.0.1(postcss@8.4.35):
+  postcss-discard-empty@7.0.0(postcss@8.4.38):
     dependencies:
-      postcss: 8.4.35
+      postcss: 8.4.38
 
-  postcss-load-config@4.0.2:
+  postcss-load-config@4.0.2(postcss@8.4.38):
     dependencies:
       lilconfig: 3.1.1
       yaml: 2.4.1
+    optionalDependencies:
+      postcss: 8.4.38
 
-  postcss-merge-rules@6.0.3(postcss@8.4.35):
+  postcss-merge-rules@7.0.0(postcss@8.4.38):
     dependencies:
       browserslist: 4.23.0
       caniuse-api: 3.0.0
-      cssnano-utils: 4.0.2(postcss@8.4.35)
-      postcss: 8.4.35
-      postcss-selector-parser: 6.0.15
+      cssnano-utils: 5.0.0(postcss@8.4.38)
+      postcss: 8.4.38
+      postcss-selector-parser: 6.0.16
 
-  postcss-minify-selectors@6.0.2(postcss@8.4.35):
+  postcss-minify-selectors@7.0.0(postcss@8.4.38):
     dependencies:
-      postcss: 8.4.35
-      postcss-selector-parser: 6.0.15
+      postcss: 8.4.38
+      postcss-selector-parser: 6.0.16
 
-  postcss-nested@6.0.1(postcss@8.4.35):
+  postcss-nested@6.0.1(postcss@8.4.38):
     dependencies:
-      postcss: 8.4.35
-      postcss-selector-parser: 6.0.15
+      postcss: 8.4.38
+      postcss-selector-parser: 6.0.16
 
-  postcss-normalize-whitespace@6.0.1(postcss@8.4.35):
+  postcss-normalize-whitespace@7.0.0(postcss@8.4.38):
     dependencies:
-      postcss: 8.4.35
+      postcss: 8.4.38
       postcss-value-parser: 4.2.0
 
-  postcss-selector-parser@6.0.15:
+  postcss-selector-parser@6.0.16:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
   postcss-value-parser@4.2.0: {}
-
-  postcss@8.4.35:
-    dependencies:
-      nanoid: 3.3.7
-      picocolors: 1.0.0
-      source-map-js: 1.2.0
 
   postcss@8.4.38:
     dependencies:
@@ -13083,7 +13101,7 @@ snapshots:
       strip-json-comments: 2.0.1
     optional: true
 
-  react-colorful@5.6.1(react-dom@18.3.0)(react@18.3.0):
+  react-colorful@5.6.1(react-dom@18.3.0(react@18.3.0))(react@18.3.0):
     dependencies:
       react: 18.3.0
       react-dom: 18.3.0(react@18.3.0)
@@ -13124,7 +13142,7 @@ snapshots:
       react: 18.3.0
       scheduler: 0.23.1
 
-  react-element-to-jsx-string@15.0.0(react-dom@18.3.0)(react@18.3.0):
+  react-element-to-jsx-string@15.0.0(react-dom@18.3.0(react@18.3.0))(react@18.3.0):
     dependencies:
       '@base2/pretty-print-object': 1.0.1
       is-plain-object: 5.0.0
@@ -13144,28 +13162,31 @@ snapshots:
 
   react-remove-scroll-bar@2.3.6(@types/react@18.3.0)(react@18.3.0):
     dependencies:
-      '@types/react': 18.3.0
       react: 18.3.0
       react-style-singleton: 2.2.1(@types/react@18.3.0)(react@18.3.0)
       tslib: 2.6.2
+    optionalDependencies:
+      '@types/react': 18.3.0
 
   react-remove-scroll@2.5.5(@types/react@18.3.0)(react@18.3.0):
     dependencies:
-      '@types/react': 18.3.0
       react: 18.3.0
       react-remove-scroll-bar: 2.3.6(@types/react@18.3.0)(react@18.3.0)
       react-style-singleton: 2.2.1(@types/react@18.3.0)(react@18.3.0)
       tslib: 2.6.2
       use-callback-ref: 1.3.2(@types/react@18.3.0)(react@18.3.0)
       use-sidecar: 1.1.2(@types/react@18.3.0)(react@18.3.0)
+    optionalDependencies:
+      '@types/react': 18.3.0
 
   react-style-singleton@2.2.1(@types/react@18.3.0)(react@18.3.0):
     dependencies:
-      '@types/react': 18.3.0
       get-nonce: 1.0.1
       invariant: 2.2.4
       react: 18.3.0
       tslib: 2.6.2
+    optionalDependencies:
+      '@types/react': 18.3.0
 
   react@18.2.0:
     dependencies:
@@ -13620,9 +13641,9 @@ snapshots:
 
   store2@2.14.3: {}
 
-  storybook@8.1.3(react-dom@18.3.0)(react@18.3.0):
+  storybook@8.1.3(@babel/preset-env@7.24.4(@babel/core@7.24.4))(react-dom@18.3.0(react@18.3.0))(react@18.3.0):
     dependencies:
-      '@storybook/cli': 8.1.3(react-dom@18.3.0)(react@18.3.0)
+      '@storybook/cli': 8.1.3(@babel/preset-env@7.24.4(@babel/core@7.24.4))(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
     transitivePeerDependencies:
       - '@babel/preset-env'
       - bufferutil
@@ -13886,11 +13907,11 @@ snapshots:
   ts-pattern@5.0.8: {}
 
   tsconfck@3.0.2(typescript@5.4.5):
-    dependencies:
+    optionalDependencies:
       typescript: 5.4.5
 
   tsconfck@3.0.3(typescript@5.4.5):
-    dependencies:
+    optionalDependencies:
       typescript: 5.4.5
 
   tsconfig-paths@4.2.0:
@@ -13903,7 +13924,7 @@ snapshots:
 
   tslib@2.6.2: {}
 
-  tsup@8.0.2(typescript@5.4.5):
+  tsup@8.0.2(@swc/core@1.5.0)(postcss@8.4.38)(typescript@5.4.5):
     dependencies:
       bundle-require: 4.0.3(esbuild@0.19.12)
       cac: 6.7.14
@@ -13913,12 +13934,15 @@ snapshots:
       execa: 5.1.1
       globby: 11.1.0
       joycon: 3.1.1
-      postcss-load-config: 4.0.2
+      postcss-load-config: 4.0.2(postcss@8.4.38)
       resolve-from: 5.0.0
       rollup: 4.16.4
       source-map: 0.8.0-beta.0
       sucrase: 3.35.0
       tree-kill: 1.2.2
+    optionalDependencies:
+      '@swc/core': 1.5.0(@swc/helpers@0.5.8)
+      postcss: 8.4.38
       typescript: 5.4.5
     transitivePeerDependencies:
       - supports-color
@@ -13984,10 +14008,11 @@ snapshots:
 
   typescript-eslint@7.7.1(eslint@9.3.0)(typescript@5.4.5):
     dependencies:
-      '@typescript-eslint/eslint-plugin': 7.7.1(@typescript-eslint/parser@7.7.1)(eslint@9.3.0)(typescript@5.4.5)
+      '@typescript-eslint/eslint-plugin': 7.7.1(@typescript-eslint/parser@7.7.1(eslint@9.3.0)(typescript@5.4.5))(eslint@9.3.0)(typescript@5.4.5)
       '@typescript-eslint/parser': 7.7.1(eslint@9.3.0)(typescript@5.4.5)
       '@typescript-eslint/utils': 7.7.1(eslint@9.3.0)(typescript@5.4.5)
       eslint: 9.3.0
+    optionalDependencies:
       typescript: 5.4.5
     transitivePeerDependencies:
       - supports-color
@@ -14127,16 +14152,18 @@ snapshots:
 
   use-callback-ref@1.3.2(@types/react@18.3.0)(react@18.3.0):
     dependencies:
-      '@types/react': 18.3.0
       react: 18.3.0
       tslib: 2.6.2
+    optionalDependencies:
+      '@types/react': 18.3.0
 
   use-sidecar@1.1.2(@types/react@18.3.0)(react@18.3.0):
     dependencies:
-      '@types/react': 18.3.0
       detect-node-es: 1.1.0
       react: 18.3.0
       tslib: 2.6.2
+    optionalDependencies:
+      '@types/react': 18.3.0
 
   util-deprecate@1.0.2: {}
 
@@ -14187,35 +14214,40 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite-tsconfig-paths@4.3.2(typescript@5.4.5)(vite@5.2.10):
+  vite-tsconfig-paths@4.3.2(typescript@5.4.5)(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.23.0)):
     dependencies:
       debug: 4.3.4
       globrex: 0.1.2
       tsconfck: 3.0.3(typescript@5.4.5)
-      vite: 5.2.10
+    optionalDependencies:
+      vite: 5.2.10(@types/node@20.12.7)(lightningcss@1.23.0)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@5.1.7:
+  vite@5.1.7(@types/node@20.12.7)(lightningcss@1.23.0):
     dependencies:
       esbuild: 0.19.12
       postcss: 8.4.38
       rollup: 4.16.4
     optionalDependencies:
+      '@types/node': 20.12.7
       fsevents: 2.3.3
+      lightningcss: 1.23.0
 
-  vite@5.2.10:
+  vite@5.2.10(@types/node@20.12.7)(lightningcss@1.23.0):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.16.4
     optionalDependencies:
+      '@types/node': 20.12.7
       fsevents: 2.3.3
+      lightningcss: 1.23.0
 
-  vitefu@0.2.5(vite@5.1.7):
-    dependencies:
-      vite: 5.1.7
+  vitefu@0.2.5(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.23.0)):
+    optionalDependencies:
+      vite: 5.2.10(@types/node@20.12.7)(lightningcss@1.23.0)
 
   watchpack@2.4.1:
     dependencies:
