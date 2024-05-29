@@ -1,6 +1,6 @@
 {
   "name": "@tacos-ui/styled-system",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Styled system for Tacos UI",
   "scripts": {
     "prepare": "panda codegen",
@@ -25,14 +25,14 @@
   "exports": {
     "./css": {
       "import": {
-        "default": "./dist/css/index.mjs",
-        "types": "./dist/css/index.d.ts"
+        "types": "./dist/css/index.d.ts",
+        "default": "./dist/css/index.mjs"
       }
     },
     "./tokens": {
       "import": {
-        "default": "./dist/tokens/index.mjs",
-        "types": "./dist/tokens/index.d.ts"
+        "types": "./dist/tokens/index.d.ts",
+        "default": "./dist/tokens/index.mjs"
       }
     },
     "./types": {
@@ -42,20 +42,20 @@
     },
     "./patterns": {
       "import": {
-        "default": "./dist/patterns/index.mjs",
-        "types": "./dist/patterns/index.d.ts"
+        "types": "./dist/patterns/index.d.ts",
+        "default": "./dist/patterns/index.mjs"
       }
     },
     "./recipes": {
       "import": {
-        "default": "./dist/recipes/index.mjs",
-        "types": "./dist/recipes/index.d.ts"
+        "types": "./dist/recipes/index.d.ts",
+        "default": "./dist/recipes/index.mjs"
       }
     },
     "./jsx": {
       "import": {
-        "default": "./dist/jsx/index.mjs",
-        "types": "./dist/jsx/index.d.ts"
+        "types": "./dist/jsx/index.d.ts",
+        "default": "./dist/jsx/index.mjs"
       }
     }
   },

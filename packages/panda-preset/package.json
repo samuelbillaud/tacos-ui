@@ -1,6 +1,6 @@
 {
   "name": "@tacos-ui/panda-preset",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Panda CSS Preset for Tacos UI",
   "keywords": [
     "Panda CSS",
@@ -17,13 +17,13 @@
     "access": "public"
   },
   "main": "src/index.ts",
-  "module": "dist/index.mjs",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
   "scripts": {
     "prepare": "panda codegen",
     "dev": "tsup --watch",
-    "build": "tsup src/index.ts --format=esm,cjs --dts",
+    "build": "tsup",
     "studio": "pandacss studio"
   },
   "dependencies": {
