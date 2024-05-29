@@ -8,8 +8,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "packages": "pnpm --filter=./packages/** -recursive --parallel --stream",
+    "build": "pnpm packages -- build",
     "dev": "pnpm --recursive --parallel --stream run dev",
-    "build": "pnpm --recursive --parallel --stream run build",
     "dev:panda-preset": "pnpm --filter @tacos-ui/panda-preset run dev",
     "dev:components": "pnpm --filter @tacos-ui/react run dev",
     "format": "prettier --write packages",
