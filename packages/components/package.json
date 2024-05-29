@@ -32,7 +32,7 @@
     ".": {
       "source": "./src/components/ui/index.ts",
       "import": {
-        "types": "./dist/index.d.dts",
+        "types": "./dist/index.d.ts",
         "default": "./dist/index.js"
       },
       "require": {
