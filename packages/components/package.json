@@ -1,7 +1,7 @@
 {
   "name": "@tacos-ui/react",
   "description": "React component for Tacos UI",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "type": "module",
   "keywords": [
     "Ark UI",
