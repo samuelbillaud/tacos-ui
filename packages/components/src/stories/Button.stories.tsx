@@ -4,7 +4,7 @@ import { X } from 'lucide-react';
 
 import { buttonRecipe } from '@tacos-ui/styled-system/recipes';
 
-import { Button } from '~/components/ui';
+import { Button } from '~/components';
 
 const meta: Meta = {
   title: 'Components/Button',

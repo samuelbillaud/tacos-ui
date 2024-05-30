@@ -30,7 +30,7 @@
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "source": "./src/components/ui/index.ts",
+      "source": "./src/components/index.ts",
       "import": {
         "types": "./dist/index.d.ts",
         "default": "./dist/index.js"

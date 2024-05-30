@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import { switchRecipe } from '@tacos-ui/styled-system/recipes';
 
-import { Switch } from '~/components/ui';
+import { Switch } from '~/components';
 
 const meta: Meta = {
   title: 'Components/Switch',
