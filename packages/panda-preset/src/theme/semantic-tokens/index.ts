@@ -7,7 +7,7 @@ export const semanticTokens = defineSemanticTokens({
   colors: {
     ...colors,
     gray: colors['slate'],
-    accent: colors['sky'],
+    accent: colors['neutral'],
     bg: {
       canvas: { value: '{colors.gray.1}' },
       default: { value: { base: '{colors.white.DEFAULT}', _dark: '{colors.gray.2}' } },

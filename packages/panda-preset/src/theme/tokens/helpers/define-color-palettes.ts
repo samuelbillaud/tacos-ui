@@ -8,10 +8,10 @@ export const defineColorPalettes = () => {
   const excludedColors = ['gray', 'mauve', 'sage', 'olive', 'sand'];
 
   return Object.fromEntries(
-    Object.keys(radixColors)
+    [...Object.keys(radixColors), 'neutral']
       .filter((color) => !/[A-Z]/.test(color))
       .filter((color) => !excludedColors.includes(color))
-      .map((color) => [color, defineColorPalette(color)]),
+      .map((color) => [color, defineColorPalette(color === 'neutral' ? 'gray' : color)]),
   );
 };
 

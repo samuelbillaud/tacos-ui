@@ -12,6 +12,7 @@ import { iris } from './iris';
 import { jade } from './jade';
 import { lime } from './lime';
 import { mint } from './mint';
+import { neutral } from './neutral';
 import { orange } from './orange';
 import { pink } from './pink';
 import { plum } from './plum';
@@ -40,6 +41,7 @@ export const colors = {
   jade,
   lime,
   mint,
+  neutral,
   orange,
   pink,
   plum,
