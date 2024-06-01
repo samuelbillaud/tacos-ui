@@ -63,7 +63,7 @@
     "@storybook/react-vite": "^8.1.3",
     "@storybook/test": "^8.1.3",
     "@tacos-ui/panda-preset": "workspace:*",
-    "lucide-react": "0.375.0",
+    "lucide-react": "0.381.0",
     "react": "18.3.0",
     "react-dom": "18.3.0",
     "storybook": "^8.1.3",
@@ -75,7 +75,7 @@
     "@ark-ui/react": "3.0.2",
     "@tacos-ui/panda-preset": "workspace:*",
     "@tacos-ui/styled-system": "workspace:*",
-    "lucide-react": "0.375.0",
+    "lucide-react": "0.381.0",
     "react": "18.3.0",
     "react-dom": "18.3.0"
   },

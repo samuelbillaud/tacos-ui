@@ -140,8 +140,8 @@ importers:
         specifier: workspace:*
         version: link:../styled-system
       lucide-react:
-        specifier: 0.375.0
-        version: 0.375.0(react@18.3.0)
+        specifier: 0.381.0
+        version: 0.381.0(react@18.3.0)
       react:
         specifier: 18.3.0
         version: 18.3.0
@@ -5154,8 +5154,8 @@ packages:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
     engines: {node: '>=10'}
 
-  lucide-react@0.375.0:
-    resolution: {integrity: sha512-gWEvd9d6f0XaOvQ0jOP541Q1Weec6X7mwcUU0uqoQ9PgMGAxBwolrWRLJoEOsJHWpfdCtDWTF3EHq/TCzRGyMw==}
+  lucide-react@0.381.0:
+    resolution: {integrity: sha512-cft0ywFfHkGprX5pwKyS9jme/ksh9eYAHSZqFRKN0XGp70kia4uqZOTPB+i+O51cqiJlvGLqzMGWnMHaeJTs3g==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
 
@@ -14364,7 +14364,7 @@ snapshots:
     dependencies:
       yallist: 4.0.0
 
-  lucide-react@0.375.0(react@18.3.0):
+  lucide-react@0.381.0(react@18.3.0):
     dependencies:
       react: 18.3.0
 
