@@ -28,4 +28,4 @@ export const neutral = {
   emphasized: { value: '{colors.gray.12}' },
   fg: { value: { base: 'white', _dark: 'black' } },
   text: { value: { base: 'black', _dark: 'white' } },
-}
+};

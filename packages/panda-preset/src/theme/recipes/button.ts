@@ -1,8 +1,8 @@
 import { defineSlotRecipe } from '@pandacss/dev';
 
 export const buttonRecipe = defineSlotRecipe({
-  slots: ['root', 'loadingIcon'],
   className: 'button',
+  slots: ['root', 'loadingIcon'],
   jsx: ['Button', /Button\.+/],
   base: {
     root: {
