@@ -8,16 +8,18 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "packages": "pnpm --filter=./packages/** -recursive --parallel --stream",
     "build": "pnpm packages -- build",
-    "dev": "pnpm --recursive --parallel --stream run dev",
-    "dev:panda-preset": "pnpm --filter @tacos-ui/panda-preset run dev",
-    "dev:components": "pnpm --filter @tacos-ui/react run dev",
+    "dev": "pnpm --parallel --recursive --filter=./packages/** dev",
+    "dev:panda-preset": "pnpm --filter @tacos-ui/panda-preset dev",
+    "dev:components": "pnpm --filter @tacos-ui/react dev",
+    "dev:website": "pnpm --filter=./apps/website dev",
+    "dev:playground": "pnpm --filter=./apps/playground dev",
     "format": "prettier --write packages",
     "format:check": "prettier --check packages",
     "lint": "eslint .",
     "lint:fix": "pnpm lint --fix",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "release": "changeset publish"
   },
   "keywords": [],
   "author": "Samuel Billaud <samuel.billaud1990@gmail.com> (https://github.com/samuelbillaud)",
