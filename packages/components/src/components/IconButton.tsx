@@ -6,7 +6,7 @@ import { buttonRecipe } from '@tacos-ui/styled-system/recipes';
 
 import { BaseButton, type BaseButtonProps } from './BaseButton';
 
-export const Button = forwardRef<HTMLButtonElement, BaseButtonProps>((props, ref) => {
+export const IconButton = forwardRef<HTMLButtonElement, BaseButtonProps>((props, ref) => {
   const [variantProps, buttonProps] = buttonRecipe.splitVariantProps(props);
 
   const [cssProps, localProps] = splitCssProps(buttonProps);
@@ -15,6 +15,12 @@ export const Button = forwardRef<HTMLButtonElement, BaseButtonProps>((props, ref
 
   const { className, ...rootProps } = localProps;
 
-  return <BaseButton className={cx(styles, css(cssProps), className)} ref={ref} {...rootProps} />;
+  return (
+    <BaseButton
+      className={cx(styles, className, css({ ...cssProps, paddingX: 0 }), className)}
+      ref={ref}
+      {...rootProps}
+    />
+  );
 });
-Button.displayName = 'Button';
+IconButton.displayName = 'IconButton';

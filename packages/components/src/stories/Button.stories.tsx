@@ -25,7 +25,6 @@ const meta: Meta = {
   },
   args: {
     size: 'md',
-    disabled: false,
   },
 } satisfies Meta<typeof Button>;
 
@@ -68,6 +67,7 @@ export const OutlineWithLeftIcon: Story = {
       </>
     ),
     variant: 'outline',
+    isLoading: false,
   },
 };
 
@@ -83,6 +83,7 @@ export const AsChild: Story = {
     children: <a href="#">Go to GitHub</a>,
     variant: 'outline',
     asChild: true,
+    isLoading: false,
   },
 };
 

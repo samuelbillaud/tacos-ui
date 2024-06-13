@@ -22,6 +22,7 @@ export const Base = () => {
         >
           <RadioButtonGroup.ItemControl />
           <RadioButtonGroup.ItemText>{option.value}</RadioButtonGroup.ItemText>
+          <RadioButtonGroup.ItemHiddenInput />
         </RadioButtonGroup.Item>
       ))}
     </RadioButtonGroup.Root>

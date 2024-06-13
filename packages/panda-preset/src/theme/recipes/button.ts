@@ -1,50 +1,30 @@
-import { defineSlotRecipe } from '@pandacss/dev';
+import { defineRecipe } from '@pandacss/dev';
 
-export const buttonRecipe = defineSlotRecipe({
+export const buttonRecipe = defineRecipe({
   className: 'button',
-  slots: ['root', 'loadingIcon'],
-  jsx: ['Button', /Button\.+/],
+  jsx: ['Button', /Button\.+/, 'IconButton', /IconButton\.+/],
   base: {
-    root: {
-      position: 'relative',
-      alignItems: 'center',
-      borderRadius: 'sm',
-      cursor: 'pointer',
-      display: 'inline-flex',
-      fontWeight: 'semibold',
-      justifyContent: 'center',
-      outline: 'none',
-      transitionDuration: 'normal',
-      transitionProperty: 'background, border-color, color',
-      transitionTimingFunction: 'default',
-      userSelect: 'none',
-      verticalAlign: 'middle',
-      whiteSpace: 'nowrap',
+    position: 'relative',
+    alignItems: 'center',
+    borderRadius: 'sm',
+    cursor: 'pointer',
+    display: 'inline-flex',
+    fontWeight: 'semibold',
+    justifyContent: 'center',
+    outline: 'none',
+    transitionDuration: 'normal',
+    transitionProperty: 'background, border-color, color',
+    transitionTimingFunction: 'default',
+    userSelect: 'none',
+    verticalAlign: 'middle',
+    whiteSpace: 'nowrap',
 
-      _hidden: {
-        display: 'none',
-      },
-
-      _disabled: {
-        cursor: 'not-allowed',
-      },
+    _hidden: {
+      display: 'none',
     },
-    loadingIcon: {
-      position: 'absolute',
-      top: '0',
-      right: '0',
-      bottom: '0',
-      left: '0',
-      zIndex: 'overlay',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
 
-      '& svg': {
-        color: 'transparent',
-        height: '[1.5em]',
-        width: '[1.5em]',
-      },
+    _disabled: {
+      cursor: 'not-allowed',
     },
   },
   defaultVariants: {
@@ -54,191 +34,191 @@ export const buttonRecipe = defineSlotRecipe({
   variants: {
     variant: {
       solid: {
-        root: {
-          background: 'colorPalette.default',
-          color: 'colorPalette.fg',
-          colorPalette: 'accent',
+        background: 'colorPalette.default',
+        color: 'colorPalette.fg',
+        colorPalette: 'accent',
+
+        _hover: {
+          background: 'colorPalette.emphasized',
+        },
+
+        _focusVisible: {
+          outline: '2px solid',
+          outlineColor: 'colorPalette.default',
+          outlineOffset: '2px',
+        },
+
+        _disabled: {
+          color: 'fg.disabled',
+          background: 'bg.disabled',
 
           _hover: {
-            background: 'colorPalette.emphasized',
-          },
-
-          _focusVisible: {
-            outline: '2px solid',
-            outlineColor: 'colorPalette.default',
-            outlineOffset: '2px',
-          },
-
-          _disabled: {
             color: 'fg.disabled',
             background: 'bg.disabled',
-
-            _hover: {
-              color: 'fg.disabled',
-              background: 'bg.disabled',
-            },
           },
         },
       },
       outline: {
-        root: {
-          borderWidth: '1px',
-          borderColor: 'colorPalette.a8',
-          color: 'colorPalette.text',
-          colorPalette: 'gray',
+        borderWidth: '1px',
+        borderColor: 'colorPalette.a8',
+        color: 'colorPalette.text',
+        colorPalette: 'gray',
+
+        _hover: {
+          background: 'colorPalette.a2',
+        },
+
+        _disabled: {
+          borderColor: 'border.disabled',
+          color: 'fg.disabled',
 
           _hover: {
-            background: 'colorPalette.a2',
-          },
-
-          _disabled: {
+            background: 'transparent',
             borderColor: 'border.disabled',
             color: 'fg.disabled',
-
-            _hover: {
-              background: 'transparent',
-              borderColor: 'border.disabled',
-              color: 'fg.disabled',
-            },
           },
+        },
 
-          _focusVisible: {
-            outline: '2px solid',
-            outlineColor: 'colorPalette.default',
-            outlineOffset: '2px',
-          },
+        _focusVisible: {
+          outline: '2px solid',
+          outlineColor: 'colorPalette.default',
+          outlineOffset: '2px',
+        },
 
-          _selected: {
-            background: 'accent.default',
-            borderColor: 'accent.default',
-            color: 'accent.fg',
-            _hover: {
-              background: 'accent.emphasized',
-              borderColor: 'accent.emphasized',
-            },
+        _selected: {
+          background: 'accent.default',
+          borderColor: 'accent.default',
+          color: 'accent.fg',
+          _hover: {
+            background: 'accent.emphasized',
+            borderColor: 'accent.emphasized',
           },
         },
       },
       ghost: {
-        root: {
-          color: 'colorPalette.text',
-          colorPalette: 'gray',
+        color: 'colorPalette.text',
+        colorPalette: 'gray',
+
+        _hover: {
+          background: 'colorPalette.a3',
+        },
+
+        _selected: {
+          background: 'colorPalette.a3',
+        },
+
+        _disabled: {
+          color: 'fg.disabled',
 
           _hover: {
-            background: 'colorPalette.a3',
-          },
-
-          _selected: {
-            background: 'colorPalette.a3',
-          },
-
-          _disabled: {
+            background: 'transparent',
             color: 'fg.disabled',
-
-            _hover: {
-              background: 'transparent',
-              color: 'fg.disabled',
-            },
           },
+        },
 
-          _focusVisible: {
-            outline: '2px solid',
-            outlineColor: 'colorPalette.default',
-            outlineOffset: '2px',
-          },
+        _focusVisible: {
+          outline: '2px solid',
+          outlineColor: 'colorPalette.default',
+          outlineOffset: '2px',
         },
       },
       soft: {
-        root: {
-          background: 'colorPalette.a3',
-          color: 'colorPalette.text',
-          colorPalette: 'gray',
+        background: 'colorPalette.a3',
+        color: 'colorPalette.text',
+        colorPalette: 'gray',
+
+        _hover: {
+          background: 'colorPalette.a4',
+        },
+
+        _focusVisible: {
+          outline: '2px solid',
+          outlineColor: 'colorPalette.default',
+          outlineOffset: '2px',
+        },
+
+        _disabled: {
+          background: 'bg.disabled',
+          color: 'fg.disabled',
 
           _hover: {
-            background: 'colorPalette.a4',
-          },
-
-          _focusVisible: {
-            outline: '2px solid',
-            outlineColor: 'colorPalette.default',
-            outlineOffset: '2px',
-          },
-
-          _disabled: {
             background: 'bg.disabled',
             color: 'fg.disabled',
-
-            _hover: {
-              background: 'bg.disabled',
-              color: 'fg.disabled',
-            },
           },
         },
       },
     },
     size: {
-      sm: {
-        root: {
-          h: '8',
-          minW: '8',
-          textStyle: 'xs',
-          px: '3',
-          gap: '2',
+      xs: {
+        h: '8',
+        minW: '8',
+        textStyle: 'xs',
+        px: '3',
+        gap: '2',
 
-          '& > svg': {
-            fontSize: 'md',
-            width: '4',
-            height: '4',
-          },
+        '& svg': {
+          width: '4',
+          height: '4',
+        },
+      },
+      sm: {
+        h: '9',
+        minW: '9',
+        textStyle: 'sm',
+        px: '3.5',
+        gap: '2',
+
+        '& svg': {
+          width: '4',
+          height: '4',
         },
       },
       md: {
-        root: {
-          h: '10',
-          minW: '10',
-          textStyle: 'sm',
-          px: '4',
-          gap: '2',
+        h: '10',
+        minW: '10',
+        textStyle: 'sm',
+        px: '4',
+        gap: '2',
 
-          '& > svg': {
-            width: '5',
-            height: '5',
-          },
+        '& svg': {
+          width: '5',
+          height: '5',
         },
       },
       lg: {
-        root: {
-          h: '12',
-          minW: '12',
-          textStyle: 'md',
-          px: '5',
-          gap: '2.5',
+        h: '11',
+        minW: '11',
+        textStyle: 'md',
+        px: '4.5',
+        gap: '2',
 
-          '& > svg': {
-            width: '5',
-            height: '5',
-          },
+        '& svg': {
+          width: '5',
+          height: '5',
         },
       },
-    },
-    isLoading: {
-      true: {
-        root: {
-          color: 'transparent',
+      xl: {
+        h: '12',
+        minW: '12',
+        textStyle: 'md',
+        px: '5',
+        gap: '2.5',
 
-          _disabled: {
-            color: 'transparent',
-
-            _hover: {
-              color: 'transparent',
-            },
-          },
+        '& svg': {
+          width: '5',
+          height: '5',
         },
-        loadingIcon: {
-          '& svg': {
-            color: 'gray.a8',
-            animation: 'spin 1s linear infinite',
-          },
+      },
+      '2xl': {
+        h: '16',
+        minW: '16',
+        textStyle: 'lg',
+        px: '7',
+        gap: '3',
+
+        '& svg': {
+          width: '6',
+          height: '6',
         },
       },
     },

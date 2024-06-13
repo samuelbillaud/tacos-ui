@@ -1,3 +1,5 @@
+import type { RecipeConfig, RecipeVariantRecord, SlotRecipeConfig } from '@pandacss/dev';
+
 import { accordionRecipe } from './accordion';
 import { alertRecipe } from './alert';
 import { avatarRecipe } from './avatar';
@@ -18,6 +20,7 @@ import { iconRecipe } from './icon';
 import { inputRecipe } from './input';
 import { kbdRecipe } from './kbd';
 import { linkRecipe } from './link';
+import { menuRecipe } from './menu';
 import { popoverRecipe } from './popover';
 import { radioButtonGroupRecipe } from './radio-button-group';
 import { radioGroupRecipe } from './radio-group';
@@ -28,11 +31,12 @@ import { tabsRecipe } from './tabs';
 import { tagsInputRecipe } from './tags-input';
 import { textRecipe } from './text';
 import { textareaRecipe } from './textarea';
+import { toastRecipe } from './toast';
 import { toggleGroupRecipe } from './toggle-group';
 import { tooltipRecipe } from './tooltip';
 import { treeViewRecipe } from './tree-view';
 
-export const recipes = {
+export const recipes: Record<string, Partial<RecipeConfig<RecipeVariantRecord>>> = {
   badgeRecipe,
   buttonRecipe,
   codeRecipe,
@@ -46,7 +50,7 @@ export const recipes = {
   textRecipe,
 };
 
-export const slotRecipes = {
+export const slotRecipes: Record<string, Partial<SlotRecipeConfig>> = {
   accordionRecipe,
   alertRecipe,
   avatarRecipe,
@@ -59,6 +63,7 @@ export const slotRecipes = {
   drawerRecipe,
   editableRecipe,
   hoverCardRecipe,
+  menuRecipe,
   popoverRecipe,
   radioButtonGroupRecipe,
   radioGroupRecipe,
@@ -66,6 +71,7 @@ export const slotRecipes = {
   switchRecipe,
   tabsRecipe,
   tagsInputRecipe,
+  toastRecipe,
   toggleGroupRecipe,
   tooltipRecipe,
   treeViewRecipe,
