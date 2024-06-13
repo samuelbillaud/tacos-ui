@@ -15,7 +15,7 @@
   "type": "module",
   "author": "Samuel Billaud <samuel.billaud1990@gmail.com> (https://github.com/samuelbillaud)",
   "license": "MIT",
-  "repository": "https://github.com/samuelbillaud/zaatar-ui",
+  "repository": "https://github.com/samuelbillaud/tacos-ui",
   "publishConfig": {
     "access": "public"
   },

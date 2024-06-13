@@ -17,7 +17,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/samuelbillaud/zaatar-ui.git"
+    "url": "git+https://github.com/samuelbillaud/tacos-ui.git"
   },
   "publishConfig": {
     "access": "public"
@@ -80,7 +80,7 @@
     "react-dom": "18.3.0"
   },
   "bugs": {
-    "url": "https://github.com/samuelbillaud/zaatar-ui/issues"
+    "url": "https://github.com/samuelbillaud/tacos-ui/issues"
   },
-  "homepage": "https://github.com/samuelbillaud/zaatar-ui#readme"
+  "homepage": "https://github.com/samuelbillaud/tacos-ui#readme"
 }
