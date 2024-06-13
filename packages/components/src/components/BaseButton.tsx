@@ -1,3 +1,5 @@
+import type { Assign, JsxStyleProps } from '@tacos-ui/styled-system/types';
+
 import { Fragment, type PropsWithChildren, forwardRef } from 'react';
 
 import { type HTMLArkProps, ark } from '@ark-ui/react/factory';
@@ -7,11 +9,11 @@ import { css, cx } from '@tacos-ui/styled-system/css';
 import { Box } from '@tacos-ui/styled-system/jsx';
 import { type ButtonRecipeVariantProps } from '@tacos-ui/styled-system/recipes';
 
-import { type MarginProps } from '~/lib/splitMarginProps';
-
 export type ButtonElementProps = HTMLArkProps<'button'>;
 
-export interface BaseButtonProps extends ButtonRecipeVariantProps, ButtonElementProps, MarginProps {
+export interface BaseButtonProps
+  extends Assign<JsxStyleProps, ButtonElementProps>,
+    ButtonRecipeVariantProps {
   isLoading?: boolean;
 }
 
