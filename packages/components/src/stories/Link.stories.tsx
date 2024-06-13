@@ -8,4 +8,4 @@ const meta: Meta = {
 
 export default meta;
 
-export const Base = () => <Link href="https://park-ui.com">Park UI</Link>;
+export const Base = () => <Link href="https://tacos-ui.com">Tacos UI</Link>;

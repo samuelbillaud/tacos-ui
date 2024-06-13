@@ -41,7 +41,10 @@ export const Label = withContext<HTMLLabelElement, Assign<JsxStyleProps, RadioGr
   RadioGroup.Label,
   'label',
 );
+
 export {
   RadioGroupContext as Context,
   type RadioGroupContextProps as ContextProps,
+  RadioGroupItemHiddenInput as ItemHiddenInput,
+  type RadioGroupItemHiddenInputProps as ItemHiddenInputProps,
 } from '@ark-ui/react/radio-group';
