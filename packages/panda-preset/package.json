@@ -31,9 +31,9 @@
     "@radix-ui/colors": "^3.0.0"
   },
   "devDependencies": {
-    "@pandacss/dev": "0.39.2",
-    "@pandacss/studio": "^0.39.2",
-    "@pandacss/types": "0.39.2"
+    "@pandacss/dev": "0.40.1",
+    "@pandacss/studio": "^0.40.1",
+    "@pandacss/types": "0.40.1"
   },
   "peerDependencies": {
     "@pandacss/dev": ">0.37.1",
