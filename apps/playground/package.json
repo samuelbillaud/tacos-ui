@@ -13,12 +13,12 @@
     "@tacos-ui/panda-preset": "workspace:*",
     "@tacos-ui/react": "workspace:*",
     "@tacos-ui/styled-system": "workspace:*",
-    "react": "^18.3.0",
+    "react": "^18.3.1",
     "react-dom": "^18.3.0"
   },
   "devDependencies": {
     "@pandacss/dev": "0.39.2",
-    "@types/react": "^18.3.0",
+    "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.10.0",
     "@typescript-eslint/parser": "^7.10.0",
