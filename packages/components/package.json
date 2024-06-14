@@ -71,7 +71,7 @@
     "@ark-ui/react": "3.2.1",
     "@tacos-ui/panda-preset": "workspace:*",
     "@tacos-ui/styled-system": "workspace:*",
-    "lucide-react": "0.375.0",
+    "lucide-react": "0.394.0",
     "react": "18.3.1",
     "react-dom": "18.3.0"
   },
