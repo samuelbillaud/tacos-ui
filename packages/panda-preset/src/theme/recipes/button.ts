@@ -122,6 +122,19 @@ export const buttonRecipe = defineRecipe({
           outlineOffset: '2px',
         },
       },
+      link: {
+        verticalAlign: 'baseline',
+        _disabled: {
+          color: 'border.disabled',
+          cursor: 'not-allowed',
+          _hover: {
+            color: 'border.disabled',
+          },
+        },
+        height: 'auto!',
+        px: '0!',
+        minW: '0!',
+      },
       soft: {
         background: 'colorPalette.a3',
         color: 'colorPalette.text',

@@ -26,6 +26,6 @@ export const cyan = {
 
   default: { value: '{colors.cyan.9}' },
   emphasized: { value: '{colors.cyan.10}' },
-  fg: { value: '{colors.white.DEFAULT}' },
+  fg: { value: '{colors.white}' },
   text: { value: '{colors.cyan.a11}' },
 };

@@ -26,6 +26,6 @@ export const lime = {
 
   default: { value: '{colors.lime.9}' },
   emphasized: { value: '{colors.lime.10}' },
-  fg: { value: '{colors.black.DEFAULT}' },
+  fg: { value: '{colors.black}' },
   text: { value: '{colors.lime.a11}' },
 };

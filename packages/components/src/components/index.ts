@@ -26,6 +26,8 @@ export * as RadioButtonGroup from './RadioButtonGroup';
 export * as RadioGroup from './RadioGroup';
 export * as Select from './Select';
 export * from './Skeleton';
+export * from './Slider';
+export * as Stepper from './Stepper';
 export * from './Switch';
 export * as Tabs from './Tabs';
 export * as TagsInput from './TagsInput';
