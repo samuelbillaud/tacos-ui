@@ -6,6 +6,8 @@ import { buttonRecipe } from '@tacos-ui/styled-system/recipes';
 
 import { BaseButton, type BaseButtonProps } from './BaseButton';
 
+export interface IconButtonProps extends BaseButtonProps {}
+
 export const IconButton = forwardRef<HTMLButtonElement, BaseButtonProps>((props, ref) => {
   const [variantProps, buttonProps] = buttonRecipe.splitVariantProps(props);
 

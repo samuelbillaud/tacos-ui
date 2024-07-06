@@ -26,6 +26,6 @@ export const tomato = {
 
   default: { value: '{colors.tomato.9}' },
   emphasized: { value: '{colors.tomato.10}' },
-  fg: { value: '{colors.white.DEFAULT}' },
+  fg: { value: '{colors.white}' },
   text: { value: '{colors.tomato.a11}' },
 };

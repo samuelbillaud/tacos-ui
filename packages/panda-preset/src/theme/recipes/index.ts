@@ -26,6 +26,7 @@ import { radioButtonGroupRecipe } from './radio-button-group';
 import { radioGroupRecipe } from './radio-group';
 import { selectRecipe } from './select';
 import { skeletonRecipe } from './skeleton';
+import { sliderRecipe } from './slider';
 import { switchRecipe } from './switch';
 import { tabsRecipe } from './tabs';
 import { tagsInputRecipe } from './tags-input';
@@ -68,6 +69,7 @@ export const slotRecipes: Record<string, Partial<SlotRecipeConfig>> = {
   radioButtonGroupRecipe,
   radioGroupRecipe,
   selectRecipe,
+  sliderRecipe,
   switchRecipe,
   tabsRecipe,
   tagsInputRecipe,
