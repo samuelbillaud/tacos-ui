@@ -1,0 +1,9 @@
+---
+import { getSitemap } from '~/lib/page-control';
+import { SidebarNavigation } from './sidebar-navigation';
+
+const sitemap = await getSitemap();
+const pathName = Astro.url.pathname.replace(/\/$/, '');
+---
+
+<SidebarNavigation pathname={pathName} items={sitemap} client:load transition:persist />

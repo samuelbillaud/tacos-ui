@@ -1,7 +1,7 @@
 {
   "name": "@tacos-ui/react",
   "description": "React component for Tacos UI",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "type": "module",
   "keywords": [
     "Ark UI",
@@ -30,9 +30,9 @@
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "source": "./src/components/index.ts",
+      "source": "./src/components/ui/index.ts",
       "import": {
-        "types": "./dist/index.d.ts",
+        "types": "./dist/index.d.dts",
         "default": "./dist/index.js"
       },
       "require": {

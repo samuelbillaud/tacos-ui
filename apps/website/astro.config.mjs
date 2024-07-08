@@ -1,8 +1,10 @@
+import mdx from '@astrojs/mdx';
 import react from '@astrojs/react';
+import sitemap from '@astrojs/sitemap';
 import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  // Enable React to support React JSX components.
-  integrations: [react()],
+  integrations: [mdx(), react(), sitemap()],
+  site: 'https://tacos-ui.com',
 });

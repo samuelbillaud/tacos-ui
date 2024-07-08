@@ -1,0 +1,18 @@
+{
+  "name": "Tacos UI",
+  "display": "standalone",
+  "start_url": "https://tacos-ui.com",
+  "description": "A modern React components library",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

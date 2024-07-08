@@ -1,0 +1,98 @@
+---
+import '@fontsource-variable/outfit';
+import '@fontsource-variable/roboto-mono';
+import { ViewTransitions } from 'astro:transitions';
+import '../index.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title} | Tacos UI</title>
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="Panda,CSS,Ark UI,Components,Library,React" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="sitemap" href="/sitemap.xml" />
+
+    <!-- Icons -->
+    <link rel="icon" href="/icon-32.png" type="image/png" sizes="any" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-icon.png" type="image/png" sizes="180x180" />
+
+    <ViewTransitions />
+  </head>
+  <body>
+    <slot />
+    <script>
+      const localStorageThemeName = 'tacos-ui-color-theme';
+
+      const getThemePreference = () => {
+        const prefersColorsScheme = window.matchMedia('(prefers-color-scheme: dark)').matches
+          ? 'dark'
+          : 'light';
+
+        if (typeof localStorage !== 'undefined' && localStorage.getItem(localStorageThemeName)) {
+          return localStorage.getItem(localStorageThemeName) === 'system'
+            ? prefersColorsScheme
+            : localStorage.getItem(localStorageThemeName);
+        }
+
+        return prefersColorsScheme;
+      };
+
+      const setColorMode = () => {
+        const isDark = getThemePreference() === 'dark';
+
+        if (isDark) {
+          document.documentElement.classList.add('dark');
+        }
+      };
+      setColorMode();
+      document.addEventListener('astro:after-swap', setColorMode);
+    </script>
+    <script is:inline>
+      const localStorageThemeName = 'tacos-ui-color-theme';
+
+      const getThemePreference = () => {
+        const prefersColorsScheme = window.matchMedia('(prefers-color-scheme: dark)').matches
+          ? 'dark'
+          : 'light';
+
+        if (typeof localStorage !== 'undefined' && localStorage.getItem(localStorageThemeName)) {
+          return localStorage.getItem(localStorageThemeName) === 'system'
+            ? prefersColorsScheme
+            : localStorage.getItem(localStorageThemeName);
+        }
+
+        return prefersColorsScheme;
+      };
+
+      const isDark = getThemePreference() === 'dark';
+
+      document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
+
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem(localStorageThemeName)) {
+          const newColorScheme = event.matches ? 'dark' : 'light';
+
+          const isSystem = localStorage.getItem(localStorageThemeName) === 'system';
+
+          if (isSystem) {
+            document.documentElement.classList[newColorScheme === 'dark' ? 'add' : 'remove'](
+              'dark'
+            );
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

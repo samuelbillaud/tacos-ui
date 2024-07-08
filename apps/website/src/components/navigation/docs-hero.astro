@@ -1,0 +1,40 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { FileTextIcon } from 'lucide-react';
+import { Box, Container, HStack } from '@tacos-ui/styled-system/jsx';
+import { Badge, Heading, Text } from '@tacos-ui/react';
+import { Prose } from '../prose';
+
+interface Props {
+  entry: CollectionEntry<'components' | 'overview'>;
+}
+
+const { entry } = Astro.props;
+
+const isComponent = entry.collection === 'components';
+---
+
+<Box borderBottomWidth="1px" bg={{ base: 'gray.2', _dark: 'black.a2' }}>
+  <Container maxW="66rem" py={{ base: '16', md: '24' }}>
+    <Prose size="base">
+      <Heading as="h1" fontWeight="bold">
+        {entry.data.title}
+      </Heading>
+      <Text className="lead">{entry.data.description}</Text>
+    </Prose>
+    {
+      isComponent && (
+        <HStack gap="3">
+          {entry.data.ark?.link && (
+            <a href={`${entry.data.ark.link}#api-reference`} target="_blank">
+              <Badge borderRadius="l2">
+                <FileTextIcon />
+                API Reference
+              </Badge>
+            </a>
+          )}
+        </HStack>
+      )
+    }
+  </Container>
+</Box>

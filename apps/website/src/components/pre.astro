@@ -1,0 +1,30 @@
+---
+import { Code } from 'astro/components';
+import * as cheerio from 'cheerio';
+import { Box } from '@tacos-ui/styled-system/jsx';
+import { CodePreview } from './code-preview';
+import { ExpendableCodePreview } from './expandable-code-preview';
+import { LivePreview } from './live-preview';
+
+const html = await Astro.slots.render('default');
+const code = cheerio.load(html).root().text().trim();
+---
+
+<Box borderRadius="md" overflow="hidden" borderWidth="1px" className="not-prose">
+  {
+    html.includes('metastring="live"') ? (
+      <>
+        <Box p={{ base: '4', md: '6' }} borderBottomWidth="1px">
+          <LivePreview code={code} client:load />
+        </Box>
+        <ExpendableCodePreview code={code} client:load>
+          <Code code={code} lang="tsx" theme="poimandres" />
+        </ExpendableCodePreview>
+      </>
+    ) : (
+      <CodePreview code={code} client:load>
+        <Code code={code} lang="tsx" theme="poimandres" />
+      </CodePreview>
+    )
+  }
+</Box>

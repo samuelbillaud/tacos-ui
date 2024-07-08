@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Button, Switch } from '@tacos-ui/react';
+import { Button, IconButton, Switch } from '@tacos-ui/react';
 
 import { css } from '@tacos-ui/styled-system/css';
 import { Flex } from '@tacos-ui/styled-system/jsx';
@@ -48,6 +48,8 @@ function App() {
       <Switch checked={checked} onCheckedChange={onCheckChange} size="md">
         {checked ? 'On' : 'Off'}
       </Switch>
+
+      <IconButton variant="ghost">G</IconButton>
     </Flex>
   );
 }

@@ -1,0 +1,24 @@
+---
+import fs from 'node:fs';
+import { getCollection } from 'astro:content';
+import { Code } from 'astro/components';
+import { Box } from '@tacos-ui/styled-system/jsx';
+import { Playground } from './playground';
+import { ExpendableCodePreview } from './expandable-code-preview';
+
+const componentId = Astro.params.slug?.split('/').pop();
+
+const types = await getCollection('props', (x) => x.id === componentId);
+
+const componentProps = types[0]?.data ?? {};
+
+const code = fs.readFileSync(`./src/components/demos/${componentId}.demo.tsx`, 'utf8');
+---
+
+<Box borderRadius="md" overflow="hidden" borderWidth="1px" className="not-prose">
+  <Playground id={componentId} componentProps={componentProps} client:load>
+    <ExpendableCodePreview code={code} client:load>
+      <Code code={code} lang="tsx" theme="poimandres" />
+    </ExpendableCodePreview>
+  </Playground>
+</Box>
