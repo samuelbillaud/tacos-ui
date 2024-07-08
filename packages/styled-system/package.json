@@ -1,6 +1,6 @@
 {
   "name": "@tacos-ui/styled-system",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Styled system for Tacos UI",
   "scripts": {
     "prepare": "panda codegen",

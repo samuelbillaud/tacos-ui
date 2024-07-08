@@ -21,7 +21,7 @@
     "@fontsource-variable/outfit": "^5.0.13",
     "@fontsource-variable/roboto-mono": "^5.0.19",
     "@tacos-ui/panda-preset": "workspace:*",
-    "@tacos-ui/react": "^0.5.0",
+    "@tacos-ui/react": "^0.6.0",
     "@tacos-ui/styled-system": "workspace:*",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
