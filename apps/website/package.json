@@ -4,20 +4,41 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
+    "postinstall": "panda codegen",
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check": "astro check"
   },
   "dependencies": {
+    "@ark-ui/react": "3.2.1",
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/mdx": "^3.1.1",
     "@astrojs/react": "^3.4.0",
+    "@astrojs/sitemap": "^3.1.6",
+    "@fontsource-variable/outfit": "^5.0.13",
+    "@fontsource-variable/roboto-mono": "^5.0.19",
+    "@tacos-ui/panda-preset": "workspace:*",
+    "@tacos-ui/react": "^0.5.0",
+    "@tacos-ui/styled-system": "workspace:*",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "@uidotdev/usehooks": "^2.4.1",
     "astro": "^4.9.2",
+    "cheerio": "1.0.0-rc.12",
+    "lucide-react": "0.375.0",
+    "pandacss-preset-typography": "^0.1.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "@astrojs/check": "^0.7.0",
+    "react-live": "^4.1.7",
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@pandacss/dev": "0.39.2",
+    "@types/cheerio": "^0.22.35",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0"
   }
 }

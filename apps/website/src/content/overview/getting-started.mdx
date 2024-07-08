@@ -1,0 +1,70 @@
+---
+id: getting-started
+title: Getting Started
+description: A Step-by-step Guide to Using Tacos UI
+---
+
+import { Stepper } from '@tacos-ui/react';
+
+## Setup Guide
+
+<Stepper.Root>
+<Stepper.Step title="Prerequisite" number="1">
+
+Before you start, ensure that your Panda project is set up and ready to go. If not, please refer to the
+[Panda CSS Getting Started Guide](https://panda-css.com/docs/overview/getting-started#framework-guides) and once you've
+completed that, come back to this guide.
+
+</Stepper.Step>
+<Stepper.Step title="Install Tacos UI components" number="2">
+
+The first step is to install [Tacos UI](https://tacos-ui.com). To install Tacos UI, execute the following command in your project's root directory:
+
+```bash
+npm install @tacos-ui/react
+```
+
+</Stepper.Step>
+<Stepper.Step title="Install Tacos UI styled system" number="3">
+
+The second step is to install `@tacos-ui/styled-system`. This package is used to have same design between components
+library and your application.
+
+```bash
+npm install @tacos-ui/styled-system
+```
+
+</Stepper.Step>
+<Stepper.Step number="3" title="Install Tacos UI Panda Preset">
+
+The next package you will need is `@tacos-ui/panda-preset`. This package contains all the recipes and tokens explicitly
+built for Tacos UI.
+
+```bash
+npm install @tacos-ui/panda-preset -D
+```
+
+After you've installed the presets, you'll need to add it to your Panda configuration file along with your preferred
+`jsxFramework` like shown below:
+
+```tsx
+import { defineConfig } from '@pandacss/dev';
+
+export default defineConfig({
+  preflight: true,
+  presets: ['@pandacss/preset-base', '@tacos-ui/panda-preset'],
+  include: ['./node_modules/@tacos-ui/react/src/**/*.tsx', './src/**/*.{ts,tsx,js,jsx}'],
+  exclude: [],
+  jsxFramework: 'react',
+  outdir: 'styled-system',
+  importMap: '@tacos-ui/styled-system',
+});
+```
+
+Make sure to run `panda codegen` after you've added the presets to your Panda configuration file.
+
+And that's it!
+
+</Stepper.Step>
+
+</Stepper.Root>
