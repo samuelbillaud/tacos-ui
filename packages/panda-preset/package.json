@@ -27,7 +27,7 @@
     "studio": "pandacss studio"
   },
   "dependencies": {
-    "@ark-ui/anatomy": "3.2.0",
+    "@ark-ui/anatomy": "3.4.0",
     "@radix-ui/colors": "^3.0.0"
   },
   "devDependencies": {

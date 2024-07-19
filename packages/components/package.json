@@ -68,7 +68,7 @@
     "vite-tsconfig-paths": "4.3.2"
   },
   "dependencies": {
-    "@ark-ui/react": "3.2.1",
+    "@ark-ui/react": "3.5.0",
     "@tacos-ui/panda-preset": "workspace:*",
     "@tacos-ui/styled-system": "workspace:*",
     "lucide-react": "0.375.0",
