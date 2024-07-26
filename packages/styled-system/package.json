@@ -60,7 +60,7 @@
     }
   },
   "devDependencies": {
-    "@pandacss/dev": "0.39.2"
+    "@pandacss/dev": "0.44.0"
   },
   "dependencies": {
     "@tacos-ui/panda-preset": "workspace:*"
