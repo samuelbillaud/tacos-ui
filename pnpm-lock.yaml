@@ -155,8 +155,8 @@ importers:
         specifier: 1.0.0-rc.12
         version: 1.0.0-rc.12
       lucide-react:
-        specifier: 0.375.0
-        version: 0.375.0(react@18.3.1)
+        specifier: 0.419.0
+        version: 0.419.0(react@18.3.1)
       pandacss-preset-typography:
         specifier: ^0.1.6
         version: 0.1.6(@pandacss/dev@0.39.2(typescript@5.4.5))
@@ -192,8 +192,8 @@ importers:
         specifier: workspace:*
         version: link:../styled-system
       lucide-react:
-        specifier: 0.375.0
-        version: 0.375.0(react@18.3.1)
+        specifier: 0.419.0
+        version: 0.419.0(react@18.3.1)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -5210,6 +5210,11 @@ packages:
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
 
+  lucide-react@0.419.0:
+    resolution: {integrity: sha512-YkOHuc1uGH2A4G0NRZyeCW6mMFGb8z3amep0fARuKIri68nveAT5C8OuXOPJXpb/iIgSfsjdMjjII7bnEtGkvw==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
   lz-string@1.5.0:
     resolution: {integrity: sha512-h5bgJWpxJNswbU7qCrV0tIKQCaS3blPDrqKWx+QxzuzL1zGUzij9XCWLrSLsJPu5t+eWA/ycetzYAO5IOMcWAQ==}
     hasBin: true
@@ -6505,9 +6510,11 @@ packages:
 
   shikiji-core@0.9.19:
     resolution: {integrity: sha512-AFJu/vcNT21t0e6YrfadZ+9q86gvPum6iywRyt1OtIPjPFe25RQnYJyxHQPMLKCCWA992TPxmEmbNcOZCAJclw==}
+    deprecated: Shikiji is merged back to Shiki v1.0, please migrate over to get the latest updates
 
   shikiji@0.9.19:
     resolution: {integrity: sha512-Kw2NHWktdcdypCj1GkKpXH4o6Vxz8B8TykPlPuLHOGSV8VkhoCLcFOH4k19K4LXAQYRQmxg+0X/eM+m2sLhAkg==}
+    deprecated: Shikiji is merged back to Shiki v1.0, please migrate over to get the latest updates
 
   side-channel@1.0.6:
     resolution: {integrity: sha512-fDW/EZ6Q9RiO8eFG8Hj+7u/oW+XrPTIChwCOM2+th2A6OblDtYYIpve9m+KvI9Z4C9qSEXlaGR6bTEYHReuglA==}
@@ -14647,6 +14654,10 @@ snapshots:
       yallist: 3.1.1
 
   lucide-react@0.375.0(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+
+  lucide-react@0.419.0(react@18.3.1):
     dependencies:
       react: 18.3.1
 
