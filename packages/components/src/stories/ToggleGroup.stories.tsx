@@ -1,5 +1,4 @@
 import type { Meta } from '@storybook/react';
-
 import { BoldIcon, ItalicIcon, UnderlineIcon } from 'lucide-react';
 
 import { Stack } from '@tacos-ui/styled-system/jsx';

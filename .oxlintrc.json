@@ -1,0 +1,104 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["react", "typescript", "unicorn"],
+  "categories": {
+    "correctness": "error"
+  },
+  "env": {
+    "builtin": true,
+    "browser": true
+  },
+  "ignorePatterns": [
+    "**/dist/**",
+    "**/build/**",
+    "**/node_modules/**",
+    "**/styled-system/**",
+    "**/.astro/**",
+    "**/storybook-static/**"
+  ],
+  "rules": {
+    "no-var": "error",
+    "prefer-const": "error",
+    "prefer-rest-params": "error",
+    "prefer-spread": "error",
+    "curly": ["error", "all"],
+
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-boolean-value": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-empty-object-type": [
+      "error",
+      { "allowInterfaces": "with-single-extends" }
+    ],
+    "@typescript-eslint/prefer-as-const": "error",
+
+    "unicorn/prefer-node-protocol": "error",
+    "unicorn/prefer-string-slice": "error",
+    "unicorn/prefer-array-find": "error",
+    "unicorn/prefer-array-some": "error",
+    "unicorn/prefer-includes": "error",
+    "unicorn/no-useless-undefined": "error",
+    "unicorn/catch-error-name": "error",
+    "unicorn/error-message": "error",
+    "unicorn/no-lonely-if": "error",
+    "unicorn/prefer-optional-catch-binding": "error"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.{ts,tsx}"],
+      "jsPlugins": ["@stylistic/eslint-plugin", "eslint-plugin-perfectionist"],
+      "rules": {
+        "@stylistic/padding-line-between-statements": [
+          "error",
+          { "blankLine": "always", "next": "return", "prev": "*" },
+          { "blankLine": "always", "next": "*", "prev": ["const", "let"] },
+          { "blankLine": "any", "next": ["const", "let"], "prev": ["const", "let"] }
+        ],
+        "perfectionist/sort-imports": [
+          "error",
+          {
+            "customGroups": [
+              { "groupName": "react", "elementNamePattern": "^react$|^react-.+" },
+              { "groupName": "panda", "elementNamePattern": "^@pandacss/.+" },
+              {
+                "groupName": "styledSystem",
+                "elementNamePattern": "^@tacos-ui/styled-system.*"
+              }
+            ],
+            "groups": [
+              "react",
+              "panda",
+              ["builtin", "external"],
+              "styledSystem",
+              "type-internal",
+              "internal",
+              ["type-parent", "type-sibling", "type-index"],
+              ["parent", "sibling", "index"],
+              "side-effect",
+              "style",
+              "unknown"
+            ],
+            "newlinesBetween": 1,
+            "order": "asc",
+            "type": "natural"
+          }
+        ]
+      }
+    },
+    {
+      "files": ["**/*.stories.tsx"],
+      "rules": {
+        "react-hooks/rules-of-hooks": "off"
+      }
+    },
+    {
+      "files": ["**/*.config.{ts,js,mjs,cjs}", "**/postcss.config.cjs"],
+      "env": {
+        "node": true
+      }
+    }
+  ]
+}

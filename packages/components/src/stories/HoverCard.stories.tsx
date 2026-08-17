@@ -1,5 +1,4 @@
 import type { Meta } from '@storybook/react';
-
 import { MapPinIcon } from 'lucide-react';
 
 import { HStack, Stack } from '@tacos-ui/styled-system/jsx';

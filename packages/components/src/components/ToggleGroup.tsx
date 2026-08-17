@@ -1,12 +1,11 @@
 import type { Assign } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { ToggleGroup } from '@ark-ui/react/toggle-group';
 
 import {
   type ToggleGroupRecipeVariantProps,
   toggleGroupRecipe,
 } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 import { createStyleContext } from '~/lib/create-style-context';
 
@@ -18,7 +17,7 @@ export const Root = withProvider<HTMLDivElement, RootProps>(ToggleGroup.Root, 'r
 
 export const Item = withContext<HTMLButtonElement, Assign<JsxStyleProps, ToggleGroup.ItemProps>>(
   ToggleGroup.Item,
-  'item',
+  'item'
 );
 
 export {

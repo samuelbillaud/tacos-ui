@@ -1,5 +1,3 @@
-import type { Assign, JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { Fragment, type PropsWithChildren, forwardRef } from 'react';
 
 import { type HTMLArkProps, ark } from '@ark-ui/react/factory';
@@ -8,6 +6,7 @@ import { Loader2 } from 'lucide-react';
 import { css, cx } from '@tacos-ui/styled-system/css';
 import { Box } from '@tacos-ui/styled-system/jsx';
 import { type ButtonRecipeVariantProps } from '@tacos-ui/styled-system/recipes';
+import type { Assign, JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 export type ButtonElementProps = HTMLArkProps<'button'>;
 
@@ -29,7 +28,7 @@ export const BaseButton = forwardRef<HTMLButtonElement, BaseButtonProps>((props,
   return (
     <ark.button
       asChild={asChild}
-      className={cx(css({ ...(isLoading ? { color: 'transparent' } : {}) }), className)}
+      className={cx(css(isLoading ? { color: 'transparent' } : {}), className)}
       data-disabled={disabled || undefined}
       disabled={disabled}
       ref={ref}

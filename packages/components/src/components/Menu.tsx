@@ -1,9 +1,8 @@
 import type { Assign } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { Menu } from '@ark-ui/react/menu';
 
 import { type MenuRecipeVariantProps, menuRecipe } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 import { createStyleContext } from '~/lib/create-style-context';
 
@@ -14,12 +13,12 @@ export const Root = withRootProvider<RootProps>(Menu.Root);
 
 export const Arrow = withContext<HTMLDivElement, Assign<JsxStyleProps, Menu.ArrowProps>>(
   Menu.Arrow,
-  'arrow',
+  'arrow'
 );
 
 export const ArrowTip = withContext<HTMLDivElement, Assign<JsxStyleProps, Menu.ArrowTipProps>>(
   Menu.ArrowTip,
-  'arrowTip',
+  'arrowTip'
 );
 
 export const CheckboxItem = withContext<
@@ -29,7 +28,7 @@ export const CheckboxItem = withContext<
 
 export const Content = withContext<HTMLDivElement, Assign<JsxStyleProps, Menu.ContentProps>>(
   Menu.Content,
-  'content',
+  'content'
 );
 
 export const ContextTrigger = withContext<
@@ -39,7 +38,7 @@ export const ContextTrigger = withContext<
 
 export const Indicator = withContext<HTMLDivElement, Assign<JsxStyleProps, Menu.IndicatorProps>>(
   Menu.Indicator,
-  'indicator',
+  'indicator'
 );
 
 export const ItemGroupLabel = withContext<
@@ -49,7 +48,7 @@ export const ItemGroupLabel = withContext<
 
 export const ItemGroup = withContext<HTMLDivElement, Assign<JsxStyleProps, Menu.ItemGroupProps>>(
   Menu.ItemGroup,
-  'itemGroup',
+  'itemGroup'
 );
 
 export const ItemIndicator = withContext<
@@ -59,17 +58,17 @@ export const ItemIndicator = withContext<
 
 export const Item = withContext<HTMLDivElement, Assign<JsxStyleProps, Menu.ItemProps>>(
   Menu.Item,
-  'item',
+  'item'
 );
 
 export const ItemText = withContext<HTMLDivElement, Assign<JsxStyleProps, Menu.ItemTextProps>>(
   Menu.ItemText,
-  'itemText',
+  'itemText'
 );
 
 export const Positioner = withContext<HTMLDivElement, Assign<JsxStyleProps, Menu.PositionerProps>>(
   Menu.Positioner,
-  'positioner',
+  'positioner'
 );
 
 export const RadioItemGroup = withContext<
@@ -79,12 +78,12 @@ export const RadioItemGroup = withContext<
 
 export const RadioItem = withContext<HTMLDivElement, Assign<JsxStyleProps, Menu.RadioItemProps>>(
   Menu.RadioItem,
-  'item',
+  'item'
 );
 
 export const Separator = withContext<HTMLHRElement, Assign<JsxStyleProps, Menu.SeparatorProps>>(
   Menu.Separator,
-  'separator',
+  'separator'
 );
 
 export const TriggerItem = withContext<
@@ -94,7 +93,7 @@ export const TriggerItem = withContext<
 
 export const Trigger = withContext<HTMLButtonElement, Assign<JsxStyleProps, Menu.TriggerProps>>(
   Menu.Trigger,
-  'trigger',
+  'trigger'
 );
 
 export { MenuContext as Context, type MenuContextProps as ContextProps } from '@ark-ui/react/menu';

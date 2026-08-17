@@ -5,7 +5,7 @@ const getOverviewPages = async () => {
   const priority = ['getting-started', 'about'];
 
   return getCollection('overview').then((items) =>
-    items.sort((a, b) => priority.indexOf(a.data.id) - priority.indexOf(b.data.id)),
+    items.sort((a, b) => priority.indexOf(a.data.id) - priority.indexOf(b.data.id))
   );
 };
 
@@ -13,7 +13,7 @@ const getComponentsPages = async () => {
   const priority = ['typography', 'component'];
 
   return getCollection('components').then((items) =>
-    items.sort((a, b) => priority.indexOf(a.data.category) - priority.indexOf(b.data.category)),
+    items.sort((a, b) => priority.indexOf(a.data.category) - priority.indexOf(b.data.category))
   );
 };
 

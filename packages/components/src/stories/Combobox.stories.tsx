@@ -1,7 +1,6 @@
-import type { Meta } from '@storybook/react';
-
 import { useState } from 'react';
 
+import type { Meta } from '@storybook/react';
 import { CheckIcon, ChevronsUpDownIcon } from 'lucide-react';
 
 import { Combobox, IconButton, Input } from '~/components';
@@ -23,7 +22,7 @@ export const Base = () => {
 
   const handleChange = (e: Combobox.InputValueChangeDetails) => {
     const filtered = data.filter((item) =>
-      item.label.toLowerCase().includes(e.inputValue.toLowerCase()),
+      item.label.toLowerCase().includes(e.inputValue.toLowerCase())
     );
 
     setItems(filtered.length > 0 ? filtered : data);

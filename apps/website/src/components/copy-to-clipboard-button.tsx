@@ -15,7 +15,9 @@ export const CopyToClipboardButton = ({ content, isAlwaysDark }: CopyToClipboard
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
-    if (visible) return;
+    if (visible) {
+      return;
+    }
     const timer = setTimeout(() => setVisible(true), 1000);
 
     return () => clearTimeout(timer);

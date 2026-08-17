@@ -1,9 +1,8 @@
 import type { Assign } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { Editable } from '@ark-ui/react/editable';
 
 import { type EditableRecipeVariantProps, editableRecipe } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 import { createStyleContext } from '~/lib/create-style-context';
 
@@ -15,7 +14,7 @@ export const Root = withProvider<HTMLDivElement, RootProps>(Editable.Root, 'root
 
 export const Area = withContext<HTMLDivElement, Assign<JsxStyleProps, Editable.AreaProps>>(
   Editable.Area,
-  'area',
+  'area'
 );
 
 export const CancelTrigger = withContext<
@@ -25,7 +24,7 @@ export const CancelTrigger = withContext<
 
 export const Control = withContext<HTMLDivElement, Assign<JsxStyleProps, Editable.ControlProps>>(
   Editable.Control,
-  'control',
+  'control'
 );
 
 export const EditTrigger = withContext<
@@ -35,17 +34,17 @@ export const EditTrigger = withContext<
 
 export const Input = withContext<HTMLInputElement, Assign<JsxStyleProps, Editable.InputProps>>(
   Editable.Input,
-  'input',
+  'input'
 );
 
 export const Label = withContext<HTMLLabelElement, Assign<JsxStyleProps, Editable.LabelProps>>(
   Editable.Label,
-  'label',
+  'label'
 );
 
 export const Preview = withContext<HTMLSpanElement, Assign<JsxStyleProps, Editable.PreviewProps>>(
   Editable.Preview,
-  'preview',
+  'preview'
 );
 
 export const SubmitTrigger = withContext<

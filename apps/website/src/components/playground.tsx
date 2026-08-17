@@ -65,8 +65,8 @@ export const Playground = ({
       Object.entries(componentProps).map(([key, value]) => [
         key,
         typeof value === 'object' ? value.defaultValue : value,
-      ]),
-    ),
+      ])
+    )
   );
 
   const hasSettings = Object.keys(componentProps).length > 0;
@@ -123,7 +123,7 @@ export const Playground = ({
                     </Select.Content>
                   </Select.Positioner>
                 </Select.Root>
-              ),
+              )
             )}
           </Stack>
         )}

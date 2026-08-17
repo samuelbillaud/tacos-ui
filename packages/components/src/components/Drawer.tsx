@@ -1,10 +1,9 @@
 import type { Assign, HTMLArkProps } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { Dialog as Drawer } from '@ark-ui/react/dialog';
 import { ark } from '@ark-ui/react/factory';
 
 import { type DrawerRecipeVariantProps, drawerRecipe } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 import { createStyleContext } from '~/lib/create-style-context';
 
@@ -15,12 +14,12 @@ export const Root = withRootProvider<RootProps>(Drawer.Root);
 
 export const Backdrop = withContext<HTMLDivElement, Assign<JsxStyleProps, Drawer.BackdropProps>>(
   Drawer.Backdrop,
-  'backdrop',
+  'backdrop'
 );
 
 export const Body = withContext<HTMLDivElement, Assign<JsxStyleProps, HTMLArkProps<'div'>>>(
   ark.div,
-  'body',
+  'body'
 );
 
 export const CloseTrigger = withContext<
@@ -30,7 +29,7 @@ export const CloseTrigger = withContext<
 
 export const Content = withContext<HTMLDivElement, Assign<JsxStyleProps, Drawer.ContentProps>>(
   Drawer.Content,
-  'content',
+  'content'
 );
 
 export const Description = withContext<
@@ -40,12 +39,12 @@ export const Description = withContext<
 
 export const Footer = withContext<HTMLDivElement, Assign<JsxStyleProps, HTMLArkProps<'div'>>>(
   ark.div,
-  'footer',
+  'footer'
 );
 
 export const Header = withContext<HTMLDivElement, Assign<JsxStyleProps, HTMLArkProps<'div'>>>(
   ark.div,
-  'header',
+  'header'
 );
 
 export const Positioner = withContext<
@@ -55,12 +54,12 @@ export const Positioner = withContext<
 
 export const Title = withContext<HTMLHeadingElement, Assign<JsxStyleProps, Drawer.TitleProps>>(
   Drawer.Title,
-  'title',
+  'title'
 );
 
 export const Trigger = withContext<HTMLButtonElement, Assign<JsxStyleProps, Drawer.TriggerProps>>(
   Drawer.Trigger,
-  'trigger',
+  'trigger'
 );
 
 export {

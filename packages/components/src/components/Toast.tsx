@@ -1,9 +1,8 @@
 import type { Assign } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { Toast } from '@ark-ui/react/toast';
 
 import { type ToastRecipeVariantProps, toastRecipe } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 import { createStyleContext } from '~/lib/create-style-context';
 
@@ -30,7 +29,7 @@ export const Description = withContext<
 
 export const Title = withContext<HTMLDivElement, Assign<JsxStyleProps, Toast.TitleProps>>(
   Toast.Title,
-  'title',
+  'title'
 );
 
 export {

@@ -1,9 +1,8 @@
 import type { Assign } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { Clipboard } from '@ark-ui/react/clipboard';
 
 import { type ClipboardRecipeVariantProps, clipboardRecipe } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 import { createStyleContext } from '~/lib/create-style-context';
 
@@ -15,7 +14,7 @@ export const Root = withProvider<HTMLDivElement, RootProps>(Clipboard.Root, 'roo
 
 export const Control = withContext<HTMLDivElement, Assign<JsxStyleProps, Clipboard.ControlProps>>(
   Clipboard.Control,
-  'control',
+  'control'
 );
 
 export const Indicator = withContext<
@@ -25,12 +24,12 @@ export const Indicator = withContext<
 
 export const Input = withContext<HTMLInputElement, Assign<JsxStyleProps, Clipboard.InputProps>>(
   Clipboard.Input,
-  'input',
+  'input'
 );
 
 export const Label = withContext<HTMLLabelElement, Assign<JsxStyleProps, Clipboard.LabelProps>>(
   Clipboard.Label,
-  'label',
+  'label'
 );
 
 export const Trigger = withContext<

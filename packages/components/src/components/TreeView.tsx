@@ -1,13 +1,12 @@
-import type { Assign } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { forwardRef } from 'react';
 
+import type { Assign } from '@ark-ui/react';
 import { TreeView as ArkTreeView, type TreeViewRootProps } from '@ark-ui/react/tree-view';
 
 import { css, cx } from '@tacos-ui/styled-system/css';
 import { splitCssProps } from '@tacos-ui/styled-system/jsx';
 import { type TreeViewRecipeVariantProps, treeViewRecipe } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 interface Child {
   children?: Child[];
@@ -46,7 +45,7 @@ export const TreeView = forwardRef<HTMLDivElement, TreeViewProps>((props, ref) =
             <ArkTreeView.Item className={styles.item} key={child.value} value={child.value}>
               <ArkTreeView.ItemText className={styles.itemText}>{child.name}</ArkTreeView.ItemText>
             </ArkTreeView.Item>
-          ),
+          )
         )}
       </ArkTreeView.BranchContent>
     </ArkTreeView.Branch>

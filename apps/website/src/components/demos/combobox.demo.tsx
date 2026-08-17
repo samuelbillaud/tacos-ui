@@ -15,7 +15,7 @@ export const Demo = (props: Combobox.RootProps) => {
 
   const handleChange = (e: Combobox.InputValueChangeDetails) => {
     const filtered = data.filter((item) =>
-      item.label.toLowerCase().includes(e.inputValue.toLowerCase()),
+      item.label.toLowerCase().includes(e.inputValue.toLowerCase())
     );
 
     setItems(filtered.length > 0 ? filtered : data);

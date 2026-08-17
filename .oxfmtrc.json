@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "semi": true,
+  "printWidth": 100,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "arrowParens": "always",
+  "sortPackageJson": true,
+  "ignorePatterns": [
+    "**/dist/**",
+    "**/build/**",
+    "**/node_modules/**",
+    "**/styled-system/**",
+    "**/.astro/**",
+    "**/storybook-static/**"
+  ]
+}

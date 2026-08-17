@@ -1,13 +1,12 @@
-import type { Assign } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { forwardRef } from 'react';
 
+import type { Assign } from '@ark-ui/react';
 import { type HTMLArkProps, ark } from '@ark-ui/react/factory';
 
 import { css, cx } from '@tacos-ui/styled-system/css';
 import { splitCssProps } from '@tacos-ui/styled-system/jsx';
 import { type IconRecipeVariantProps, iconRecipe } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 export interface IconProps
   extends Assign<JsxStyleProps, HTMLArkProps<'svg'>>, IconRecipeVariantProps {}

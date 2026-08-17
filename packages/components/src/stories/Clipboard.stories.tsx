@@ -1,5 +1,4 @@
 import type { Meta } from '@storybook/react';
-
 import { CheckIcon, ClipboardCopyIcon } from 'lucide-react';
 
 import { Clipboard, FormLabel, IconButton, Input } from '~/components';

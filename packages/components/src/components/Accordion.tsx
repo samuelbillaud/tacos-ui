@@ -1,9 +1,8 @@
 import type { Assign } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { Accordion } from '@ark-ui/react/accordion';
 
 import { type AccordionRecipeVariantProps, accordionRecipe } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 import { createStyleContext } from '~/lib/create-style-context';
 
@@ -25,7 +24,7 @@ export const ItemIndicator = withContext<
 
 export const Item = withContext<HTMLDivElement, Assign<JsxStyleProps, Accordion.ItemProps>>(
   Accordion.Item,
-  'item',
+  'item'
 );
 
 export const ItemTrigger = withContext<

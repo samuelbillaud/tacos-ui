@@ -6,20 +6,20 @@
     "Panda CSS",
     "Preset"
   ],
-  "type": "module",
-  "author": "Samuel Billaud <samuel.billaud1990@gmail.com> (https://github.com/samuelbillaud)",
   "license": "MIT",
+  "author": "Samuel Billaud <samuel.billaud1990@gmail.com> (https://github.com/samuelbillaud)",
   "repository": "https://github.com/samuelbillaud/tacos-ui",
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
+  "type": "module",
+  "sideEffects": false,
   "main": "src/index.ts",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "prepare": "panda codegen",
     "dev": "tsup --watch",

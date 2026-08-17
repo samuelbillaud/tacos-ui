@@ -1,9 +1,8 @@
-import type { TransitionBeforeSwapEvent } from 'astro:transitions/client';
-
 import { useEffect, useState } from 'react';
 
 import { Collapsible } from '@ark-ui/react/collapsible';
 import { Icon } from '@tacos-ui/react';
+import type { TransitionBeforeSwapEvent } from 'astro:transitions/client';
 import { ChevronRightIcon } from 'lucide-react';
 
 import { sidebarRecipe } from './sidebar-recipe';
@@ -46,7 +45,7 @@ export const SidebarNavigation = ({ items, pathname }: SidebarNavigationProps) =
               data-depth={depth}
               onClick={() =>
                 setExpandedIds((ids) =>
-                  ids.includes(item.id) ? ids.filter((id) => id !== item.id) : [...ids, item.id],
+                  ids.includes(item.id) ? ids.filter((id) => id !== item.id) : [...ids, item.id]
                 )
               }
               // @ts-expect-error - `--depth` is not a valid property

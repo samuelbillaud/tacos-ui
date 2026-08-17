@@ -1,12 +1,11 @@
-import type { Assign, HTMLArkProps } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { forwardRef } from 'react';
 
+import type { Assign, HTMLArkProps } from '@ark-ui/react';
 import { ark } from '@ark-ui/react/factory';
 
 import { styled } from '@tacos-ui/styled-system/jsx';
 import { type SkeletonRecipeVariantProps, skeletonRecipe } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 const StyledSkeleton = styled(ark.div, skeletonRecipe);
 

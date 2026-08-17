@@ -1,12 +1,11 @@
 import type { Assign } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { RadioGroup } from '@ark-ui/react/radio-group';
 
 import {
   type RadioButtonGroupRecipeVariantProps,
   radioButtonGroupRecipe,
 } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 import { createStyleContext } from '~/lib/create-style-context';
 
@@ -28,7 +27,7 @@ export const ItemControl = withContext<
 
 export const Item = withContext<HTMLLabelElement, Assign<JsxStyleProps, RadioGroup.ItemProps>>(
   RadioGroup.Item,
-  'item',
+  'item'
 );
 
 export const ItemText = withContext<
@@ -38,7 +37,7 @@ export const ItemText = withContext<
 
 export const Label = withContext<HTMLLabelElement, Assign<JsxStyleProps, RadioGroup.LabelProps>>(
   RadioGroup.Label,
-  'label',
+  'label'
 );
 
 export {

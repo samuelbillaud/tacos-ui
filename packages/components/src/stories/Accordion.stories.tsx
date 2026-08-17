@@ -1,5 +1,4 @@
 import type { Meta } from '@storybook/react';
-
 import { ChevronDownIcon } from 'lucide-react';
 
 import { accordionRecipe } from '@tacos-ui/styled-system/recipes';

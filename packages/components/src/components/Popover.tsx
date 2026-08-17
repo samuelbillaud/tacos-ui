@@ -1,9 +1,8 @@
 import type { Assign } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { Popover } from '@ark-ui/react/popover';
 
 import { type PopoverRecipeVariantProps, popoverRecipe } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 import { createStyleContext } from '~/lib/create-style-context';
 
@@ -14,17 +13,17 @@ export const Root = withRootProvider<RootProps>(Popover.Root);
 
 export const Anchor = withContext<HTMLDivElement, Assign<JsxStyleProps, Popover.AnchorProps>>(
   Popover.Anchor,
-  'anchor',
+  'anchor'
 );
 
 export const Arrow = withContext<HTMLDivElement, Assign<JsxStyleProps, Popover.ArrowProps>>(
   Popover.Arrow,
-  'arrow',
+  'arrow'
 );
 
 export const ArrowTip = withContext<HTMLDivElement, Assign<JsxStyleProps, Popover.ArrowTipProps>>(
   Popover.ArrowTip,
-  'arrowTip',
+  'arrowTip'
 );
 
 export const CloseTrigger = withContext<
@@ -34,7 +33,7 @@ export const CloseTrigger = withContext<
 
 export const Content = withContext<HTMLDivElement, Assign<JsxStyleProps, Popover.ContentProps>>(
   Popover.Content,
-  'content',
+  'content'
 );
 
 export const Description = withContext<
@@ -44,7 +43,7 @@ export const Description = withContext<
 
 export const Indicator = withContext<HTMLDivElement, Assign<JsxStyleProps, Popover.IndicatorProps>>(
   Popover.Indicator,
-  'indicator',
+  'indicator'
 );
 
 export const Positioner = withContext<
@@ -54,12 +53,12 @@ export const Positioner = withContext<
 
 export const Title = withContext<HTMLDivElement, Assign<JsxStyleProps, Popover.TitleProps>>(
   Popover.Title,
-  'title',
+  'title'
 );
 
 export const Trigger = withContext<HTMLButtonElement, Assign<JsxStyleProps, Popover.TriggerProps>>(
   Popover.Trigger,
-  'trigger',
+  'trigger'
 );
 
 export {

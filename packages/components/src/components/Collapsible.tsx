@@ -1,12 +1,11 @@
 import type { Assign } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { Collapsible } from '@ark-ui/react/collapsible';
 
 import {
   type CollapsibleRecipeVariantProps,
   collapsibleRecipe,
 } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 import { createStyleContext } from '~/lib/create-style-context';
 
@@ -18,7 +17,7 @@ export const Root = withProvider<HTMLDivElement, RootProps>(Collapsible.Root, 'r
 
 export const Content = withContext<HTMLDivElement, Assign<JsxStyleProps, Collapsible.ContentProps>>(
   Collapsible.Content,
-  'content',
+  'content'
 );
 
 export const Trigger = withContext<

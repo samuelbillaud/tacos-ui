@@ -1,5 +1,4 @@
 import type { Meta } from '@storybook/react';
-
 import {
   ChevronRightIcon,
   CreditCardIcon,

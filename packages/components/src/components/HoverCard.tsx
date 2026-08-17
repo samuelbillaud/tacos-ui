@@ -1,9 +1,8 @@
 import type { Assign } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { HoverCard } from '@ark-ui/react/hover-card';
 
 import { type HoverCardRecipeVariantProps, hoverCardRecipe } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 import { createStyleContext } from '~/lib/create-style-context';
 
@@ -14,17 +13,17 @@ export const Root = withRootProvider<RootProps>(HoverCard.Root);
 
 export const Arrow = withContext<HTMLDivElement, Assign<JsxStyleProps, HoverCard.ArrowProps>>(
   HoverCard.Arrow,
-  'arrow',
+  'arrow'
 );
 
 export const ArrowTip = withContext<HTMLDivElement, Assign<JsxStyleProps, HoverCard.ArrowTipProps>>(
   HoverCard.ArrowTip,
-  'arrowTip',
+  'arrowTip'
 );
 
 export const Content = withContext<HTMLDivElement, Assign<JsxStyleProps, HoverCard.ContentProps>>(
   HoverCard.Content,
-  'content',
+  'content'
 );
 
 export const Positioner = withContext<

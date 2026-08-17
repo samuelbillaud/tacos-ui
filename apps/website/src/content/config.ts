@@ -27,7 +27,7 @@ const props = defineCollection({
     z.object({
       options: z.array(z.string()).optional(),
       defaultValue: z.string().optional(),
-    }),
+    })
   ),
 });
 

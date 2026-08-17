@@ -1,13 +1,12 @@
-import type { Assign } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { forwardRef } from 'react';
 
+import type { Assign } from '@ark-ui/react';
 import { Checkbox as ArkCheckbox } from '@ark-ui/react/checkbox';
 
 import { css, cx } from '@tacos-ui/styled-system/css';
 import { splitCssProps } from '@tacos-ui/styled-system/jsx';
 import { type CheckboxRecipeVariantProps, checkboxRecipe } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 export interface CheckboxProps
   extends Assign<JsxStyleProps, ArkCheckbox.RootProps>, CheckboxRecipeVariantProps {}

@@ -1,13 +1,12 @@
-import type { Assign } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { forwardRef } from 'react';
 
+import type { Assign } from '@ark-ui/react';
 import { Switch as ArkSwitch, type SwitchRootProps } from '@ark-ui/react/switch';
 
 import { css, cx } from '@tacos-ui/styled-system/css';
 import { splitCssProps } from '@tacos-ui/styled-system/jsx';
 import { type SwitchRecipeVariantProps, switchRecipe } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 export interface SwitchProps
   extends Assign<JsxStyleProps, SwitchRootProps>, SwitchRecipeVariantProps {}

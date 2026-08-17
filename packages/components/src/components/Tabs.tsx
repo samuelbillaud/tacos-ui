@@ -1,9 +1,8 @@
 import type { Assign } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { Tabs } from '@ark-ui/react/tabs';
 
 import { type TabsRecipeVariantProps, tabsRecipe } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 import { createStyleContext } from '~/lib/create-style-context';
 
@@ -14,22 +13,22 @@ export const Root = withProvider<HTMLDivElement, RootProps>(Tabs.Root, 'root');
 
 export const Content = withContext<HTMLDivElement, Assign<JsxStyleProps, Tabs.ContentProps>>(
   Tabs.Content,
-  'content',
+  'content'
 );
 
 export const Indicator = withContext<HTMLDivElement, Assign<JsxStyleProps, Tabs.IndicatorProps>>(
   Tabs.Indicator,
-  'indicator',
+  'indicator'
 );
 
 export const List = withContext<HTMLDivElement, Assign<JsxStyleProps, Tabs.ListProps>>(
   Tabs.List,
-  'list',
+  'list'
 );
 
 export const Trigger = withContext<HTMLButtonElement, Assign<JsxStyleProps, Tabs.TriggerProps>>(
   Tabs.Trigger,
-  'trigger',
+  'trigger'
 );
 
 export { TabsContext as Context, type TabsContextProps as ContextProps } from '@ark-ui/react/tabs';

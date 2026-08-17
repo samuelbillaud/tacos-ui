@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-
 import { X } from 'lucide-react';
 
 import { buttonRecipe } from '@tacos-ui/styled-system/recipes';

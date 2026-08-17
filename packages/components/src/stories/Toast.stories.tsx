@@ -1,5 +1,4 @@
 import type { Meta } from '@storybook/react';
-
 import { XIcon } from 'lucide-react';
 
 import { Button, IconButton, Toast } from '~/components';

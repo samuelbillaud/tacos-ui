@@ -1,6 +1,5 @@
-import type { Tokens } from '@pandacss/types';
-
 import { defineTokens } from '@pandacss/dev';
+import type { Tokens } from '@pandacss/types';
 
 import { animations } from './animations';
 import { blurs } from './blurs';

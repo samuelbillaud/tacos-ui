@@ -1,5 +1,4 @@
 import type { Meta } from '@storybook/react';
-
 import { DiamondIcon } from 'lucide-react';
 
 import { Stack } from '@tacos-ui/styled-system/jsx';

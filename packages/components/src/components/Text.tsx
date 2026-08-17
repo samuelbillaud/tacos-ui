@@ -1,11 +1,11 @@
-import type { Assign, HTMLArkProps } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import React from 'react';
+
+import type { Assign, HTMLArkProps } from '@ark-ui/react';
 
 import { css, cx } from '@tacos-ui/styled-system/css';
 import { splitCssProps } from '@tacos-ui/styled-system/jsx';
 import { type TextRecipeVariantProps, textRecipe } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 type PolymorphicRef<C extends React.ElementType> = React.ComponentPropsWithRef<C>['ref'];
 
@@ -31,7 +31,7 @@ export type TextProps<C extends React.ElementType> = PolymorphicComponentPropWit
 >;
 
 type PolymorphicComponent = <C extends React.ElementType = 'p'>(
-  props: TextProps<C>,
+  props: TextProps<C>
 ) => React.ReactNode | null;
 
 export const Text: PolymorphicComponent = React.forwardRef(
@@ -44,5 +44,5 @@ export const Text: PolymorphicComponent = React.forwardRef(
     const Component = props.as || 'p';
 
     return <Component className={cx(styles, css(cssProps), className)} ref={ref} {...otherProps} />;
-  },
+  }
 );

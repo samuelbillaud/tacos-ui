@@ -1,13 +1,12 @@
-import type { Assign } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { type ReactNode, forwardRef } from 'react';
 
+import type { Assign } from '@ark-ui/react';
 import { Slider as ArkSlider, type SliderRootProps } from '@ark-ui/react/slider';
 
 import { css, cx } from '@tacos-ui/styled-system/css';
 import { splitCssProps } from '@tacos-ui/styled-system/jsx';
 import { type SliderRecipeVariantProps, sliderRecipe } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 export interface SliderProps
   extends Assign<JsxStyleProps, SliderRootProps>, SliderRecipeVariantProps {

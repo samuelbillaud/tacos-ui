@@ -1,9 +1,8 @@
 import type { Assign } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { Select } from '@ark-ui/react/select';
 
 import { type SelectRecipeVariantProps, selectRecipe } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 import { createStyleContext } from '~/lib/create-style-context';
 
@@ -22,17 +21,17 @@ export const ClearTrigger = withContext<
 
 export const Content = withContext<HTMLDivElement, Assign<JsxStyleProps, Select.ContentProps>>(
   Select.Content,
-  'content',
+  'content'
 );
 
 export const Control = withContext<HTMLDivElement, Assign<JsxStyleProps, Select.ControlProps>>(
   Select.Control,
-  'control',
+  'control'
 );
 
 export const Indicator = withContext<HTMLDivElement, Assign<JsxStyleProps, Select.IndicatorProps>>(
   Select.Indicator,
-  'indicator',
+  'indicator'
 );
 
 export const ItemGroupLabel = withContext<
@@ -42,7 +41,7 @@ export const ItemGroupLabel = withContext<
 
 export const ItemGroup = withContext<HTMLDivElement, Assign<JsxStyleProps, Select.ItemGroupProps>>(
   Select.ItemGroup,
-  'itemGroup',
+  'itemGroup'
 );
 
 export const ItemIndicator = withContext<
@@ -52,17 +51,17 @@ export const ItemIndicator = withContext<
 
 export const Item = withContext<HTMLDivElement, Assign<JsxStyleProps, Select.ItemProps>>(
   Select.Item,
-  'item',
+  'item'
 );
 
 export const ItemText = withContext<HTMLDivElement, Assign<JsxStyleProps, Select.ItemTextProps>>(
   Select.ItemText,
-  'itemText',
+  'itemText'
 );
 
 export const Label = withContext<HTMLLabelElement, Assign<JsxStyleProps, Select.LabelProps>>(
   Select.Label,
-  'label',
+  'label'
 );
 
 export const Positioner = withContext<
@@ -72,12 +71,12 @@ export const Positioner = withContext<
 
 export const Trigger = withContext<HTMLButtonElement, Assign<JsxStyleProps, Select.TriggerProps>>(
   Select.Trigger,
-  'trigger',
+  'trigger'
 );
 
 export const ValueText = withContext<HTMLSpanElement, Assign<JsxStyleProps, Select.ValueTextProps>>(
   Select.ValueText,
-  'valueText',
+  'valueText'
 );
 
 export {

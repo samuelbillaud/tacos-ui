@@ -1,9 +1,8 @@
 import type { Assign } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { Dialog } from '@ark-ui/react/dialog';
 
 import { type DialogRecipeVariantProps, dialogRecipe } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 import { createStyleContext } from '~/lib/create-style-context';
 
@@ -14,7 +13,7 @@ export const Root = withRootProvider<RootProps>(Dialog.Root);
 
 export const Backdrop = withContext<HTMLDivElement, Assign<JsxStyleProps, Dialog.BackdropProps>>(
   Dialog.Backdrop,
-  'backdrop',
+  'backdrop'
 );
 
 export const CloseTrigger = withContext<
@@ -24,7 +23,7 @@ export const CloseTrigger = withContext<
 
 export const Content = withContext<HTMLDivElement, Assign<JsxStyleProps, Dialog.ContentProps>>(
   Dialog.Content,
-  'content',
+  'content'
 );
 
 export const Description = withContext<
@@ -39,12 +38,12 @@ export const Positioner = withContext<
 
 export const Title = withContext<HTMLHeadingElement, Assign<JsxStyleProps, Dialog.TitleProps>>(
   Dialog.Title,
-  'title',
+  'title'
 );
 
 export const Trigger = withContext<HTMLButtonElement, Assign<JsxStyleProps, Dialog.TriggerProps>>(
   Dialog.Trigger,
-  'trigger',
+  'trigger'
 );
 
 export {

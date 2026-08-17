@@ -1,9 +1,8 @@
 import type { Assign } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { TagsInput } from '@ark-ui/react/tags-input';
 
 import { type TagsInputRecipeVariantProps, tagsInputRecipe } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 import { createStyleContext } from '~/lib/create-style-context';
 
@@ -20,12 +19,12 @@ export const ClearTrigger = withContext<
 
 export const Control = withContext<HTMLDivElement, Assign<JsxStyleProps, TagsInput.ControlProps>>(
   TagsInput.Control,
-  'control',
+  'control'
 );
 
 export const Input = withContext<HTMLInputElement, Assign<JsxStyleProps, TagsInput.InputProps>>(
   TagsInput.Input,
-  'input',
+  'input'
 );
 
 export const ItemDeleteTrigger = withContext<
@@ -45,7 +44,7 @@ export const ItemPreview = withContext<
 
 export const Item = withContext<HTMLDivElement, Assign<JsxStyleProps, TagsInput.ItemProps>>(
   TagsInput.Item,
-  'item',
+  'item'
 );
 
 export const ItemText = withContext<
@@ -55,7 +54,7 @@ export const ItemText = withContext<
 
 export const Label = withContext<HTMLLabelElement, Assign<JsxStyleProps, TagsInput.LabelProps>>(
   TagsInput.Label,
-  'label',
+  'label'
 );
 
 export {

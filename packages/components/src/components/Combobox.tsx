@@ -1,9 +1,8 @@
 import type { Assign } from '@ark-ui/react';
-import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
-
 import { Combobox } from '@ark-ui/react/combobox';
 
 import { type ComboboxRecipeVariantProps, comboboxRecipe } from '@tacos-ui/styled-system/recipes';
+import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
 import { createStyleContext } from '~/lib/create-style-context';
 
@@ -22,17 +21,17 @@ export const ClearTrigger = withContext<
 
 export const Content = withContext<HTMLDivElement, Assign<JsxStyleProps, Combobox.ContentProps>>(
   Combobox.Content,
-  'content',
+  'content'
 );
 
 export const Control = withContext<HTMLDivElement, Assign<JsxStyleProps, Combobox.ControlProps>>(
   Combobox.Control,
-  'control',
+  'control'
 );
 
 export const Input = withContext<HTMLInputElement, Assign<JsxStyleProps, Combobox.InputProps>>(
   Combobox.Input,
-  'input',
+  'input'
 );
 
 export const ItemGroupLabel = withContext<
@@ -52,17 +51,17 @@ export const ItemIndicator = withContext<
 
 export const Item = withContext<HTMLDivElement, Assign<JsxStyleProps, Combobox.ItemProps>>(
   Combobox.Item,
-  'item',
+  'item'
 );
 
 export const ItemText = withContext<HTMLDivElement, Assign<JsxStyleProps, Combobox.ItemTextProps>>(
   Combobox.ItemText,
-  'itemText',
+  'itemText'
 );
 
 export const Label = withContext<HTMLLabelElement, Assign<JsxStyleProps, Combobox.LabelProps>>(
   Combobox.Label,
-  'label',
+  'label'
 );
 
 export const Positioner = withContext<
@@ -72,7 +71,7 @@ export const Positioner = withContext<
 
 export const Trigger = withContext<HTMLButtonElement, Assign<JsxStyleProps, Combobox.TriggerProps>>(
   Combobox.Trigger,
-  'trigger',
+  'trigger'
 );
 
 export {
