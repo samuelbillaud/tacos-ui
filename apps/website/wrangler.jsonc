@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "tacos-ui-website",
+  "compatibility_date": "2026-08-17",
+
+  // Static-only deployment: no `main` entry point and no ASSETS binding,
+  // since there is no Worker script to bind to. Astro emits a fully
+  // prerendered site, so Cloudflare serves `dist/` directly.
+  // The site has no 404 page yet, so `not_found_handling` is left at its
+  // default. Add a `src/pages/404.astro` and set it to "404-page" to serve
+  // a branded not-found page.
+  "assets": {
+    "directory": "./dist/"
+  }
+}
