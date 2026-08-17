@@ -1,6 +1,6 @@
 import { defineSlotRecipe } from '@pandacss/dev';
 
-import { clipboardAnatomy } from '@ark-ui/anatomy';
+import { clipboardAnatomy } from '@ark-ui/react/anatomy';
 
 export const clipboardRecipe = defineSlotRecipe({
   className: 'clipboard',

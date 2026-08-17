@@ -1,6 +1,6 @@
 import { defineSlotRecipe } from '@pandacss/dev';
 
-import { toggleGroupAnatomy } from '@ark-ui/anatomy';
+import { toggleGroupAnatomy } from '@ark-ui/react/anatomy';
 
 export const toggleGroupRecipe = defineSlotRecipe({
   className: 'toggleGroup',

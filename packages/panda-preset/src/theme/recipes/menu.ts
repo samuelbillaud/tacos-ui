@@ -1,6 +1,6 @@
 import { defineSlotRecipe } from '@pandacss/dev';
 
-import { menuAnatomy } from '@ark-ui/anatomy';
+import { menuAnatomy } from '@ark-ui/react/anatomy';
 
 const itemStyle = {
   alignItems: 'center',

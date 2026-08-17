@@ -77,6 +77,7 @@ export const Trigger = withContext<HTMLButtonElement, Assign<JsxStyleProps, Comb
 export {
   ComboboxContext as Context,
   type ComboboxContextProps as ContextProps,
+  createListCollection,
 } from '@ark-ui/react/combobox';
 
 export type {

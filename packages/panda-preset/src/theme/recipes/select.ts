@@ -1,6 +1,6 @@
 import { defineSlotRecipe } from '@pandacss/dev';
 
-import { selectAnatomy } from '@ark-ui/anatomy';
+import { selectAnatomy } from '@ark-ui/react/anatomy';
 
 export const selectRecipe = defineSlotRecipe({
   className: 'select',

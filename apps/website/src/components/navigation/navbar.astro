@@ -3,8 +3,7 @@ import { css } from '@tacos-ui/styled-system/css';
 import { Box, Flex, HStack, type BoxProps } from '@tacos-ui/styled-system/jsx';
 import { IconButton } from '@tacos-ui/react';
 
-import { Github } from 'lucide-react';
-
+import { GithubIcon } from '~/components/github-icon';
 import { Logo } from '~/components/logo';
 import { ColorModeMenu } from './ColorModeMenu';
 
@@ -27,7 +26,7 @@ const props = Astro.props;
       <HStack gap="1">
         <IconButton variant="ghost">
           <a href="https://github.com/samuelbillaud/tacos-ui" target="_blank" rel="noreferrer">
-            <Github />
+            <GithubIcon />
           </a>
         </IconButton>
         <ColorModeMenu client:load />

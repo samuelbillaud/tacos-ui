@@ -10,7 +10,6 @@
     "skipLibCheck": true,
     "verbatimModuleSyntax": true,
     "module": "ESNext",
-    "customConditions": ["source"],
     "noErrorTruncation": true,
     "resolveJsonModule": true,
     "noEmit": true,

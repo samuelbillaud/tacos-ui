@@ -36,4 +36,4 @@ export * from './Textarea';
 export * as Toast from './Toast';
 export * as ToggleGroup from './ToggleGroup';
 export * as Tooltip from './Tooltip';
-export * from './TreeView';
+export * as TreeView from './TreeView';

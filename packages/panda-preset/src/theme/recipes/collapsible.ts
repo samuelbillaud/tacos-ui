@@ -1,6 +1,6 @@
 import { defineSlotRecipe } from '@pandacss/dev';
 
-import { collapsibleAnatomy } from '@ark-ui/anatomy';
+import { collapsibleAnatomy } from '@ark-ui/react/anatomy';
 
 export const collapsibleRecipe = defineSlotRecipe({
   className: 'collapsible',

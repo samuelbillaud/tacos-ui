@@ -1,80 +1,77 @@
-import { forwardRef } from 'react';
-
 import type { Assign } from '@ark-ui/react';
-import { TreeView as ArkTreeView, type TreeViewRootProps } from '@ark-ui/react/tree-view';
+import { type TreeNode, TreeView } from '@ark-ui/react/tree-view';
 
-import { css, cx } from '@tacos-ui/styled-system/css';
-import { splitCssProps } from '@tacos-ui/styled-system/jsx';
 import { type TreeViewRecipeVariantProps, treeViewRecipe } from '@tacos-ui/styled-system/recipes';
 import type { JsxStyleProps } from '@tacos-ui/styled-system/types';
 
-interface Child {
-  children?: Child[];
-  name: string;
-  value: string;
-}
+import { createStyleContext } from '~/lib/create-style-context';
 
-export interface TreeViewData {
-  children: Child[];
-  label: string;
-}
+const { withProvider, withContext } = createStyleContext(treeViewRecipe);
 
-export interface TreeViewProps
-  extends Assign<JsxStyleProps, TreeViewRootProps>, TreeViewRecipeVariantProps {
-  data: TreeViewData;
-}
+export interface RootProps
+  extends Assign<JsxStyleProps, TreeView.RootProps<TreeNode>>, TreeViewRecipeVariantProps {}
+export const Root = withProvider<HTMLDivElement, RootProps>(TreeView.Root, 'root');
 
-export const TreeView = forwardRef<HTMLDivElement, TreeViewProps>((props, ref) => {
-  const [cssProps, localProps] = splitCssProps(props);
-  const { data, className, ...rootProps } = localProps;
-  const styles = treeViewRecipe();
-
-  const renderChild = (child: Child) => (
-    <ArkTreeView.Branch className={styles.branch} key={child.value} value={child.value}>
-      <ArkTreeView.BranchControl className={styles.branchControl}>
-        <ArkTreeView.BranchIndicator className={styles.branchIndicator}>
-          <ChevronRightIcon />
-        </ArkTreeView.BranchIndicator>
-        <ArkTreeView.BranchText className={styles.branchText}>{child.name}</ArkTreeView.BranchText>
-      </ArkTreeView.BranchControl>
-      <ArkTreeView.BranchContent className={styles.branchContent}>
-        {child.children?.map((child) =>
-          child.children ? (
-            renderChild(child)
-          ) : (
-            <ArkTreeView.Item className={styles.item} key={child.value} value={child.value}>
-              <ArkTreeView.ItemText className={styles.itemText}>{child.name}</ArkTreeView.ItemText>
-            </ArkTreeView.Item>
-          )
-        )}
-      </ArkTreeView.BranchContent>
-    </ArkTreeView.Branch>
-  );
-
-  return (
-    <ArkTreeView.Root
-      aria-label={data.label}
-      className={cx(styles.root, css(cssProps), className)}
-      ref={ref}
-      {...rootProps}
-    >
-      <ArkTreeView.Tree className={styles.tree}>{data.children.map(renderChild)}</ArkTreeView.Tree>
-    </ArkTreeView.Root>
-  );
-});
-
-TreeView.displayName = 'TreeView';
-
-const ChevronRightIcon = () => (
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <title>Chevron Right Icon</title>
-    <path
-      d="m9 18l6-6l-6-6"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-    />
-  </svg>
+export const Branch = withContext<HTMLDivElement, Assign<JsxStyleProps, TreeView.BranchProps>>(
+  TreeView.Branch,
+  'branch'
 );
+
+export const BranchContent = withContext<
+  HTMLDivElement,
+  Assign<JsxStyleProps, TreeView.BranchContentProps>
+>(TreeView.BranchContent, 'branchContent');
+
+export const BranchControl = withContext<
+  HTMLDivElement,
+  Assign<JsxStyleProps, TreeView.BranchControlProps>
+>(TreeView.BranchControl, 'branchControl');
+
+export const BranchIndicator = withContext<
+  HTMLDivElement,
+  Assign<JsxStyleProps, TreeView.BranchIndicatorProps>
+>(TreeView.BranchIndicator, 'branchIndicator');
+
+export const BranchText = withContext<
+  HTMLSpanElement,
+  Assign<JsxStyleProps, TreeView.BranchTextProps>
+>(TreeView.BranchText, 'branchText');
+
+export const BranchTrigger = withContext<
+  HTMLDivElement,
+  Assign<JsxStyleProps, TreeView.BranchTriggerProps>
+>(TreeView.BranchTrigger, 'branchTrigger');
+
+export const Item = withContext<HTMLDivElement, Assign<JsxStyleProps, TreeView.ItemProps>>(
+  TreeView.Item,
+  'item'
+);
+
+export const ItemIndicator = withContext<
+  HTMLDivElement,
+  Assign<JsxStyleProps, TreeView.ItemIndicatorProps>
+>(TreeView.ItemIndicator, 'itemIndicator');
+
+export const ItemText = withContext<HTMLSpanElement, Assign<JsxStyleProps, TreeView.ItemTextProps>>(
+  TreeView.ItemText,
+  'itemText'
+);
+
+export const Label = withContext<HTMLLabelElement, Assign<JsxStyleProps, TreeView.LabelProps>>(
+  TreeView.Label,
+  'label'
+);
+
+export const Tree = withContext<HTMLDivElement, Assign<JsxStyleProps, TreeView.TreeProps>>(
+  TreeView.Tree,
+  'tree'
+);
+
+export {
+  TreeViewContext as Context,
+  type TreeViewContextProps as ContextProps,
+  createTreeCollection,
+  TreeViewNodeProvider as NodeProvider,
+  type TreeViewNodeProviderProps as NodeProviderProps,
+  type TreeNode,
+} from '@ark-ui/react/tree-view';

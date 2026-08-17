@@ -82,6 +82,7 @@ export const ValueText = withContext<HTMLSpanElement, Assign<JsxStyleProps, Sele
 export {
   SelectContext as Context,
   type SelectContextProps as ContextProps,
+  createListCollection,
   SelectHiddenSelect as HiddenSelect,
   type SelectHiddenSelectProps as HiddenSelectProps,
 } from '@ark-ui/react/select';

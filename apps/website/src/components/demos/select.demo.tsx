@@ -2,15 +2,17 @@ import { Select } from '@tacos-ui/react';
 import { CheckIcon, ChevronsUpDownIcon } from 'lucide-react';
 
 export const Demo = (props: Select.RootProps) => {
-  const items = [
-    { label: 'React', value: 'react' },
-    { label: 'Solid', value: 'solid' },
-    { label: 'Svelte', value: 'svelte', disabled: true },
-    { label: 'Vue', value: 'vue' },
-  ];
+  const collection = Select.createListCollection({
+    items: [
+      { label: 'React', value: 'react' },
+      { label: 'Solid', value: 'solid' },
+      { label: 'Svelte', value: 'svelte', disabled: true },
+      { label: 'Vue', value: 'vue' },
+    ],
+  });
 
   return (
-    <Select.Root positioning={{ sameWidth: true }} width="2xs" {...props} items={items}>
+    <Select.Root positioning={{ sameWidth: true }} width="2xs" {...props} collection={collection}>
       <Select.Label>Framework</Select.Label>
       <Select.Control>
         <Select.Trigger>
@@ -22,7 +24,7 @@ export const Demo = (props: Select.RootProps) => {
         <Select.Content>
           <Select.ItemGroup>
             <Select.ItemGroupLabel>Framework</Select.ItemGroupLabel>
-            {items.map((item) => (
+            {collection.items.map((item) => (
               <Select.Item item={item} key={item.value}>
                 <Select.ItemText>{item.label}</Select.ItemText>
                 <Select.ItemIndicator>

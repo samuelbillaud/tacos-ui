@@ -1,6 +1,6 @@
 import { defineSlotRecipe } from '@pandacss/dev';
 
-import { accordionAnatomy } from '@ark-ui/anatomy';
+import { accordionAnatomy } from '@ark-ui/react/anatomy';
 
 export const accordionRecipe = defineSlotRecipe({
   slots: accordionAnatomy.keys(),

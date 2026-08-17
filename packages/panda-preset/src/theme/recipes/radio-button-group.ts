@@ -1,6 +1,6 @@
 import { defineSlotRecipe } from '@pandacss/dev';
 
-import { radioGroupAnatomy } from '@ark-ui/anatomy';
+import { radioGroupAnatomy } from '@ark-ui/react/anatomy';
 
 export const radioButtonGroupRecipe = defineSlotRecipe({
   className: 'radioButtonGroup',

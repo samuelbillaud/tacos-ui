@@ -96,8 +96,8 @@ export const Playground = ({
               ) : (
                 <Select.Root
                   closeOnSelect={false}
+                  collection={Select.createListCollection({ items: options ?? [] })}
                   defaultValue={[defaultValue ?? '']}
-                  items={options ?? []}
                   key={key}
                   onValueChange={(e) => setState({ ...state, [key]: e.value[0] ?? '' })}
                   positioning={{ sameWidth: true }}

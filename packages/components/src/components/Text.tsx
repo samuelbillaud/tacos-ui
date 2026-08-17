@@ -30,19 +30,13 @@ export type TextProps<C extends React.ElementType> = PolymorphicComponentPropWit
   Assign<JsxStyleProps, HTMLArkProps<'p'>> & TextRecipeVariantProps
 >;
 
-type PolymorphicComponent = <C extends React.ElementType = 'p'>(
-  props: TextProps<C>
-) => React.ReactNode | null;
+export const Text = <C extends React.ElementType = 'p'>(props: TextProps<C>) => {
+  const [variantProps, textProps] = textRecipe.splitVariantProps(props);
+  const [cssProps, localProps] = splitCssProps(textProps);
+  // oxlint-disable-next-line no-unused-vars
+  const { className, as: _, ref, ...otherProps } = localProps;
+  const styles = textRecipe(variantProps);
+  const Component = props.as || 'p';
 
-export const Text: PolymorphicComponent = React.forwardRef(
-  <C extends React.ElementType = 'p'>(props: TextProps<C>, ref?: PolymorphicRef<C>) => {
-    const [variantProps, textProps] = textRecipe.splitVariantProps(props);
-    const [cssProps, localProps] = splitCssProps(textProps);
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars -- We need to omit `as` from the props
-    const { className, as: _, ...otherProps } = localProps;
-    const styles = textRecipe(variantProps);
-    const Component = props.as || 'p';
-
-    return <Component className={cx(styles, css(cssProps), className)} ref={ref} {...otherProps} />;
-  }
-);
+  return <Component className={cx(styles, css(cssProps), className)} ref={ref} {...otherProps} />;
+};

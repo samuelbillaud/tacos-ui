@@ -1,6 +1,6 @@
 import { defineSlotRecipe } from '@pandacss/dev';
 
-import { avatarAnatomy } from '@ark-ui/anatomy';
+import { avatarAnatomy } from '@ark-ui/react/anatomy';
 
 export const avatarRecipe = defineSlotRecipe({
   className: 'avatar',

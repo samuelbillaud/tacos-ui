@@ -20,6 +20,8 @@ export const Base = () => {
   ];
   const [items, setItems] = useState(data);
 
+  const collection = Combobox.createListCollection({ items });
+
   const handleChange = (e: Combobox.InputValueChangeDetails) => {
     const filtered = data.filter((item) =>
       item.label.toLowerCase().includes(e.inputValue.toLowerCase())
@@ -29,7 +31,7 @@ export const Base = () => {
   };
 
   return (
-    <Combobox.Root items={items} onInputValueChange={handleChange} width="2xs">
+    <Combobox.Root collection={collection} onInputValueChange={handleChange} width="2xs">
       <Combobox.Label>Framework</Combobox.Label>
       <Combobox.Control>
         <Combobox.Input asChild placeholder="Select a Framework">

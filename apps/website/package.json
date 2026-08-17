@@ -15,7 +15,7 @@
     "cf:preview": "wrangler dev"
   },
   "dependencies": {
-    "@ark-ui/react": "3.2.1",
+    "@ark-ui/react": "5.38.1",
     "@astrojs/check": "^0.7.0",
     "@astrojs/mdx": "^3.1.1",
     "@astrojs/react": "^3.4.0",
@@ -23,25 +23,23 @@
     "@fontsource-variable/outfit": "^5.3.0",
     "@fontsource-variable/roboto-mono": "^5.3.0",
     "@tacos-ui/panda-preset": "workspace:*",
-    "@tacos-ui/react": "^0.5.0",
+    "@tacos-ui/react": "workspace:*",
     "@tacos-ui/styled-system": "workspace:*",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
     "@uidotdev/usehooks": "^2.4.1",
     "astro": "^4.9.2",
     "cheerio": "1.0.0-rc.12",
-    "lucide-react": "0.375.0",
+    "lucide-react": "1.31.0",
     "pandacss-preset-typography": "^0.1.6",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
     "react-live": "^4.1.8",
     "typescript": "^5.4.5"
   },
   "devDependencies": {
     "@pandacss/dev": "1.12.0",
     "@types/cheerio": "^0.22.35",
-    "@types/react": "18.3.3",
-    "@types/react-dom": "18.3.0",
     "wrangler": "4"
   }
 }

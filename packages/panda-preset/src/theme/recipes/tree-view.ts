@@ -1,6 +1,6 @@
 import { defineSlotRecipe } from '@pandacss/dev';
 
-import { treeViewAnatomy } from '@ark-ui/anatomy';
+import { treeViewAnatomy } from '@ark-ui/react/anatomy';
 
 export const treeViewRecipe = defineSlotRecipe({
   className: 'treeView',

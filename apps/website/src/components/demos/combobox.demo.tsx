@@ -13,6 +13,8 @@ const data = [
 export const Demo = (props: Combobox.RootProps) => {
   const [items, setItems] = useState(data);
 
+  const collection = Combobox.createListCollection({ items });
+
   const handleChange = (e: Combobox.InputValueChangeDetails) => {
     const filtered = data.filter((item) =>
       item.label.toLowerCase().includes(e.inputValue.toLowerCase())
@@ -22,7 +24,7 @@ export const Demo = (props: Combobox.RootProps) => {
   };
 
   return (
-    <Combobox.Root onInputValueChange={handleChange} width="2xs" {...props} items={items}>
+    <Combobox.Root onInputValueChange={handleChange} width="2xs" {...props} collection={collection}>
       <Combobox.Label>Framework</Combobox.Label>
       <Combobox.Control>
         <Combobox.Input asChild placeholder="Select a Framework">

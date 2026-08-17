@@ -13,13 +13,13 @@
     "@tacos-ui/panda-preset": "workspace:*",
     "@tacos-ui/react": "workspace:*",
     "@tacos-ui/styled-system": "workspace:*",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.0"
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
   },
   "devDependencies": {
     "@pandacss/dev": "1.12.0",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
     "@vitejs/plugin-react-swc": "^3.6.0",
     "typescript": "^5.4.5",
     "vite": "^5.2.10"

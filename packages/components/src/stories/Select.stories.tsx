@@ -10,15 +10,17 @@ const meta: Meta = {
 export default meta;
 
 export const Base = () => {
-  const items = [
-    { label: 'React', value: 'react' },
-    { label: 'Solid', value: 'solid' },
-    { label: 'Svelte', value: 'svelte', disabled: true },
-    { label: 'Vue', value: 'vue' },
-  ];
+  const collection = Select.createListCollection({
+    items: [
+      { label: 'React', value: 'react' },
+      { label: 'Solid', value: 'solid' },
+      { label: 'Svelte', value: 'svelte', disabled: true },
+      { label: 'Vue', value: 'vue' },
+    ],
+  });
 
   return (
-    <Select.Root items={items} positioning={{ sameWidth: true }}>
+    <Select.Root collection={collection} positioning={{ sameWidth: true }}>
       <Select.Label>Framework</Select.Label>
       <Select.Control>
         <Select.Trigger>
@@ -30,7 +32,7 @@ export const Base = () => {
         <Select.Content>
           <Select.ItemGroup>
             <Select.ItemGroupLabel>Framework</Select.ItemGroupLabel>
-            {items.map((item) => (
+            {collection.items.map((item) => (
               <Select.Item item={item} key={item.value}>
                 <Select.ItemText>{item.label}</Select.ItemText>
                 <Select.ItemIndicator>
