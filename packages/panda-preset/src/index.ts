@@ -11,6 +11,7 @@ import { tokens } from './theme/tokens';
 
 const createPreset = (): Preset => {
   return definePreset({
+    name: '@tacos-ui/panda-preset',
     theme: {
       extend: {
         breakpoints,
@@ -24,6 +25,14 @@ const createPreset = (): Preset => {
     },
     conditions,
     globalCss,
+    // Panda 1 ships a `d` utility for the SVG path property, which turns every
+    // `<path d="M11.6 3.5..." />` into a CSS class. Costs ~35kB of dead CSS.
+    utilities: {
+      extend: {
+        // oxlint-disable-next-line unicorn/no-useless-undefined -- transform returns undefined to emit nothing
+        d: { transform: () => undefined },
+      },
+    },
   });
 };
 

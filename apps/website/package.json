@@ -38,7 +38,7 @@
     "typescript": "^5.4.5"
   },
   "devDependencies": {
-    "@pandacss/dev": "0.39.2",
+    "@pandacss/dev": "1.12.0",
     "@types/cheerio": "^0.22.35",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
