@@ -59,8 +59,12 @@
       }
     }
   },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  },
   "devDependencies": {
-    "@pandacss/dev": "1.12.0"
+    "@pandacss/dev": "1.12.0",
+    "react": "19.2.8"
   },
   "dependencies": {
     "@tacos-ui/panda-preset": "workspace:*"
