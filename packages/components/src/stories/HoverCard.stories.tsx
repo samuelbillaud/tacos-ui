@@ -33,7 +33,7 @@ export const Base = () => {
                   Samuel Billaud
                 </Text>
                 <Text color="fg.muted" size="sm">
-                  FrontEnd Developer at Mergify
+                  FrontEnd Developer
                 </Text>
               </Stack>
               <HStack color="fg.subtle" gap="1">
