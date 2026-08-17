@@ -7,6 +7,8 @@ on:
       - 'packages/**'
     branches:
       - main
+  # Lets a release be retried without touching packages/.
+  workflow_dispatch:
 
 permissions:
   contents: write
