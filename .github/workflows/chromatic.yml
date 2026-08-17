@@ -1,24 +1,24 @@
 name: 'Chromatic'
 
-on: push
+# Manual only: the visual regression baseline is not set up yet.
+# Switch back to `on: push` once CHROMATIC_PROJECT_TOKEN is configured.
+on: workflow_dispatch
 
 jobs:
-  # chromatic:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout code
-  #       uses: actions/checkout@v4
-  #       with:
-  #         fetch-depth: 0
+  chromatic:
+    name: Chromatic
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-  #     - name: Setup pnpm
-  #       uses: pnpm/action-setup@v3
+      - name: Install
+        uses: ./.github/composite-actions/install
 
-  #     - name: Install dependencies
-  #       run: pnpm install
-
-  #     - name: Run Chromatic
-  #       uses: chromaui/action@latest
-  #       with:
-  #         projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-  #         workingDir: packages/components
+      - name: Run Chromatic
+        uses: chromaui/action@latest
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          workingDir: packages/components
