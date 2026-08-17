@@ -8,11 +8,12 @@ runs:
     # field from package.json, keeping CI and local installs in sync.
     - uses: pnpm/action-setup@v6
 
+    # No `registry-url`: it writes an .npmrc pointing at NODE_AUTH_TOKEN, and
+    # that empty auth entry shadows the OIDC credentials used to publish.
     - name: Setup Node.js
       uses: actions/setup-node@v7
       with:
         node-version-file: '.nvmrc'
-        registry-url: 'https://registry.npmjs.org'
         cache: 'pnpm'
 
     - name: Setup Git User
