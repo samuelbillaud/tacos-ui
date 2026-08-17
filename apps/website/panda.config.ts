@@ -52,8 +52,18 @@ export default defineConfig({
         '--colors-prose-bold': 'colors.fg.default',
         '--colors-prose-link': 'colors.fg.default',
         '--colors-prose-code': 'colors.fg.default',
+        '--colors-prose-bullet': 'colors.fg.subtle',
         '--colors-prose-td-border': 'colors.border.subtle',
         '--colors-prose-th-border': 'colors.border.subtle',
+      },
+      // pandacss-preset-typography drops the pseudo-element selectors, emitting
+      // an empty `:where()` that browsers discard.
+      'article :is(ul, ol) > li::marker': {
+        color: 'var(--colors-prose-bullet)',
+        fontWeight: '400',
+      },
+      'article blockquote p:first-of-type::before, article blockquote p:last-of-type::after': {
+        content: 'none',
       },
       'pre, code': {
         fontFamily: 'robotoMono',
