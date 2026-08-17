@@ -27,14 +27,14 @@
   ],
   "type": "module",
   "main": "dist/index.cjs",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.mts",
   "exports": {
     ".": {
-      "source": "./src/components/ui/index.ts",
+      "source": "./src/components/index.ts",
       "import": {
-        "types": "./dist/index.d.dts",
-        "default": "./dist/index.js"
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
       },
       "require": {
         "types": "./dist/index.d.cts",
@@ -48,7 +48,7 @@
   },
   "scripts": {
     "prepare": "panda codegen",
-    "build": "tsup",
+    "build": "tsdown",
     "build-storybook": "storybook build",
     "dev": "storybook dev -p 6006",
     "typecheck": "tsc",
@@ -71,7 +71,7 @@
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "storybook": "^10.5.8",
-    "typescript": "5.4.5",
+    "typescript": "7.0.2",
     "vite": "^8.2.1"
   },
   "peerDependencies": {

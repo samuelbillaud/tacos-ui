@@ -4,7 +4,7 @@ import { badgeRecipe } from '@tacos-ui/styled-system/recipes';
 
 import { Badge } from '~/components';
 
-const meta: Meta = {
+const meta = {
   title: 'Components/Badge',
   component: Badge,
   argTypes: {

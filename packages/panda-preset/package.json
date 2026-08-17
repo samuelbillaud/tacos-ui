@@ -10,20 +10,21 @@
   "author": "Samuel Billaud <samuel.billaud1990@gmail.com> (https://github.com/samuelbillaud)",
   "repository": "https://github.com/samuelbillaud/tacos-ui",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "type": "module",
   "sideEffects": false,
   "main": "src/index.ts",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.mts",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "prepare": "panda codegen",
-    "dev": "tsup --watch",
-    "build": "tsup",
+    "dev": "tsdown --watch",
+    "build": "tsdown",
     "studio": "pandacss studio"
   },
   "dependencies": {

@@ -6,6 +6,8 @@ packages:
 overrides:
   react: 19.2.8
   react-dom: 19.2.8
+  # Two postcss copies break panda's postcss plugin at build time.
+  postcss: 8.5.26
 
 # pnpm 10+ requires build scripts to be allowed explicitly.
 allowBuilds:
