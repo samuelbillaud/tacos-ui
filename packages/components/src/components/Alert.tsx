@@ -10,8 +10,7 @@ import { createStyleContext } from '~/lib/create-style-context';
 const { withProvider, withContext } = createStyleContext(alertRecipe);
 
 export interface RootProps
-  extends Assign<JsxStyleProps, HTMLArkProps<'div'>>,
-    AlertRecipeVariantProps {}
+  extends Assign<JsxStyleProps, HTMLArkProps<'div'>>, AlertRecipeVariantProps {}
 export const Root = withProvider<HTMLDivElement, RootProps>(ark.div, 'root');
 
 export const Content = withContext<HTMLDivElement, Assign<JsxStyleProps, HTMLArkProps<'div'>>>(

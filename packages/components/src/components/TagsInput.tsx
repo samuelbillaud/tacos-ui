@@ -10,8 +10,7 @@ import { createStyleContext } from '~/lib/create-style-context';
 const { withProvider, withContext } = createStyleContext(tagsInputRecipe);
 
 export interface RootProps
-  extends Assign<JsxStyleProps, TagsInput.RootProps>,
-    TagsInputRecipeVariantProps {}
+  extends Assign<JsxStyleProps, TagsInput.RootProps>, TagsInputRecipeVariantProps {}
 export const Root = withProvider<HTMLDivElement, RootProps>(TagsInput.Root, 'root');
 
 export const ClearTrigger = withContext<

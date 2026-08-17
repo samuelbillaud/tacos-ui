@@ -10,8 +10,7 @@ import { createStyleContext } from '~/lib/create-style-context';
 const { withProvider, withContext } = createStyleContext(clipboardRecipe);
 
 export interface RootProps
-  extends Assign<JsxStyleProps, Clipboard.RootProps>,
-    ClipboardRecipeVariantProps {}
+  extends Assign<JsxStyleProps, Clipboard.RootProps>, ClipboardRecipeVariantProps {}
 export const Root = withProvider<HTMLDivElement, RootProps>(Clipboard.Root, 'root');
 
 export const Control = withContext<HTMLDivElement, Assign<JsxStyleProps, Clipboard.ControlProps>>(

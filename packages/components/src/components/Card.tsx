@@ -10,8 +10,7 @@ import { createStyleContext } from '~/lib/create-style-context';
 const { withProvider, withContext } = createStyleContext(cardRecipe);
 
 export interface RootProps
-  extends Assign<JsxStyleProps, HTMLArkProps<'div'>>,
-    CardRecipeVariantProps {}
+  extends Assign<JsxStyleProps, HTMLArkProps<'div'>>, CardRecipeVariantProps {}
 export const Root = withProvider<HTMLDivElement, RootProps>(ark.div, 'root');
 
 export const Body = withContext<HTMLDivElement, Assign<JsxStyleProps, HTMLArkProps<'div'>>>(

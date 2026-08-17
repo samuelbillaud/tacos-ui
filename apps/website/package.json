@@ -20,8 +20,8 @@
     "@astrojs/mdx": "^3.1.1",
     "@astrojs/react": "^3.4.0",
     "@astrojs/sitemap": "^3.1.6",
-    "@fontsource-variable/outfit": "^5.0.13",
-    "@fontsource-variable/roboto-mono": "^5.0.19",
+    "@fontsource-variable/outfit": "^5.3.0",
+    "@fontsource-variable/roboto-mono": "^5.3.0",
     "@tacos-ui/panda-preset": "workspace:*",
     "@tacos-ui/react": "^0.5.0",
     "@tacos-ui/styled-system": "workspace:*",
@@ -34,7 +34,7 @@
     "pandacss-preset-typography": "^0.1.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-live": "^4.1.7",
+    "react-live": "^4.1.8",
     "typescript": "^5.4.5"
   },
   "devDependencies": {

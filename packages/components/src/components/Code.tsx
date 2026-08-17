@@ -7,6 +7,5 @@ import { styled } from '@tacos-ui/styled-system/jsx';
 import { type CodeRecipeVariantProps, codeRecipe } from '@tacos-ui/styled-system/recipes';
 
 export interface CodeProps
-  extends Assign<JsxStyleProps, HTMLArkProps<'code'>>,
-    CodeRecipeVariantProps {}
+  extends Assign<JsxStyleProps, HTMLArkProps<'code'>>, CodeRecipeVariantProps {}
 export const Code = styled(ark.code, codeRecipe);

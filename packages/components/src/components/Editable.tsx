@@ -10,8 +10,7 @@ import { createStyleContext } from '~/lib/create-style-context';
 const { withProvider, withContext } = createStyleContext(editableRecipe);
 
 export interface RootProps
-  extends Assign<JsxStyleProps, Editable.RootProps>,
-    EditableRecipeVariantProps {}
+  extends Assign<JsxStyleProps, Editable.RootProps>, EditableRecipeVariantProps {}
 export const Root = withProvider<HTMLDivElement, RootProps>(Editable.Root, 'root');
 
 export const Area = withContext<HTMLDivElement, Assign<JsxStyleProps, Editable.AreaProps>>(

@@ -12,8 +12,7 @@ import { type ButtonRecipeVariantProps } from '@tacos-ui/styled-system/recipes';
 export type ButtonElementProps = HTMLArkProps<'button'>;
 
 export interface BaseButtonProps
-  extends Assign<JsxStyleProps, ButtonElementProps>,
-    ButtonRecipeVariantProps {
+  extends Assign<JsxStyleProps, ButtonElementProps>, ButtonRecipeVariantProps {
   isLoading?: boolean;
 }
 

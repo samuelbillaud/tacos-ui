@@ -10,8 +10,7 @@ import { splitCssProps } from '@tacos-ui/styled-system/jsx';
 import { type CheckboxRecipeVariantProps, checkboxRecipe } from '@tacos-ui/styled-system/recipes';
 
 export interface CheckboxProps
-  extends Assign<JsxStyleProps, ArkCheckbox.RootProps>,
-    CheckboxRecipeVariantProps {}
+  extends Assign<JsxStyleProps, ArkCheckbox.RootProps>, CheckboxRecipeVariantProps {}
 
 export const Checkbox = forwardRef<HTMLLabelElement, CheckboxProps>((props, ref) => {
   const [variantProps, checkboxProps] = checkboxRecipe.splitVariantProps(props);

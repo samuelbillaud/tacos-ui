@@ -13,8 +13,7 @@ import { createStyleContext } from '~/lib/create-style-context';
 const { withProvider, withContext } = createStyleContext(collapsibleRecipe);
 
 export interface RootProps
-  extends Assign<JsxStyleProps, Collapsible.RootProps>,
-    CollapsibleRecipeVariantProps {}
+  extends Assign<JsxStyleProps, Collapsible.RootProps>, CollapsibleRecipeVariantProps {}
 export const Root = withProvider<HTMLDivElement, RootProps>(Collapsible.Root, 'root');
 
 export const Content = withContext<HTMLDivElement, Assign<JsxStyleProps, Collapsible.ContentProps>>(

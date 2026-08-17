@@ -10,8 +10,7 @@ import { splitCssProps } from '@tacos-ui/styled-system/jsx';
 import { type SwitchRecipeVariantProps, switchRecipe } from '@tacos-ui/styled-system/recipes';
 
 export interface SwitchProps
-  extends Assign<JsxStyleProps, SwitchRootProps>,
-    SwitchRecipeVariantProps {}
+  extends Assign<JsxStyleProps, SwitchRootProps>, SwitchRecipeVariantProps {}
 
 export const Switch = forwardRef<HTMLLabelElement, SwitchProps>((props, ref) => {
   const [variantProps, switchProps] = switchRecipe.splitVariantProps(props);

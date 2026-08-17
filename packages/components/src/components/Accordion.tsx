@@ -10,8 +10,7 @@ import { createStyleContext } from '~/lib/create-style-context';
 const { withProvider, withContext } = createStyleContext(accordionRecipe);
 
 export interface RootProps
-  extends Assign<JsxStyleProps, Accordion.RootProps>,
-    AccordionRecipeVariantProps {}
+  extends Assign<JsxStyleProps, Accordion.RootProps>, AccordionRecipeVariantProps {}
 export const Root = withProvider<HTMLDivElement, RootProps>(Accordion.Root, 'root');
 
 export const ItemContent = withContext<

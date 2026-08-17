@@ -10,8 +10,7 @@ import { createStyleContext } from '~/lib/create-style-context';
 const { withProvider, withContext } = createStyleContext(toastRecipe);
 
 export interface RootProps
-  extends Assign<JsxStyleProps, Toast.RootProps>,
-    ToastRecipeVariantProps {}
+  extends Assign<JsxStyleProps, Toast.RootProps>, ToastRecipeVariantProps {}
 export const Root = withProvider<HTMLDivElement, RootProps>(Toast.Root, 'root');
 
 export const ActionTrigger = withContext<

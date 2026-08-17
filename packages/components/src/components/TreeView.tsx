@@ -21,8 +21,7 @@ export interface TreeViewData {
 }
 
 export interface TreeViewProps
-  extends Assign<JsxStyleProps, TreeViewRootProps>,
-    TreeViewRecipeVariantProps {
+  extends Assign<JsxStyleProps, TreeViewRootProps>, TreeViewRecipeVariantProps {
   data: TreeViewData;
 }
 

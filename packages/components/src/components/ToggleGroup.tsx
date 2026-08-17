@@ -13,8 +13,7 @@ import { createStyleContext } from '~/lib/create-style-context';
 const { withProvider, withContext } = createStyleContext(toggleGroupRecipe);
 
 export interface RootProps
-  extends Assign<JsxStyleProps, ToggleGroup.RootProps>,
-    ToggleGroupRecipeVariantProps {}
+  extends Assign<JsxStyleProps, ToggleGroup.RootProps>, ToggleGroupRecipeVariantProps {}
 export const Root = withProvider<HTMLDivElement, RootProps>(ToggleGroup.Root, 'root');
 
 export const Item = withContext<HTMLButtonElement, Assign<JsxStyleProps, ToggleGroup.ItemProps>>(

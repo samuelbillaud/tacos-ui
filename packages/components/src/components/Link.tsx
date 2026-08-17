@@ -7,6 +7,5 @@ import { styled } from '@tacos-ui/styled-system/jsx';
 import { type LinkRecipeVariantProps, linkRecipe } from '@tacos-ui/styled-system/recipes';
 
 export interface LinkProps
-  extends Assign<JsxStyleProps, HTMLArkProps<'a'>>,
-    LinkRecipeVariantProps {}
+  extends Assign<JsxStyleProps, HTMLArkProps<'a'>>, LinkRecipeVariantProps {}
 export const Link = styled(ark.a, linkRecipe);

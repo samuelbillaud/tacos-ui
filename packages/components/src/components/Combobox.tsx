@@ -10,7 +10,8 @@ import { createStyleContext } from '~/lib/create-style-context';
 const { withProvider, withContext } = createStyleContext(comboboxRecipe);
 
 export interface RootProps
-  extends Assign<JsxStyleProps, Combobox.RootProps<Combobox.CollectionItem>>,
+  extends
+    Assign<JsxStyleProps, Combobox.RootProps<Combobox.CollectionItem>>,
     ComboboxRecipeVariantProps {}
 export const Root = withProvider<HTMLDivElement, RootProps>(Combobox.Root, 'root');
 

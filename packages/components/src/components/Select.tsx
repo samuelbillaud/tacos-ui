@@ -10,7 +10,8 @@ import { createStyleContext } from '~/lib/create-style-context';
 const { withProvider, withContext } = createStyleContext(selectRecipe);
 
 export interface RootProps
-  extends Assign<JsxStyleProps, Select.RootProps<Select.CollectionItem>>,
+  extends
+    Assign<JsxStyleProps, Select.RootProps<Select.CollectionItem>>,
     SelectRecipeVariantProps {}
 export const Root = withProvider<HTMLDivElement, RootProps>(Select.Root, 'root');
 

@@ -11,8 +11,7 @@ import { type SkeletonRecipeVariantProps, skeletonRecipe } from '@tacos-ui/style
 const StyledSkeleton = styled(ark.div, skeletonRecipe);
 
 export interface SkeletonProps
-  extends Assign<JsxStyleProps, HTMLArkProps<'div'>>,
-    SkeletonRecipeVariantProps {
+  extends Assign<JsxStyleProps, HTMLArkProps<'div'>>, SkeletonRecipeVariantProps {
   /**
    *
    * @default false

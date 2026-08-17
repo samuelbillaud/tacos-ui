@@ -13,8 +13,7 @@ import { createStyleContext } from '~/lib/create-style-context';
 const { withProvider, withContext } = createStyleContext(radioButtonGroupRecipe);
 
 export interface RootProps
-  extends Assign<JsxStyleProps, RadioGroup.RootProps>,
-    RadioButtonGroupRecipeVariantProps {}
+  extends Assign<JsxStyleProps, RadioGroup.RootProps>, RadioButtonGroupRecipeVariantProps {}
 export const Root = withProvider<HTMLDivElement, RootProps>(RadioGroup.Root, 'root');
 
 export const Indicator = withContext<

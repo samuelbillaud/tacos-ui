@@ -10,8 +10,7 @@ import { splitCssProps } from '@tacos-ui/styled-system/jsx';
 import { type IconRecipeVariantProps, iconRecipe } from '@tacos-ui/styled-system/recipes';
 
 export interface IconProps
-  extends Assign<JsxStyleProps, HTMLArkProps<'svg'>>,
-    IconRecipeVariantProps {}
+  extends Assign<JsxStyleProps, HTMLArkProps<'svg'>>, IconRecipeVariantProps {}
 
 export const Icon = forwardRef<SVGSVGElement, IconProps>((props, ref) => {
   const [variantProps, iconProps] = iconRecipe.splitVariantProps(props);

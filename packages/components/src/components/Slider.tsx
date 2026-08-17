@@ -10,8 +10,7 @@ import { splitCssProps } from '@tacos-ui/styled-system/jsx';
 import { type SliderRecipeVariantProps, sliderRecipe } from '@tacos-ui/styled-system/recipes';
 
 export interface SliderProps
-  extends Assign<JsxStyleProps, SliderRootProps>,
-    SliderRecipeVariantProps {
+  extends Assign<JsxStyleProps, SliderRootProps>, SliderRecipeVariantProps {
   children?: ReactNode;
   marks?: {
     label?: ReactNode;
