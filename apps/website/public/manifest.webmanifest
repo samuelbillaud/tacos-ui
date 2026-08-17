@@ -1,7 +1,7 @@
 {
   "name": "Tacos UI",
   "display": "standalone",
-  "start_url": "https://tacos-ui.com",
+  "start_url": "/",
   "description": "A modern React components library",
   "icons": [
     {
