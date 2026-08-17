@@ -8,13 +8,19 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+  pull-requests: write
+  # Lets npm authenticate the publish through trusted publishing, no token.
+  id-token: write
+
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
@@ -26,9 +32,7 @@ jobs:
 
       - name: Publish packages
         id: changesets
-        uses: changesets/action@v1
+        uses: changesets/action@v2
         with:
-          publish: pnpm release
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.TACOS_UI_NPM_TOKEN}}
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          publish-script: pnpm release
+          github-token: ${{ secrets.GITHUB_TOKEN }}

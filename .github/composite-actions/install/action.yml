@@ -6,10 +6,10 @@ runs:
   steps:
     # No `version` input: pnpm/action-setup reads the `packageManager`
     # field from package.json, keeping CI and local installs in sync.
-    - uses: pnpm/action-setup@v4
+    - uses: pnpm/action-setup@v6
 
     - name: Setup Node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v7
       with:
         node-version-file: '.nvmrc'
         registry-url: 'https://registry.npmjs.org'
