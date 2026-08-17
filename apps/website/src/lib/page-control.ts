@@ -29,7 +29,7 @@ const getCurrentPageIndex = async (pathname?: string) => {
 
   const collections = await getAllCollections();
 
-  return collections.findIndex((item) => item.slug.endsWith(slug));
+  return collections.findIndex((item) => item.id.endsWith(slug));
 };
 
 export const getPreviousPage = async (pathname?: string) => {

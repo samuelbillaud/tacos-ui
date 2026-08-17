@@ -1,7 +1,7 @@
 ---
 import '@fontsource-variable/outfit';
 import '@fontsource-variable/roboto-mono';
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 import '../index.css';
 
 interface Props {
@@ -28,7 +28,7 @@ const { title, description } = Astro.props;
     <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="32x32" />
     <link rel="apple-touch-icon" href="/apple-icon.png" type="image/png" sizes="180x180" />
 
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <body>
     <slot />
