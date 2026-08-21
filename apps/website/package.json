@@ -15,7 +15,7 @@
     "cf:preview": "wrangler dev"
   },
   "dependencies": {
-    "@ark-ui/react": "5.38.1",
+    "@ark-ui/react": "5.38.2",
     "@astrojs/check": "^0.9.10",
     "@astrojs/mdx": "^7.0.5",
     "@astrojs/react": "^6.0.2",
