@@ -30,7 +30,7 @@
     "@uidotdev/usehooks": "^2.4.1",
     "astro": "^7.2.2",
     "cheerio": "1.2.0",
-    "lucide-react": "1.31.0",
+    "lucide-react": "1.34.0",
     "pandacss-preset-typography": "^0.1.6",
     "react": "19.2.8",
     "react-dom": "19.2.8",
