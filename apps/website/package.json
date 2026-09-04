@@ -19,7 +19,7 @@
     "@astrojs/check": "^0.9.10",
     "@astrojs/mdx": "^7.0.5",
     "@astrojs/react": "^6.0.2",
-    "@astrojs/sitemap": "^3.7.3",
+    "@astrojs/sitemap": "^3.7.4",
     "@fontsource-variable/outfit": "^5.3.0",
     "@fontsource-variable/roboto-mono": "^5.3.0",
     "@tacos-ui/panda-preset": "workspace:*",
